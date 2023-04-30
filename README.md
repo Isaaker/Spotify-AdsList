@@ -10,7 +10,15 @@ Making the list cost me a lot of time but finally it seems to work, in case you 
 
 I also recommend you to complement the list with some standard lists of ad domains, here are some options:
 
-Translated with www.DeepL.com/Translator (free version)
+- https://github.com/blocklistproject/Lists
+- https://github.com/topics/blocklist
+- https://github.com/topics/adblock
+- https://github.com/topics/adblock-list
+
+## Avaible List Versions
+
+The list is highly compatible, so here are the different versions so that you can use it with your Adblock of confidence:
+
 
 
 ## Status:
