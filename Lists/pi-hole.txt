@@ -1564,10 +1564,8 @@ e10499.dsce9.akamaiedge.net
 clients1.google.com
 audio4-ak-spotify-com.akamaized.net
 edge-web.dual-gslb.spotify.com
-scdnco.spotify.map.fastly.net
 sp-bootstrap.global.ssl.fastly.net
 e12919.dscd.akamaiedge.net
-i.scdn.co
 mobile-ap.spotify.com
 star.c10r.facebook.com
 ap.spotify.com
