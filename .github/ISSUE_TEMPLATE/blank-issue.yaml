@@ -1,0 +1,37 @@
+name: Blank Issue
+description: Create New Blank Issue
+title: "[New Issue]: "
+body:
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: Example -> email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: issue
+    attributes:
+      label: Write here your issue
+      placeholder: Please write here your issue!
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: Please check if the following questions
+      options:
+        - label: I select a issue Label, on the rigth menu bar
+          required: true
+        - label: I agree to follow this project's Code of Conduct
+          required: true
+        - label: I read the avaible Documentation
+          required: true
+        - label: I have checked that there is no issue on the same subject
+          required: true
+        - label: I have checked that my issue does not contain any relevant security data (Passwords, Secrets or Users)
+          required: true
+        - label: I have checked that my issue is not a Security Vulneability [Security Policy](https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/SECURITY.md)
+          required: true

@@ -1,0 +1,116 @@
+name: Bug Report
+description: Report a Bug
+title: "[BUG]: "
+labels: ["Remote Bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for creating this issue, please tell us more about the problem.
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: Example -> email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Browser
+      description: What browser did you use when you had the bug?
+      options:
+        - Firefox
+        - Firefox Developer Edition
+        - Safari
+        - Chrome
+        - Chromium
+        - Opera
+        - Opera GX
+        - Microsoft Edge
+        - Internet Explorer
+        - QQ Browser
+        - elinks
+        - Samsung Internet
+        - Vivaldi
+        - Brave
+        - Other (Tell us the name the name in the box below)
+    validations:
+      required: true
+  - type: textarea
+    id: browser-version
+    attributes:
+      label: Tell us the name the name of your browser if you select Other
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us the name
+    validations:
+      required: false
+  - type: textarea
+    id: other-browser
+    attributes:
+      label: Browser Version
+      description: Tell us the name the version of your browser
+      placeholder: Example -> Version 16.0
+    validations:
+      required: true
+  - type: dropdown
+    id: operative_system
+    attributes:
+      label: Operative System (OS)
+      multiple: true
+      options:
+        - MacOS (Apple)
+        - iOS (Apple)
+        - Android (Google)
+        - WatchOS (Apple)
+        - ChromeOS (Google)
+        - Windows (Microsoft)
+        - Linux (Linux Foundation)
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: other-os
+    attributes:
+      label: OS Version
+      description: Tell us the Version of OS, if you select other also tell us your operative system name
+      placeholder: Example -> Monterey 12.6
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: textarea
+    id: extra-info
+    attributes:
+      label: Extra Info about the bug
+      description: Tell us extra info about the bug
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
+        - label: I read the avaible Documentation
+          required: true
+        - label: I have checked that there is no issue on the same subject
+          required: true
+        - label: I have checked that my issue does not contain any relevant security data (Passwords, Secrets or Users)
+          required: true
+        - label: I have checked that my issue is not a Security Vulneability [Security Policy](https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/SECURITY.md)
+          required: true
