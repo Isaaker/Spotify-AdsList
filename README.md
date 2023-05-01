@@ -36,4 +36,4 @@ The list is highly compatible, so here are the different versions so that you ca
 ## License
 The code is under **Creative Commons Attribution-ShareAlike 4.0 International Public License**, view the license at: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt
 
-![Creative Commons Attribution-ShareAlike 4.0 International Public License Logo]([images/license]
+![Creative Commons Attribution-ShareAlike 4.0 International Public License Logo]([https://github.com/Isaaker/Spotify-AdsList/blob/main/License-Image.jpeg]
