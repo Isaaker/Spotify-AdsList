@@ -4,6 +4,7 @@
 ##### Revised: 30/4/23                                                             ####
 #######################################################################################
 ##### Version: pi-hole                                                             ####
+##### Number of domains: 1562                                                      ####
 #######################################################################################
 ##### Read more: https://github.com/Isaaker/Spotify-AdsList                        ####
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
