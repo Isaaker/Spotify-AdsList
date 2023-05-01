@@ -1,5 +1,6 @@
 # Spotify Ads List
 
+![Spotify-AdsList Logo](https://github.com/Isaaker/Spotify-AdsList/raw/main/images/spotify_ads_list_logo.png)
 
 ## Status:
 
@@ -36,4 +37,4 @@ The list is highly compatible, so here are the different versions so that you ca
 ## License
 The code is under **Creative Commons Attribution-ShareAlike 4.0 International Public License**, view the license at: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt
 
-![Creative Commons Attribution-ShareAlike 4.0 International Public License Logo]([https://github.com/Isaaker/Spotify-AdsList/blob/main/License-Image.jpeg]
+![Creative Commons Attribution-ShareAlike 4.0 International Public License Logo](https://github.com/Isaaker/Spotify-AdsList/raw/main/images/License-Image.jpeg)
