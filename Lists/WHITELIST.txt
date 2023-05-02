@@ -1,0 +1,16 @@
+#######################################################################################
+##### Spotify Ads Blacklist                                                        ####
+##### Created by: Isaaker                                                          ####
+##### Revised: 2/5/23                                                              ####
+#######################################################################################
+##### Version: WHITELIST                                                           ####
+##### Number of domains: 2                                                         ####
+#######################################################################################
+##### Read more: https://github.com/Isaaker/Spotify-AdsList                        ####
+##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
+#######################################################################################
+
+WARNING: This list is not formatted in any special way and therefore cannot be downloaded and used as an input file, please add the domains manually.
+
+- login5.spotify.com
+- spclient.wg.spotify.com
