@@ -21,7 +21,7 @@ I also recommend you to complement the list with some standard lists of ad domai
 - https://github.com/topics/adblock
 - https://github.com/topics/adblock-list
 
-## Avaible List Versions
+## List Versions
 
 The list is highly compatible, so here are the different versions so that you can use it with your Adblock of confidence:
 
@@ -33,6 +33,12 @@ The list is highly compatible, so here are the different versions so that you ca
 | Pi-hole | Compatible with pi-hole and other systems that do not require anything other than domains | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/pi-hole.txt | https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/pi-hole.txt
 | Dnsmasq | Compatible with dnsmasq | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/dnsmasq.txt | https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/dnsmasq.txt
 | Dnsmasq | Compatible with dnsmasq | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/adguard.txt | https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/adguard.txt
+
+## Whitelist
+
+In order for Spotify to function properly, a short list of domains needs to be added to its whitelist to prevent redirects from blocked to non-blocked domains from being cut off.
+
+See the Whitelist [here](https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/WHITELIST.txt)
 
 ## License
 The code is under **Creative Commons Attribution-ShareAlike 4.0 International Public License**, view the license at: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt
