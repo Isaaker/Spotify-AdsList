@@ -21,6 +21,7 @@ License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt
 | login5.spotify.com | Spotify login domain | Unable to log in to Spotify no audio is played and many screens cannot be accessed |
 | spclient.wg.spotify.com | Spotify domain providing music and controlling it | The player does not work, it is impossible to control the audio playback and this causes it to skip songs continuously and without stopping |
 | open.spotify.com | In principle, I have not observed any adverse effect on the applications when blocking this domain, however, blocking it makes it impossible to access the spotify web platform | Unable to access the spotify web player |
+| api-partner.spotify.com | This domain is the one that provides some of the main images of the app such as the home screen, the application will continue to play music but some screens may not work properly or may be inaccessible by displaying an error. | Problems displaying images |
 
 ## Plain List
 
