@@ -1572,6 +1572,6 @@
 ||star.c10r.facebook.com^
 ||ap.spotify.com^
 ||a1744.dscw154.akamai.net^
-||audio4-fa.scdn.co^
+||xpui.app.spotify.com^
 ||gew1-spclient.spotify.com^
 ||canvaz.scdn.co^
