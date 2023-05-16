@@ -1570,6 +1570,6 @@
 0.0.0.0 star.c10r.facebook.com
 0.0.0.0 ap.spotify.com
 0.0.0.0 a1744.dscw154.akamai.net
-0.0.0.0 audio4-fa.scdn.co
+0.0.0.0 xpui.app.spotify.com
 0.0.0.0 gew1-spclient.spotify.com
 0.0.0.0 canvaz.scdn.co
