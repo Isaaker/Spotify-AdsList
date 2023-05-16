@@ -1,10 +1,10 @@
 #######################################################################################
 ##### Spotify Ads Blacklist                                                        ####
 ##### Created by: Isaaker                                                          ####
-##### Revised: 1/5/23                                                              ####
+##### Revised: 16/5/23                                                             ####
 #######################################################################################
 ##### Version: Adguard                                                             ####
-##### Number of domains: 1562                                                      ####
+##### Number of domains: 1563                                                      ####
 #######################################################################################
 ##### Read more: https://github.com/Isaaker/Spotify-AdsList                        ####
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
@@ -1572,5 +1572,6 @@
 ||star.c10r.facebook.com^
 ||ap.spotify.com^
 ||a1744.dscw154.akamai.net^
-||audio4-fa.scdn.co^
+||xpui.app.spotify.com^
 ||gew1-spclient.spotify.com^
+||canvaz.scdn.co^
