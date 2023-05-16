@@ -2,11 +2,11 @@
 
 Created by: Isaaker
 
-Revised: 2/5/23
+Revised: 16/5/23
 
 Version: WHITELIST
 
-Number of domains: 2
+Number of domains: 4
 
 Read more: https://github.com/Isaaker/Spotify-AdsList
 
@@ -28,3 +28,4 @@ License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt
 - login5.spotify.com
 - spclient.wg.spotify.com
 - open.spotify.com
+- api-partner.spotify.com
