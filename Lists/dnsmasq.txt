@@ -1570,6 +1570,6 @@ server=/mobile-ap.spotify.com/
 server=/star.c10r.facebook.com/
 server=/ap.spotify.com/
 server=/a1744.dscw154.akamai.net/
-server=/audio4-fa.scdn.co/
+server=/xpui.app.spotify.com/
 server=/gew1-spclient.spotify.com/
 server=/canvaz.scdn.co/
