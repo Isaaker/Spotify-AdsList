@@ -38,7 +38,7 @@ The list is highly compatible, so here are the different versions so that you ca
 
 In order for Spotify to function properly, a short list of domains needs to be added to its whitelist to prevent redirects from blocked to non-blocked domains from being cut off.
 
-See the Whitelist [here](https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/WHITELIST.txt)
+See the Whitelist [here](https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/WHITELIST.md)
 
 ## License
 The code is under **Creative Commons Attribution-ShareAlike 4.0 International Public License**, view the license at: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt
