@@ -40,6 +40,16 @@ In order for Spotify to function properly, a short list of domains needs to be a
 
 See the Whitelist [here](https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/WHITELIST.md)
 
+## Testing
+
+Here you can find all the tests made, their date and more details.
+
+| Platform | OS & Version | Browser & Version (If applicable) | Date |
+| -- | -- | -- | -- |
+| Web Page | MacOS (14.2.1) | Safari (17.2.1) | 27/1/24 |
+| App | MacOS (14.2.1) | - | 27/1/24 |
+
+
 ## License
 The code is under **Creative Commons Attribution-ShareAlike 4.0 International Public License**, view the license at: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt
 
