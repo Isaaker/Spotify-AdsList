@@ -1,10 +1,10 @@
 #######################################################################################
 ##### Spotify Ads Blacklist                                                        ####
 ##### Created by: Isaaker                                                          ####
-##### Revised: 16/5/23                                                             ####
+##### Revised: 27/1/24                                                             ####
 #######################################################################################
 ##### Version: dnsmasq                                                             ####
-##### Number of domains: 1563                                                      ####
+##### Number of domains: 1562                                                      ####
 #######################################################################################
 ##### Read more: https://github.com/Isaaker/Spotify-AdsList                        ####
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
@@ -48,7 +48,6 @@ server=/upgrade.spotify.com#optional/
 server=/video-fa.scdn.co/
 server=/video-fa.cdn.spotify.com/
 server=/video-fa-b.cdn.spotify.com/
-server=/audio-ak-spotify-com.akamaized.net/
 server=/audio-ake.spotify.com.edgesuite.net/
 server=/audio-akp-spotify-com.akamaized.net/
 server=/audio-ak.spotify.com.edgesuite.net/
