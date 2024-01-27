@@ -49,6 +49,7 @@ Here you can find all the tests made, their date and more details.
 | Web Page | MacOS (14.2.1) | Safari (17.2.1) | 27/1/24 | OK |
 | Web Page | MacOS (14.2.1) | Firefox (122.0) | 27/1/24 | OK |
 | Web Page | Debian 12 | Firefox ESR (115.3.0esr)| 27/1/24 | ERROR ("Playback of protected content is not enabled.") |
+| Web Page | Debian 12 | Chromium (121.0.6167.85)| 27/1/24 | ERROR ("Playback of protected content is not enabled.") |
 | App | MacOS (14.2.1) | - | 27/1/24 | OK |
 
 
