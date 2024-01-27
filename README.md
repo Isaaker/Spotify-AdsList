@@ -45,7 +45,7 @@ See the Whitelist [here](https://github.com/Isaaker/Spotify-AdsList/blob/main/Li
 Here you can find all the tests made, their date and more details.
 
 | Platform | OS & Version | Browser & Version (If applicable) | Date | Status |
-| -- | -- | -- | -- |
+| -- | -- | -- | -- | -- |
 | Web Page | MacOS (14.2.1) | Safari (17.2.1) | 27/1/24 | OK |
 | Web Page | MacOS (14.2.1) | Firefox (122.0) | 27/1/24 | OK |
 | App | MacOS (14.2.1) | - | 27/1/24 | OK |
