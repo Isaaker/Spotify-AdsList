@@ -51,8 +51,9 @@ Here you can find all the tests made, their date and more details.
 | Web App | Virtual Machine| Debian 12 | Firefox ESR (115.3.0esr)| 27/1/24 | ![Static Badge](https://img.shields.io/badge/Status-ERROR-red?logo=spotify) | pihole |
 | Web App | Virtual Machine | Debian 12 | Chromium (121.0.6167.85)| 27/1/24 | ![Static Badge](https://img.shields.io/badge/Status-ERROR-red?logo=spotify) | pihole |
 | App | Mac | MacOS (14.2.1) | - | 27/1/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | pihole |
+| App | iPhone | iOS (17.3.1) | - | 15/2/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | pihole |
 
-**If you have tested the list, please create a issue with type "Testing" to add more tested devices. [Add new tested device]()**
+**If you have tested the list, please create a issue with type "Testing" to add more tested devices. [Add new tested device](https://github.com/Isaaker/Spotify-AdsList/issues/new)**
 
 ## License
 The code is under **Creative Commons Attribution-ShareAlike 4.0 International Public License**, view the license at: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt
