@@ -6,7 +6,7 @@ body:
     id: contact
     attributes:
       label: Contact Details
-      description: How can we get in touch with you if we need more info?
+      description: "How can we get in touch with you if we need more info?"
       placeholder: Example -> email@example.com
     validations:
       required: false
@@ -14,7 +14,7 @@ body:
     id: platform
     attributes:
       label: Platform
-      description: Please, select your platform.
+      description: "Please, select your platform."
       options:
         - Web App
         - App
@@ -29,7 +29,7 @@ body:
     id: device
     attributes:
       label: Device
-      description: Please, enter your device name.
+      description: "Please, enter your device name."
       placeholder: Example -> iPhone
     validations:
       required: true
@@ -37,7 +37,7 @@ body:
     id: os_version
     attributes:
       label: OS & Version
-      description: Please, enter your device OS & Version.
+      description: "Please, enter your device OS & Version."
       placeholder: Example -> MacOS (14.2.1)
     validations:
       required: true
@@ -45,7 +45,7 @@ body:
     id: browser_version
     attributes:
       label: Browser & Version (If applicable)
-      description: Please, enter your Browser & Version (If applicable).
+      description: "Please, enter your Browser & Version (If applicable)."
       placeholder: Example -> Safari (17.2.1)
     validations:
       required: false
@@ -53,7 +53,7 @@ body:
     id: date
     attributes:
       label: Testing Date
-      description: Please, enter your Testing Date -> Format: day/month/year.
+      description: "Please, enter your Testing Date -> Format: day/month/year."
       placeholder: Example -> 27/1/24
     validations:
       required: true
@@ -61,7 +61,7 @@ body:
     id: date
     attributes:
       label: Testing Date
-      description: Please, enter your Testing Date -> Format: day/month/year.
+      description: "Please, enter your Testing Date -> Format: day/month/year."
       placeholder: Example -> 27/1/24
     validations:
       required: true
@@ -69,7 +69,7 @@ body:
     id: status
     attributes:
       label: Status
-      description: Please, select the testing result status.
+      description: "Please, select the testing result status."
       options:
         - OK
         - ERROR
@@ -79,7 +79,7 @@ body:
     id: list_type
     attributes:
       label: List Type
-      description: Please, select the list type.
+      description: "Please, select the list type."
       options:
         - Standard
         - Pi-hole
@@ -91,18 +91,18 @@ body:
     id: logs
     attributes:
       label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      description: "Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks."
       render: shell
   - type: textarea
     id: extra-info
     attributes:
       label: Extra Info about the testing
-      description: Tell us extra info about the testing
+      description: "Tell us extra info about the testing"
   - type: checkboxes
     id: terms
     attributes:
       label: Code of Conduct
-      description: Please check if the following questions
+      description: "Please check if the following questions"
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
