@@ -1,6 +1,7 @@
 name: Testing Platform
 description: Add a tested platform to the tested devices avaible in README.md
-title: "[Testing]: "
+title: "New Testing Device: [Device Name] / [Device OS&Version]"
+labels: ["Testing"]
 body:
   - type: input
     id: contact
