@@ -1,10 +1,10 @@
 #######################################################################################
 ##### Spotify Ads Blacklist                                                        ####
 ##### Created by: Isaaker                                                          ####
-##### Revised: 27/1/24                                                             ####
+##### Revised: 19/4/24                                                             ####
 #######################################################################################
 ##### Version: dnsmasq                                                             ####
-##### Number of domains: 1562                                                      ####
+##### Number of domains: 1559                                                      ####
 #######################################################################################
 ##### Read more: https://github.com/Isaaker/Spotify-AdsList                        ####
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
@@ -905,7 +905,6 @@ server=/messenger-webhook.spotify.com/
 server=/messenger-webview.scdn.co/
 server=/metadatafeedback.spotify.com/
 server=/mobile-001.lon.spotify.com/
-server=/mobile-ap.spotify.com/
 server=/mobile.spotify.com/
 server=/mosaic.scdn.co/
 server=/mp3ad.scdn.co/
@@ -1562,10 +1561,8 @@ server=/a2047.dscapi9.akamai.net/
 server=/e10499.dsce9.akamaiedge.net/
 server=/clients1.google.com/
 server=/audio4-ak-spotify-com.akamaized.net/
-server=/edge-web.dual-gslb.spotify.com/
 server=/sp-bootstrap.global.ssl.fastly.net/
 server=/e12919.dscd.akamaiedge.net/
-server=/mobile-ap.spotify.com/
 server=/star.c10r.facebook.com/
 server=/ap.spotify.com/
 server=/a1744.dscw154.akamai.net/
