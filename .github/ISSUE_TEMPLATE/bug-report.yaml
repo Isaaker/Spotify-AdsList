@@ -1,7 +1,7 @@
 name: Bug Report
 description: Report a Bug
 title: "[BUG]: "
-labels: ["Remote Bug"]
+labels: ["Bug"]
 body:
   - type: markdown
     attributes:

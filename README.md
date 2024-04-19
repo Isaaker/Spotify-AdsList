@@ -10,7 +10,7 @@
 
 Spotify Ads List is a list of domains that includes all the domains from which Spotify Apps get audio ads, banners...
 
-Blocking these domains is totally legal since the only thing you are doing is redirecting requests from these domains to 0.0.0.0.0 also known as nowhere.
+Blocking these domains is totally legal since the only thing you are doing is redirecting requests from these domains to 0.0.0.0 also known as nowhere.
 
 Making the list cost me a lot of time but finally it seems to work, in case you find any false positive let me know by creating an Issue, also if you want to collaborate I invite you to create a fork of the repository.
 
@@ -38,7 +38,23 @@ The list is highly compatible, so here are the different versions so that you ca
 
 In order for Spotify to function properly, a short list of domains needs to be added to its whitelist to prevent redirects from blocked to non-blocked domains from being cut off.
 
-See the Whitelist [here](https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/WHITELIST.txt)
+See the Whitelist [here](https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/WHITELIST.md)
+
+## Testing
+
+Here you can find all the tests made, their date and more details.
+
+| Platform | Device | OS & Version | Browser & Version (If applicable) | Date | Status | List Type |
+| -- | -- | -- | -- | -- | -- | -- |
+| Web App | Mac | MacOS (14.2.1) | Safari (17.2.1) | 27/1/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | pihole |
+| Web App | Mac | MacOS (14.2.1) | Firefox (122.0) | 27/1/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | pihole |
+| Web App | Virtual Machine| Debian 12 | Firefox ESR (115.3.0esr)| 27/1/24 | ![Static Badge](https://img.shields.io/badge/Status-ERROR-red?logo=spotify) | pihole |
+| Web App | Virtual Machine | Debian 12 | Chromium (121.0.6167.85)| 27/1/24 | ![Static Badge](https://img.shields.io/badge/Status-ERROR-red?logo=spotify) | pihole |
+| App | Mac | MacOS (14.2.1) | - | 27/1/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | pihole |
+| App | iPhone | iOS (17.3.1) | - | 15/2/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | pihole |
+| App | Google Pixel 4a | Android 13 | - | 19/4/24 | ![Static Badge](https://img.shields.io/badge/Status-ERROR-red?logo=spotify) | adguard |
+
+**If you have tested the list, please create a issue with type "Testing" to add more tested devices. [Add new tested device](https://github.com/Isaaker/Spotify-AdsList/issues/new?assignees=&labels=Testing&projects=&template=testing.yml&title=New+Testing+Device%3A+%5BDevice+Name%5D+%2F+%5BDevice+OS%26Version%5D)**
 
 ## License
 The code is under **Creative Commons Attribution-ShareAlike 4.0 International Public License**, view the license at: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt
