@@ -52,7 +52,7 @@ Here you can find all the tests made, their date and more details.
 | Web App | Virtual Machine | Debian 12 | Chromium (121.0.6167.85)| 27/1/24 | ![Static Badge](https://img.shields.io/badge/Status-ERROR-red?logo=spotify) | pihole |
 | App | Mac | MacOS (14.2.1) | - | 27/1/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | pihole |
 | App | iPhone | iOS (17.3.1) | - | 15/2/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | pihole |
-| App | Google Pixel 4a | Android 13 | - | 19/4/24 | ![Static Badge](https://img.shields.io/badge/Status-ERROR-red?logo=spotify) | adguard |
+| App | Google Pixel 4a | Android 13 | - | 20/4/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | adguard |
 
 **If you have tested the list, please create a issue with type "Testing" to add more tested devices. [Add new tested device](https://github.com/Isaaker/Spotify-AdsList/issues/new?assignees=&labels=Testing&projects=&template=testing.yml&title=New+Testing+Device%3A+%5BDevice+Name%5D+%2F+%5BDevice+OS%26Version%5D)**
 
