@@ -61,3 +61,7 @@ Here you can find all the tests made, their date and more details.
 The code is under **Creative Commons Attribution-ShareAlike 4.0 International Public License**, view the license at: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt
 
 ![Creative Commons Attribution-ShareAlike 4.0 International Public License Logo](https://github.com/Isaaker/Spotify-AdsList/raw/main/images/License-Image.jpeg)
+
+# Contributing
+
+To learn more about how to contribute to this repository, I recommend you read [CONTRIBUTING.md](https://github.com/Isaaker/Spotify-AdsList/blob/main/CONTRIBUTING.md)
