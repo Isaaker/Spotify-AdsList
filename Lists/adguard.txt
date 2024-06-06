@@ -4,7 +4,7 @@
 ##### Updated: 2024-06-06 (GMT)                                                    ####
 #######################################################################################
 ##### Version: Adguard                                                             ####
-##### Number of domains: 1541                                                      ####
+##### Number of domains: 1537                                                      ####
 #######################################################################################
 ##### Read more: https://github.com/Isaaker/Spotify-AdsList                        ####
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
@@ -953,11 +953,9 @@
 ||sap-testing.spotify.com^
 ||sap.spotify.com^
 ||scannables.scdn.co^
-||scannables.scdn.co^
 ||search.spotxchange.com^
 ||secure-gg.imrworldwide.com^
 ||secure.insightexpressai.com^
-||securepubads.g.doubleclick.n^
 ||seektables.scdn.co^
 ||server-54-23-216-23.mrs5.r.cloudfront.net^
 ||showsportal.spotify.com^
@@ -1286,11 +1284,10 @@
 ||api.safedk.com^
 ||cdn.tellwrite.com^
 ||cloudconfig.googleapis.com^
-||digitalassetlinks.googleapis.c^
+||digitalassetlinks.googleapis.com^
 ||infoevent.startappservice.com^
 ||lb1-217593028.us-east-1.elb.am^
 ||media-router-flurry7.prod.medi^
-||pagead-googlehosted.l.google.c^
 ||people-pa.googleapis.com^
 ||platform-lookaside.fbsbx.com^
 ||r5---sn-5hnednlr.gvt1.com^
@@ -1298,7 +1295,6 @@
 ||rts.mobula.sdk.duapps.com^
 ||sdkm.w.inmobi.com^
 ||seen-on-screen.thewhizmarketin^
-||server-54-230-216-203.mrs50.r.^
 ||skypicker-984.firebaseio.com^
 ||skypicker-api.infinario.com^
 ||sla-intl.trustlook.com^

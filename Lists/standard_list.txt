@@ -4,7 +4,7 @@
 ##### Updated: 2024-06-06 (GMT)                                                    ####
 #######################################################################################
 ##### Version: Standard                                                            ####
-##### Number of domains: 1541                                                      ####
+##### Number of domains: 1537                                                      ####
 #######################################################################################
 ##### Read more: https://github.com/Isaaker/Spotify-AdsList                        ####
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
@@ -953,11 +953,9 @@
 0.0.0.0 sap-testing.spotify.com
 0.0.0.0 sap.spotify.com
 0.0.0.0 scannables.scdn.co
-0.0.0.0 scannables.scdn.co
 0.0.0.0 search.spotxchange.com
 0.0.0.0 secure-gg.imrworldwide.com
 0.0.0.0 secure.insightexpressai.com
-0.0.0.0 securepubads.g.doubleclick.n
 0.0.0.0 seektables.scdn.co
 0.0.0.0 server-54-23-216-23.mrs5.r.cloudfront.net
 0.0.0.0 showsportal.spotify.com
@@ -1286,11 +1284,10 @@
 0.0.0.0 api.safedk.com
 0.0.0.0 cdn.tellwrite.com
 0.0.0.0 cloudconfig.googleapis.com
-0.0.0.0 digitalassetlinks.googleapis.c
+0.0.0.0 digitalassetlinks.googleapis.com
 0.0.0.0 infoevent.startappservice.com
 0.0.0.0 lb1-217593028.us-east-1.elb.am
 0.0.0.0 media-router-flurry7.prod.medi
-0.0.0.0 pagead-googlehosted.l.google.c
 0.0.0.0 people-pa.googleapis.com
 0.0.0.0 platform-lookaside.fbsbx.com
 0.0.0.0 r5---sn-5hnednlr.gvt1.com
@@ -1298,7 +1295,6 @@
 0.0.0.0 rts.mobula.sdk.duapps.com
 0.0.0.0 sdkm.w.inmobi.com
 0.0.0.0 seen-on-screen.thewhizmarketin
-0.0.0.0 server-54-230-216-203.mrs50.r.
 0.0.0.0 skypicker-984.firebaseio.com
 0.0.0.0 skypicker-api.infinario.com
 0.0.0.0 sla-intl.trustlook.com

@@ -4,7 +4,7 @@
 ##### Updated: 2024-06-06 (GMT)                                                    ####
 #######################################################################################
 ##### Version: dnsmasq                                                             ####
-##### Number of domains: 1541                                                      ####
+##### Number of domains: 1537                                                      ####
 #######################################################################################
 ##### Read more: https://github.com/Isaaker/Spotify-AdsList                        ####
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
@@ -953,11 +953,9 @@ server=/samatha.ash.spotify.com/
 server=/sap-testing.spotify.com/
 server=/sap.spotify.com/
 server=/scannables.scdn.co/
-server=/scannables.scdn.co/
 server=/search.spotxchange.com/
 server=/secure-gg.imrworldwide.com/
 server=/secure.insightexpressai.com/
-server=/securepubads.g.doubleclick.n/
 server=/seektables.scdn.co/
 server=/server-54-23-216-23.mrs5.r.cloudfront.net/
 server=/showsportal.spotify.com/
@@ -1286,11 +1284,10 @@ server=/anycast.pixel.adsafeprotected./
 server=/api.safedk.com/
 server=/cdn.tellwrite.com/
 server=/cloudconfig.googleapis.com/
-server=/digitalassetlinks.googleapis.c/
+server=/digitalassetlinks.googleapis.com/
 server=/infoevent.startappservice.com/
 server=/lb1-217593028.us-east-1.elb.am/
 server=/media-router-flurry7.prod.medi/
-server=/pagead-googlehosted.l.google.c/
 server=/people-pa.googleapis.com/
 server=/platform-lookaside.fbsbx.com/
 server=/r5---sn-5hnednlr.gvt1.com/
@@ -1298,7 +1295,6 @@ server=/rp-lb-766892831.us-east-1.elb./
 server=/rts.mobula.sdk.duapps.com/
 server=/sdkm.w.inmobi.com/
 server=/seen-on-screen.thewhizmarketin/
-server=/server-54-230-216-203.mrs50.r./
 server=/skypicker-984.firebaseio.com/
 server=/skypicker-api.infinario.com/
 server=/sla-intl.trustlook.com/
