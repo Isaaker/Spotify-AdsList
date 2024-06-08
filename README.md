@@ -2,11 +2,17 @@
 
 ![Spotify-AdsList Logo](https://github.com/Isaaker/Spotify-AdsList/raw/main/images/spotify_ads_list_logo.png)
 
-## Status:
+## Workflows
 
-[![Semgrep](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml)
+|Name|Type|Status|
+|--|--|--|
+|Build Blocklist|Build|[![Build Blocklist](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/build_blocklist.yml/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/build_blocklist.yml)|
+|SAST GitLeaks|Security|[![SAST GitLeaks](https://github.com/Isaaker/piscinadeentropia/actions/workflows/sast-gitleaks.yml/badge.svg)](https://github.com/Isaaker/piscinadeentropia/actions/workflows/sast-gitleaks.yml)|
+|SAST Semgrep|Security|[![SAST Semgrep](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml)|
 
 ## About
+
+![maintained - yes](https://img.shields.io/badge/maintained-yes-blue)[![Hosted with GH Pages](https://img.shields.io/badge/Hosted_with-GitHub_Pages-blue?logo=github&logoColor=white)](https://pages.github.com/ "Go to GitHub Pages homepage")[![contributions - welcome](https://img.shields.io/badge/contributions-welcome-blue)](/CONTRIBUTING.md "Go to contributions doc")
 
 Spotify Ads List is a list of domains that includes all the domains from which Spotify Apps get audio ads, banners...
 
@@ -20,6 +26,8 @@ I also recommend you to complement the list with some standard lists of ad domai
 - https://github.com/topics/blocklist
 - https://github.com/topics/adblock
 - https://github.com/topics/adblock-list
+
+**[Learn more about Spotify Ads List](https://github.com/Isaaker/Spotify-AdsList/wiki)**
 
 ## List Versions
 
