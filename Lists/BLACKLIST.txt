@@ -1,15 +1,3 @@
-#######################################################################################
-##### Spotify Ads Blacklist                                                        ####
-##### Created by: Isaaker                                                          ####
-##### Updated: 2024-06-06 (GMT)                                                    ####
-#######################################################################################
-##### Version: pi-hole                                                             ####
-##### Number of domains: 1537                                                      ####
-#######################################################################################
-##### Read more: https://github.com/Isaaker/Spotify-AdsList                        ####
-##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
-#######################################################################################
-
 www.apresolve.spotify.com
 audio-fa.scdn.co
 adeventtracker.spotify.com
