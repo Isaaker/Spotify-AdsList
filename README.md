@@ -12,7 +12,7 @@
 
 ## About
 
-![maintained - yes](https://img.shields.io/badge/maintained-yes-blue)[![Hosted with GH Pages](https://img.shields.io/badge/Hosted_with-GitHub_Pages-blue?logo=github&logoColor=white)](https://pages.github.com/ "Go to GitHub Pages homepage")[![contributions - welcome](https://img.shields.io/badge/contributions-welcome-blue)](/CONTRIBUTING.md "Go to contributions doc")
+![maintained - yes](https://img.shields.io/badge/maintained-yes-blue)(https://pages.github.com/ "Go to GitHub Pages homepage")[![contributions - welcome](https://img.shields.io/badge/contributions-welcome-blue)](/CONTRIBUTING.md "Go to contributions doc")
 
 Spotify Ads List is a list of domains that includes all the domains from which Spotify Apps get audio ads, banners...
 
