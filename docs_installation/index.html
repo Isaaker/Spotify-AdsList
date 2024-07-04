@@ -1,0 +1,1315 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="No more spotify ADS">
+      
+      
+      
+        <link rel="canonical" href="https://spotify.piscinadeentropia.es/docs_installation/">
+      
+      
+        <link rel="prev" href="../docs_index/">
+      
+      
+        <link rel="next" href="../docs_testing/">
+      
+      
+      <link rel="icon" href="../images/spotify_ads_list_logo.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
+    
+    
+      
+        <title>Installation - Spotify-AdsList</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CIBM+Plex+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Ubuntu";--md-code-font:"IBM Plex Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#spotify-ads-list-tutorial" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Spotify-AdsList" class="md-header__button md-logo" aria-label="Spotify-AdsList" data-md-component="logo">
+      
+  <img src="../images/spotify_ads_list_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Spotify-AdsList
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Installation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="white"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../docs_index/" class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Installation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../docs_standard.md" class="md-tabs__link">
+          
+  
+  Versions
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../docs_whitelist.md" class="md-tabs__link">
+        
+  
+    
+  
+  Whitelist
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../docs_testing/" class="md-tabs__link">
+        
+  
+    
+  
+  Testing
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../docs_faq/" class="md-tabs__link">
+          
+  
+  Docs
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../docs_about.md" class="md-tabs__link">
+          
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://github.com/Isaaker/Spotify-AdsList/issues" class="md-tabs__link">
+        
+  
+    
+  
+  Report Bug
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Spotify-AdsList" class="md-nav__button md-logo" aria-label="Spotify-AdsList" data-md-component="logo">
+      
+  <img src="../images/spotify_ads_list_logo.png" alt="logo">
+
+    </a>
+    Spotify-AdsList
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs_index/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-check-compatibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Check compatibility
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-find-the-right-list-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Find the right list format
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-optional-setup-your-adblocker-spotify" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. (Optional) Setup your adblocker &amp; Spotify
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. (Optional) Setup your adblocker & Spotify">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup-your-adblocker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup your adblocker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-spotify" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup Spotify
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-add-spotify-ads-list-to-your-adblocker" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Add Spotify Ads List to your adblocker
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Versions
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Versions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs_standard.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Standard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs_pihole.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pi-Hole
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs_dnsmasq.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dnsmasq
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs_adguard.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adguard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs_whitelist.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Whitelist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs_testing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Docs
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Docs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs_faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    F.A.Q
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs_how_spotify_ads.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How Spotify send ads?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs_how_adblockers_work.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How adblockers work?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs_why_add_more_blocklists.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Why to add aditional blocklists
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs_about.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs_license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs_contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing.md
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Isaaker/Spotify-AdsList/issues" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Report Bug
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-check-compatibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Check compatibility
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-find-the-right-list-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Find the right list format
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-optional-setup-your-adblocker-spotify" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. (Optional) Setup your adblocker &amp; Spotify
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. (Optional) Setup your adblocker & Spotify">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup-your-adblocker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup your adblocker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-spotify" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup Spotify
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-add-spotify-ads-list-to-your-adblocker" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Add Spotify Ads List to your adblocker
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="spotify-ads-list-tutorial">Spotify Ads List Tutorial<a class="headerlink" href="#spotify-ads-list-tutorial" title="Permanent link">&para;</a></h1>
+<p><img alt="Spotify Block Tutorial Logo" src="../images/tutorial.gif" /></p>
+<p>Spotify Ads List is quick and easy to install, all you need is a compatible adblocker, an internet connection and the Spotify website or app.</p>
+<p>To install Spotify Ads List you can follow this steps:</p>
+<h2 id="1-check-compatibility">1. Check compatibility<a class="headerlink" href="#1-check-compatibility" title="Permanent link">&para;</a></h2>
+<p>Spotify Ads List is compatible with all major ad blockers, both open-source and paid.</p>
+<p>The currently supported adblockers are:
+- Standard (Compatible with multiple adblockers and can also be used with the hosts file.)
+- <a href="https://pi-hole.net">Pi-Hole</a>
+- <a href="https://dnsmasq.org/doc.html">Dnsmasq</a>
+- <a href="https://adguard.com/es/welcome.html">Adguard</a>
+- <a href="https://ublockorigin.com">uBlock Origin</a></p>
+<p><strong>Being a simple and very backward compatible list, if your adblocker is not included above, you can ask us to include it and if necessary to generate a custom list layout for it.</strong></p>
+<h2 id="2-find-the-right-list-format">2. Find the right list format<a class="headerlink" href="#2-find-the-right-list-format" title="Permanent link">&para;</a></h2>
+<p>Spotify Ads List is available in diferents formats to make it compatible with all the adblockers listed in the step 1. </p>
+<p>Here is a table to find the right format for your adblcoker:</p>
+<table>
+<thead>
+<tr>
+<th>Adblocker</th>
+<th>List Format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pi-Hole</td>
+<td>Pi-hole</td>
+</tr>
+<tr>
+<td>Dnsmasq</td>
+<td>Dnsmasq</td>
+</tr>
+<tr>
+<td>Adguard</td>
+<td>Adguard</td>
+</tr>
+<tr>
+<td>uBlock Origin</td>
+<td>Adguard</td>
+</tr>
+<tr>
+<td>Standard (with hosts file or adblockers that supports 0.0.0.0 entry)</td>
+<td>Standard </td>
+</tr>
+</tbody>
+</table>
+<p><strong>Being a simple and very backward compatible list, if your adblocker is not included above, you can ask us to include it and if necessary to generate a custom list layout for it.</strong></p>
+<h2 id="3-optional-setup-your-adblocker-spotify">3. (Optional) Setup your adblocker &amp; Spotify<a class="headerlink" href="#3-optional-setup-your-adblocker-spotify" title="Permanent link">&para;</a></h2>
+<p>If you have not yet installed and started using your adblocker, I recommend that you do so first and, if possible, learn the basics of how it works. This will help you when installing Spotify Ads List.</p>
+<p>Also, you must have installed Spotify (in case you are going to use it as an application) and created a Spotify account to use it, as Spotify Ads List does not perform these actions.</p>
+<h3 id="setup-your-adblocker">Setup your adblocker<a class="headerlink" href="#setup-your-adblocker" title="Permanent link">&para;</a></h3>
+<p>Below, you can find a series of basic guides on how to install and use your adblocker:</p>
+<ul>
+<li>Standard (Compatible with multiple adblockers and can also be used with the hosts file.)</li>
+<li><a href="https://docs.pi-hole.net/main/basic-install/">Pi-Hole</a></li>
+<li><a href="https://dnsmasq.org/doc.html">Dnsmasq</a></li>
+<li><a href="https://adguard.com/kb/general/how-to-install/">Adguard</a></li>
+<li><a href="https://github.com/gorhill/uBlock?tab=readme-ov-file#installation">uBlock Origin</a></li>
+</ul>
+<h3 id="setup-spotify">Setup Spotify<a class="headerlink" href="#setup-spotify" title="Permanent link">&para;</a></h3>
+<p>To start using Spotify you can use the web app or download the app for your OS:</p>
+<ul>
+<li><a href="https://open.spotify.com">Spotify Web App</a></li>
+<li><a href="https://www.spotify.com/en/download/">Download Spotify</a></li>
+</ul>
+<h2 id="4-add-spotify-ads-list-to-your-adblocker">4. Add Spotify Ads List to your adblocker<a class="headerlink" href="#4-add-spotify-ads-list-to-your-adblocker" title="Permanent link">&para;</a></h2>
+<p>To add Spotify Ads List to your adblocker you will need to make use of a raw file that will be synced directly from our GitHub repository. To do this, simply copy the link and enter it in the appropriate field to add it to your adblocker (Or use the link in the case of uBlock Origin):</p>
+<h1 id="standard-adblockers">Standard adblockers<a class="headerlink" href="#standard-adblockers" title="Permanent link">&para;</a></h1>
+<table>
+<thead>
+<tr>
+<th>Adblocker</th>
+<th>Raw URL</th>
+<th>How to add this?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard</td>
+<td>https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/standard_list.txt</td>
+<td>Not applicable, unless you want to use the hosts file. In that case, <a href="https://nordvpn.com/es/blog/use-hosts-file-block-ads-malware/">read this</a></td>
+</tr>
+<tr>
+<td>Pi-hole</td>
+<td>https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/pi-hole.txt</td>
+<td>Not official documentation for this, go to the Web UI, in the left bar click on "Adlists", enter the raw url and click "Add"</td>
+</tr>
+<tr>
+<td>Dnsmasq</td>
+<td>https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/dnsmasq.txt</td>
+<td>There is not much official documentation, perhaps <a href="https://dnsmasq.org/docs/dnsmasq-man.html">this will help</a></td>
+</tr>
+<tr>
+<td>Adguard</td>
+<td>https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/adguard.txt</td>
+<td><a href="https://adguard.com/kb/">Read this</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="browser-adblockers">Browser adblockers<a class="headerlink" href="#browser-adblockers" title="Permanent link">&para;</a></h3>
+<h4 id="ublock-origin">uBlock Origin<a class="headerlink" href="#ublock-origin" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Browser</th>
+<th>Add from link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Firefox</td>
+<td>moz-extension://c396fed9-d8f8-4a6c-95a0-80773fa36d8a/asset-viewer.html?url=https%3A%2F%2Fraw.githubusercontent.com%2Fisaaker%2FSpotify-AdsList%2Fmain%2FLists%2Fadguard.txt&amp;title=Spotify-AdsList&amp;subscribe=1</td>
+</tr>
+<tr>
+<td>Chrome / Chromium</td>
+<td>chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm/asset-viewer.html?url=https%3A%2F%2Fraw.githubusercontent.com%2Fisaaker%2FSpotify-AdsList%2Fmain%2FLists%2Fadguard.txt&amp;title=Spotify-AdsList&amp;subscribe=1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://github.com/gorhill/uBlock/wiki/Dashboard:-Filter-lists#3rd-party-filter-lists">You can also make this manually with the adguard raw URL</a></p>
+<h2 id="5-add-spotify-ads-list-whitelist-to-your-adblocker">5. Add Spotify Ads List whitelist to your adblocker<a class="headerlink" href="#5-add-spotify-ads-list-whitelist-to-your-adblocker" title="Permanent link">&para;</a></h2>
+<p>A whitelist is a list that lets your adblocker know which domains should not be blocked. Although usually these domains are not added to the list directly, many times some domains that are on the list (blocked) redirect legitimate requests to these domains (not blocked) via a CNAME and these requests are blocked before being redirected because it is a blocked domain. Therefore, the list will help you to ensure that legitimate requests can continue their course correctly.</p>
+<p>To add the whitelist to your adblocker, you have to enter this domains manually in the whitelist area:</p>
+<ul>
+<li>login5.spotify.com</li>
+<li>spclient.wg.spotify.com</li>
+<li>open.spotify.com</li>
+<li>api-partner.spotify.com</li>
+</ul>
+<p>You can find more help about how to add this on this links:</p>
+<table>
+<thead>
+<tr>
+<th>Adblocker</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard</td>
+<td>This is not possible in the hosts file, for other methods please consult your adblocker documentation</td>
+</tr>
+<tr>
+<td>Pi-hole</td>
+<td><a href="https://discourse.pi-hole.net/t/how-do-i-whitelist-or-blacklist-a-domain/244">Read this</a>, you can also make this form the Web UI &gt; Domains</td>
+</tr>
+<tr>
+<td>Dnsmasq</td>
+<td>Not docs of this available</td>
+</tr>
+<tr>
+<td>Adguard</td>
+<td><a href="https://github.com/AdguardTeam/AdGuardHome/discussions/3771">Read this</a></td>
+</tr>
+<tr>
+<td>uBlock Origin</td>
+<td><a href="https://github.com/gorhill/uBlock/wiki/How-to-whitelist-a-web-site/745c6f01e1f88db8184bb27f48bbdd8a21b48a90">Read this</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="6-what-can-i-do-now">6. What can I do now?<a class="headerlink" href="#6-what-can-i-do-now" title="Permanent link">&para;</a></h2>
+<p>Now the installation of the list should be complete, but you can still do more things:</p>
+<ul>
+<li><a href="https://github.com/Isaaker/Spotify-AdsList">Support my work by giving a star to my repository and/or creating a fork on GitHub</a></li>
+<li><a href="spotify.piscinadeentropia.es">Continue reading the documentation</a></li>
+<li><a href="https://github.com/Isaaker/Spotify-AdsList/issues">Report false positives or contribute in our repository</a></li>
+<li><a href="./why_add_more_blocklists">Add more adlists</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../docs_index/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../docs_testing/" class="md-footer__link md-footer__link--next" aria-label="Next: Testing">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Testing
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      License <a href="https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt">Creative Commons Attribution-ShareAlike 4.0 International Public License</a> | Reproduction and/or distribution, in whole or in part, and use in Artificial Intelligence is strictly prohibited
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.footer", "search.suggest"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>
