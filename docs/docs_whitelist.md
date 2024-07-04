@@ -1,6 +1,6 @@
 # Spotify Ads Whitelist
 
-!!! info:
+!!! info
     Created by: Isaaker
 
     Revised: 4/7/23
@@ -10,7 +10,7 @@
     Number of domains: 5
 
 
-!!! warning:
+!!! warning
     This list is not formatted in any special way and therefore cannot be downloaded and used as an input file, please add the domains manually.
 
 ## Detailed list

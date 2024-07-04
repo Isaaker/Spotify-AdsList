@@ -17,7 +17,7 @@ The currently supported adblockers are:
 - [Adguard](https://adguard.com/es/welcome.html)
 - [uBlock Origin](https://ublockorigin.com)
 
-!!! tip:
+!!! tip
     Being a simple and very backward compatible list, if your adblocker is not included above, you can ask us to include it and if necessary to generate a custom list layout for it.
 
 ## 2. Find the right list format
@@ -34,7 +34,7 @@ Here is a table to find the right format for your adblcoker:
 | uBlock Origin | Adguard |
 | Standard (with hosts file or adblockers that supports 0.0.0.0 entry) | Standard |
 
-!!! tip:
+!!! tip
     Being a simple and very backward compatible list, if your adblocker is not included above, you can ask us to include it and if necessary to generate a custom list layout for it.
 
 ## 3. (Optional) Setup your adblocker & Spotify
@@ -73,7 +73,7 @@ To add Spotify Ads List to your adblocker you will need to make use of a raw fil
 | Dnsmasq | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/dnsmasq.txt |
 | Adguard | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/adguard.txt |
 
-!!! question inline end "How can I do this?":
+!!! question inline end "How can I do this?"
     You can find more help about how to add this on this links:
 
     | Adblocker | Link |
@@ -92,14 +92,14 @@ To add Spotify Ads List to your adblocker you will need to make use of a raw fil
 | Firefox | moz-extension://c396fed9-d8f8-4a6c-95a0-80773fa36d8a/asset-viewer.html?url=https%3A%2F%2Fraw.githubusercontent.com%2Fisaaker%2FSpotify-AdsList%2Fmain%2FLists%2Fadguard.txt&title=Spotify-AdsList&subscribe=1 |
 | Chrome / Chromium | chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm/asset-viewer.html?url=https%3A%2F%2Fraw.githubusercontent.com%2Fisaaker%2FSpotify-AdsList%2Fmain%2FLists%2Fadguard.txt&title=Spotify-AdsList&subscribe=1 |
 
-!!! tip:
+!!! tip
     [You can also make this manually with the adguard raw URL](https://github.com/gorhill/uBlock/wiki/Dashboard:-Filter-lists#3rd-party-filter-lists)
 
 ## 5. Add Spotify Ads List whitelist to your adblocker
 
 To add the whitelist to your adblocker, you have to enter the whitelist domains manually in the whitelist area. You can found the whitelist on this [link](./docs_whitelist.md)
 
-!!! question inline end "How can I do this?":
+!!! question inline end "How can I do this?"
     You can find more help about how to add this on this links:
 
     | Adblocker | Link |
@@ -110,7 +110,7 @@ To add the whitelist to your adblocker, you have to enter the whitelist domains 
     | Adguard | [Read this](https://github.com/AdguardTeam/AdGuardHome/discussions/3771) |
     | uBlock Origin | [Read this](https://github.com/gorhill/uBlock/wiki/How-to-whitelist-a-web-site/745c6f01e1f88db8184bb27f48bbdd8a21b48a90) |
 
-!!! info:
+!!! info
     A whitelist is a list that lets your adblocker know which domains should not be blocked. Although usually these domains are not added to the list directly, many times some domains that are on the list (blocked) redirect legitimate requests to these domains (not blocked) via a CNAME and these requests are blocked before being redirected because it is a blocked domain. Therefore, the list will help you to ensure that legitimate requests can continue their course correctly.
 
 ## 6. What can I do now?
