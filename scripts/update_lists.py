@@ -48,7 +48,7 @@ header = f"""###################################################################
 with open("./Lists/adguard.txt", "w") as adguard:
     adguard.write(header)
     for domain in block_domains:
-        adguard.write(f"||{domain.replace("\n", "")}^\n")
+        adguard.write(f"||{domain.replace(f"\n", "")}^\n")
 
 print ("AdGuard file generated")
 
@@ -117,7 +117,7 @@ header = f"""###################################################################
 with open("./Lists/dnsmasq.txt", "w") as dnsmasq:
     dnsmasq.write(header)
     for domain in block_domains:
-        dnsmasq.write(f"server=/{domain.replace("\n", "")}/\n")
+        dnsmasq.write(f"server=/{domain.replace(f"\n", "")}/\n")
 
 print ("Dnsmasq file generated")
 
