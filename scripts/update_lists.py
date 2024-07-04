@@ -16,7 +16,7 @@ from time import gmtime, strftime
 # Get the domains to block
 time.sleep(1)
 print ("Obtaining the domains to block...")
-with open("./Lists/BLACKLIST.txt", "r") as master_blocklist:
+with open("/home/runner/work/Spotify-AdsList/Spotify-AdsList/Developer/Lists/BLACKLIST.txt", "r") as master_blocklist:
     block_domains = master_blocklist.readlines()
 
 # Generate the new adblock files
@@ -45,10 +45,10 @@ header = f"""###################################################################
 
 """
 
-with open("./Lists/adguard.txt", "w") as adguard:
+with open("/home/runner/work/Spotify-AdsList/Spotify-AdsList/Developer/Lists/adguard.txt", "w") as adguard:
     adguard.write(header)
     for domain in block_domains:
-        adguard.write(f"||{domain.replace("\n", "")}^\n")
+        adguard.write(f"||{domain.rstrip()}^\n")
 
 print ("AdGuard file generated")
 
@@ -68,7 +68,7 @@ header = f"""###################################################################
 
 """
 
-with open("./Lists/pi-hole.txt", "w") as pihole:
+with open("/home/runner/work/Spotify-AdsList/Spotify-AdsList/Developer/Lists/pi-hole.txt", "w") as pihole:
     pihole.write(header)
     for domain in block_domains:
         pihole.write(domain)
@@ -91,7 +91,7 @@ header = f"""###################################################################
 
 """
 
-with open("./Lists/standard_list.txt", "w") as standard_list:
+with open("/home/runner/work/Spotify-AdsList/Spotify-AdsList/Developer/Lists/standard_list.txt", "w") as standard_list:
     standard_list.write(header)
     for domain in block_domains:
         standard_list.write(f"0.0.0.0 {domain}")
@@ -114,10 +114,10 @@ header = f"""###################################################################
 
 """
 
-with open("./Lists/dnsmasq.txt", "w") as dnsmasq:
+with open("/home/runner/work/Spotify-AdsList/Spotify-AdsList/Developer/Lists/dnsmasq.txt", "w") as dnsmasq:
     dnsmasq.write(header)
     for domain in block_domains:
-        dnsmasq.write(f"server=/{domain.replace("\n", "")}/\n")
+        dnsmasq.write(f"server=/{domain.rstrip()}/\n")
 
 print ("Dnsmasq file generated")
 

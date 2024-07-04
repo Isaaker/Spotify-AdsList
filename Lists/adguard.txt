@@ -1,10 +1,10 @@
 #######################################################################################
 ##### Spotify Ads Blacklist                                                        ####
 ##### Created by: Isaaker                                                          ####
-##### Updated: 2024-06-06 (GMT)                                                    ####
+##### Updated: 2024-07-04 (GMT)                                                    ####
 #######################################################################################
 ##### Version: Adguard                                                             ####
-##### Number of domains: 1537                                                      ####
+##### Number of domains: 1557                                                      ####
 #######################################################################################
 ##### Read more: https://github.com/Isaaker/Spotify-AdsList                        ####
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
@@ -1547,3 +1547,23 @@
 ||canvaz.scdn.co^
 ||analytics.spotify.net^
 ||labs.spotify.com^
+||ap-guc3.spotify.com^
+||ap-gew1.spotify.com^
+||atc.spotify.map.fastly.net^
+||ap-gew4.spotify.com^
+||atc.spotify.map.fastly.net^
+||e10499.dsce9.akamaiedge.net^
+||region1.app-measurement.com^
+||d1tcwf12y4kqv3.cloudfront.net^
+||tpc.googlesyndication.com^
+||a297.dscc.akamai.net^
+||securepubads.g.doubleclick.net^
+||aet.spotify.com^
+||pubads.g.doubleclick.net^
+||get-bx.g.aaplimg.com^
+||mobile.events.data.microsoft.com^
+||a1556.dsct.akamai.net^
+||a1051.dscw154.akamai.net^
+||video-akpcw-cdn-spotify-com.akamaized.net^
+||2qbjhhcl4u87btjbo7dh8vi2n.litix.io^
+||litix.io^

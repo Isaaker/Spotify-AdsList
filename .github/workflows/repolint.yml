@@ -1,0 +1,31 @@
+# Action to Lint open repositories for common issues
+# Uses https://github.com/todogroup/repolinter
+
+# Needs master/repolint.json
+
+name: Repository Linter
+on:
+  workflow_dispatch:
+      
+jobs:
+  launch-repolint:
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}                                    # Only 1 instance at time 
+    runs-on: ubuntu-latest
+ 
+    steps:
+    - name: Check out the code
+      uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332                    # @v4.1.7
+
+    - name: Install NodeJs                                                               # Install Software NodeJs 
+      uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8                  # @v4.0.2
+      with:
+        node-version: 16
+
+    - name: Install repo-linter
+      run: |
+        npm install -g repolinter
+
+    - name: Run Repo Linter
+      run: |
+        repolinter --rulesetFile cfg/repolint.json lint .      
