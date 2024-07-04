@@ -1,7 +1,7 @@
 site_name: Spotify-AdsList
 site_url: https://spotify.piscinadeentropia.es
 site_description: No more spotify ADS
-copyright: &copy; <a href="https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt">Creative Commons Attribution-ShareAlike 4.0 International Public License</a> | Reproduction and/or distribution, in whole or in part, and use in Artificial Intelligence is strictly prohibited
+copyright: License: <a href="https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt">Creative Commons Attribution-ShareAlike 4.0 International Public License</a> | Reproduction and/or distribution, in whole or in part, and use in Artificial Intelligence is strictly prohibited
 
 theme:
     name: material
