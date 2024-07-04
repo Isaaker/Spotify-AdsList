@@ -6,7 +6,7 @@ Here you can find some frequently asked questions and answers about our blocklis
 
 Although our blockoblocklist blocks banner and image ads, Spotify's apps continue to reserve a space to place these ads, and since Spotify can't get those ads and banners, they will continue to appear in black.
 
-![Space Example](../images/ads_space.png)
+![Space Example](./images/ads_space.png)
 
 ## Why do I sometimes get a message "This content cannot be played at this time?
 

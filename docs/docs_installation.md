@@ -1,6 +1,6 @@
 # Spotify Ads List Tutorial
 
-![Spotify Block Tutorial Logo](../images/tutorial.gif)
+![Spotify Block Tutorial Logo](./images/tutorial.gif)
 
 Spotify Ads List is quick and easy to install, all you need is a compatible adblocker, an internet connection and the Spotify website or app.
 
