@@ -7,6 +7,7 @@
 |Name|Type|Status|
 |--|--|--|
 |Build Blocklist|Build|[![Build Blocklist](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/build_blocklist.yml/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/build_blocklist.yml)|
+|Deploy Mkdocs|Deploy|[![Deploy Mkdocs](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/deploy_gh-pages.yml/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/deploy_gh-pages.yml)
 |SAST GitLeaks|Security|[![SAST GitLeaks](https://github.com/Isaaker/piscinadeentropia/actions/workflows/sast-gitleaks.yml/badge.svg)](https://github.com/Isaaker/piscinadeentropia/actions/workflows/sast-gitleaks.yml)|
 |SAST Semgrep|Security|[![SAST Semgrep](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml)|
 
@@ -27,7 +28,11 @@ I also recommend you to complement the list with some standard lists of ad domai
 - https://github.com/topics/adblock
 - https://github.com/topics/adblock-list
 
-**[Learn more about Spotify Ads List](https://github.com/Isaaker/Spotify-AdsList/wiki)**
+**[Learn more about Spotify Ads List](https://spotify.piscinadeentropia.es)**
+
+## Installation
+
+**To install, please [read our installation tutorial](https://spotify.piscinadeentropia.es/installation)**
 
 ## List Versions
 
@@ -40,7 +45,9 @@ The list is highly compatible, so here are the different versions so that you ca
 | Standard | Highly compatible, no particular system | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/standard_list.txt | https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/standard_list.txt
 | Pi-hole | Compatible with pi-hole and other systems that do not require anything other than domains | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/pi-hole.txt | https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/pi-hole.txt
 | Dnsmasq | Compatible with dnsmasq | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/dnsmasq.txt | https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/dnsmasq.txt
-| Adguard | Compatible with adguard | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/adguard.txt | https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/adguard.txt
+| Adguard | Compatible with adguard & uBlock Origin | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/adguard.txt | https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/adguard.txt
+
+**To suscribe with uBlock Origin read the installation documentation -> [Add to uBlock](spotify.piscinadeentropia.es/installation)**
 
 ## Whitelist
 
@@ -58,8 +65,8 @@ Here you can find all the tests made, their date and more details.
 | Web App | Mac | MacOS (14.2.1) | Firefox (122.0) | 27/1/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | pihole | @isaaker |
 | Web App | Virtual Machine| Debian 12 | Firefox ESR (115.3.0esr)| 27/1/24 | ![Static Badge](https://img.shields.io/badge/Status-ERROR-red?logo=spotify) | pihole | @isaaker |
 | Web App | Virtual Machine | Debian 12 | Chromium (121.0.6167.85)| 27/1/24 | ![Static Badge](https://img.shields.io/badge/Status-ERROR-red?logo=spotify) | pihole | @isaaker |
-| App | Mac | MacOS (14.5) | - | 16/6/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | pihole | @isaaker |
-| App | iPhone | iOS (17.3.1) | - | 15/2/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | pihole | @isaaker |
+| App | Mac | MacOS (14.5) | - | 4/7/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | pihole | @isaaker |
+| App | iPhone | iOS (17.5.1) | - | 4/7/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | pihole | @isaaker |
 | App | Google Pixel 4a | Android 13 | - | 20/4/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | adguard | @mfjt |
 | App | Linux Laptop | Fedora Workstation 40 | - | 22/4/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | adguard | @SudoVanilla |
 | App | Mac | MacOS (14.5) | - | 23/6/24 | ![Static Badge](https://img.shields.io/badge/Status-Unknow-yellow?logo=spotify) | adguard | @y2kviv |
@@ -70,10 +77,10 @@ Here you can find all the tests made, their date and more details.
 **If you have tested the list, please create a issue with type "Testing" to add more tested devices. [Add new tested device](https://github.com/Isaaker/Spotify-AdsList/issues/new?assignees=&labels=Testing&projects=&template=testing.yml&title=New+Testing+Device%3A+%5BDevice+Name%5D+%2F+%5BDevice+OS%26Version%5D)**
 
 ## License
-The code is under **Creative Commons Attribution-ShareAlike 4.0 International Public License**, view the license at: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt
+The code is under **Creative Commons Attribution-ShareAlike 4.0 International Public License**, view the [license here](https://spotify.piscinadeentropia.es/license)
 
 ![Creative Commons Attribution-ShareAlike 4.0 International Public License Logo](https://github.com/Isaaker/Spotify-AdsList/raw/main/images/License-Image.jpeg)
 
-# Contributing
+## Contributing
 
-To learn more about how to contribute to this repository, I recommend you read [CONTRIBUTING.md](https://github.com/Isaaker/Spotify-AdsList/blob/main/CONTRIBUTING.md)
+To learn more about how to contribute to this repository, I recommend you read [CONTRIBUTING.md](https://spotify.piscinadeentropia.es/contributing)

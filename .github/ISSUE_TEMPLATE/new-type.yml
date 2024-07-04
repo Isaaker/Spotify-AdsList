@@ -1,0 +1,76 @@
+name: New List Format Request
+description: Request a new file format for you adblocker
+title: "New file format request - <ADBLOCKER>"
+labels: ["Enhancement", "Blocklists"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for creating this issue, please tell us more.
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: Example -> email@example.com
+    validations:
+      required: false
+  - type: input
+    id: adblocker
+    attributes:
+      label: What is the name of your adblocker?
+      description: Please, enter the name of tyour adblocker
+      placeholder: Example -> Pi-Hole
+    validations:
+      required: true
+  - type: input
+    id: 
+    attributes:
+      label: What is the name of your adblocker?
+      description: Please, enter the name of tyour adblocker
+      placeholder: Example -> Pi-Hole
+    validations:
+      required: true
+  - type: input
+    id: 
+    attributes:
+      label: Please, provide the URL to the adblocker official web
+      description: Please, enter the URL of the official web page of the adblocker
+      placeholder: Example -> pi-hole.net
+    validations:
+      required: true
+  - type: input
+    id: 
+    attributes:
+      label: Please, provide the URL to the adblocker documentation
+      description: Please, enter the URL of the official adblocker documentation
+      placeholder: Example -> docs.pi-hole.net
+    validations:
+      required: true
+  - type: textarea
+    id: format_example
+    attributes:
+      label: Format Example
+      description: If you have a example list of the adblocker format, you can put it here.
+      render: shell
+  - type: textarea
+    id: extra-info
+    attributes:
+      label: Extra Info about the request
+      description: Tell us extra info about the request
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
+        - label: I read the avaible Documentation
+          required: true
+        - label: I have checked that there is no issue on the same subject
+          required: true
+        - label: I have checked that my issue does not contain any relevant security data (Passwords, Secrets or Users)
+          required: true
+        - label: I have checked that my issue is not a Security Vulneability. Please, read Security Policy.
+          required: true
