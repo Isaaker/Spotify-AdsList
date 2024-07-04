@@ -1080,8 +1080,10 @@
 - <a href="https://dnsmasq.org/doc.html">Dnsmasq</a>
 - <a href="https://adguard.com/es/welcome.html">Adguard</a>
 - <a href="https://ublockorigin.com">uBlock Origin</a></p>
-<p>!!! tip:
-    Being a simple and very backward compatible list, if your adblocker is not included above, you can ask us to include it and if necessary to generate a custom list layout for it.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Being a simple and very backward compatible list, if your adblocker is not included above, you can ask us to include it and if necessary to generate a custom list layout for it.</p>
+</div>
 <h2 id="2-find-the-right-list-format">2. Find the right list format<a class="headerlink" href="#2-find-the-right-list-format" title="Permanent link">&para;</a></h2>
 <p>Spotify Ads List is available in diferents formats to make it compatible with all the adblockers listed in the step 1. </p>
 <p>Here is a table to find the right format for your adblcoker:</p>
@@ -1115,8 +1117,10 @@
 </tr>
 </tbody>
 </table>
-<p>!!! tip:
-    Being a simple and very backward compatible list, if your adblocker is not included above, you can ask us to include it and if necessary to generate a custom list layout for it.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Being a simple and very backward compatible list, if your adblocker is not included above, you can ask us to include it and if necessary to generate a custom list layout for it.</p>
+</div>
 <h2 id="3-optional-setup-your-adblocker-spotify">3. (Optional) Setup your adblocker &amp; Spotify<a class="headerlink" href="#3-optional-setup-your-adblocker-spotify" title="Permanent link">&para;</a></h2>
 <p>If you have not yet installed and started using your adblocker, I recommend that you do so first and, if possible, learn the basics of how it works. This will help you when installing Spotify Ads List.</p>
 <p>Also, you must have installed Spotify (in case you are going to use it as an application) and created a Spotify account to use it, as Spotify Ads List does not perform these actions.</p>
@@ -1164,15 +1168,36 @@
 </tr>
 </tbody>
 </table>
-<p>!!! question inline end "How can I do this?":
-    You can find more help about how to add this on this links:</p>
-<pre><code>| Adblocker | Link |
-|--|--|
-| Standard | Not applicable, unless you want to use the hosts file. In that case, [read this](https://nordvpn.com/es/blog/use-hosts-file-block-ads-malware/) |
-| Pi-hole | Not official documentation for this, go to the Web UI, in the left bar click on "Adlists", enter the raw url and click "Add" |
-| Dnsmasq | There is not much official documentation, perhaps [this will help](https://dnsmasq.org/docs/dnsmasq-man.html) |
-| Adguard | [Read this](https://adguard.com/kb/) |
-</code></pre>
+<div class="admonition question inline end">
+<p class="admonition-title">How can I do this?</p>
+<p>You can find more help about how to add this on this links:</p>
+<table>
+<thead>
+<tr>
+<th>Adblocker</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard</td>
+<td>Not applicable, unless you want to use the hosts file. In that case, <a href="https://nordvpn.com/es/blog/use-hosts-file-block-ads-malware/">read this</a></td>
+</tr>
+<tr>
+<td>Pi-hole</td>
+<td>Not official documentation for this, go to the Web UI, in the left bar click on "Adlists", enter the raw url and click "Add"</td>
+</tr>
+<tr>
+<td>Dnsmasq</td>
+<td>There is not much official documentation, perhaps <a href="https://dnsmasq.org/docs/dnsmasq-man.html">this will help</a></td>
+</tr>
+<tr>
+<td>Adguard</td>
+<td><a href="https://adguard.com/kb/">Read this</a></td>
+</tr>
+</tbody>
+</table>
+</div>
 <h3 id="browser-adblockers">Browser adblockers<a class="headerlink" href="#browser-adblockers" title="Permanent link">&para;</a></h3>
 <h4 id="ublock-origin">uBlock Origin<a class="headerlink" href="#ublock-origin" title="Permanent link">&para;</a></h4>
 <table>
@@ -1193,22 +1218,50 @@
 </tr>
 </tbody>
 </table>
-<p>!!! tip:
-    <a href="https://github.com/gorhill/uBlock/wiki/Dashboard:-Filter-lists#3rd-party-filter-lists">You can also make this manually with the adguard raw URL</a></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><a href="https://github.com/gorhill/uBlock/wiki/Dashboard:-Filter-lists#3rd-party-filter-lists">You can also make this manually with the adguard raw URL</a></p>
+</div>
 <h2 id="5-add-spotify-ads-list-whitelist-to-your-adblocker">5. Add Spotify Ads List whitelist to your adblocker<a class="headerlink" href="#5-add-spotify-ads-list-whitelist-to-your-adblocker" title="Permanent link">&para;</a></h2>
 <p>To add the whitelist to your adblocker, you have to enter the whitelist domains manually in the whitelist area. You can found the whitelist on this <a href="../docs_whitelist/">link</a></p>
-<p>!!! question inline end "How can I do this?":
-    You can find more help about how to add this on this links:</p>
-<pre><code>| Adblocker | Link |
-|--|--|
-| Standard | This is not possible in the hosts file, for other methods please consult your adblocker documentation |
-| Pi-hole | [Read this](https://discourse.pi-hole.net/t/how-do-i-whitelist-or-blacklist-a-domain/244), you can also make this form the Web UI &gt; Domains |
-| Dnsmasq | Not docs of this available |
-| Adguard | [Read this](https://github.com/AdguardTeam/AdGuardHome/discussions/3771) |
-| uBlock Origin | [Read this](https://github.com/gorhill/uBlock/wiki/How-to-whitelist-a-web-site/745c6f01e1f88db8184bb27f48bbdd8a21b48a90) |
-</code></pre>
-<p>!!! info:
-    A whitelist is a list that lets your adblocker know which domains should not be blocked. Although usually these domains are not added to the list directly, many times some domains that are on the list (blocked) redirect legitimate requests to these domains (not blocked) via a CNAME and these requests are blocked before being redirected because it is a blocked domain. Therefore, the list will help you to ensure that legitimate requests can continue their course correctly.</p>
+<div class="admonition question inline end">
+<p class="admonition-title">How can I do this?</p>
+<p>You can find more help about how to add this on this links:</p>
+<table>
+<thead>
+<tr>
+<th>Adblocker</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard</td>
+<td>This is not possible in the hosts file, for other methods please consult your adblocker documentation</td>
+</tr>
+<tr>
+<td>Pi-hole</td>
+<td><a href="https://discourse.pi-hole.net/t/how-do-i-whitelist-or-blacklist-a-domain/244">Read this</a>, you can also make this form the Web UI &gt; Domains</td>
+</tr>
+<tr>
+<td>Dnsmasq</td>
+<td>Not docs of this available</td>
+</tr>
+<tr>
+<td>Adguard</td>
+<td><a href="https://github.com/AdguardTeam/AdGuardHome/discussions/3771">Read this</a></td>
+</tr>
+<tr>
+<td>uBlock Origin</td>
+<td><a href="https://github.com/gorhill/uBlock/wiki/How-to-whitelist-a-web-site/745c6f01e1f88db8184bb27f48bbdd8a21b48a90">Read this</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>A whitelist is a list that lets your adblocker know which domains should not be blocked. Although usually these domains are not added to the list directly, many times some domains that are on the list (blocked) redirect legitimate requests to these domains (not blocked) via a CNAME and these requests are blocked before being redirected because it is a blocked domain. Therefore, the list will help you to ensure that legitimate requests can continue their course correctly.</p>
+</div>
 <h2 id="6-what-can-i-do-now">6. What can I do now?<a class="headerlink" href="#6-what-can-i-do-now" title="Permanent link">&para;</a></h2>
 <p>Now the installation of the list should be complete, but you can still do more things:</p>
 <ul>
