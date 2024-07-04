@@ -1,6 +1,6 @@
 # Spotify Ads List
 
-![Spotify-AdsList Logo](https://github.com/Isaaker/Spotify-AdsList/raw/main/images/spotify_ads_list_logo.png)
+![Spotify-AdsList Logo](https://github.com/Isaaker/Spotify-AdsList/raw/main/docs/images/spotify_ads_list_logo.png)
 
 ## Workflows
 
@@ -13,7 +13,7 @@
 
 ## About
 
-![maintained - yes](https://img.shields.io/badge/maintained-yes-blue)[![contributions - welcome](https://img.shields.io/badge/contributions-welcome-blue)](/CONTRIBUTING.md "Go to contributions doc")
+![maintained - yes](https://img.shields.io/badge/maintained-yes-blue)[![Contributions - Welcome](https://img.shields.io/badge/contributions-welcome-blue)](https://spotify.piscinadeentropia.es/docs_contributing/)
 
 Spotify Ads List is a list of domains that includes all the domains from which Spotify Apps get audio ads, banners...
 
@@ -79,7 +79,7 @@ Here you can find all the tests made, their date and more details.
 ## License
 The code is under **Creative Commons Attribution-ShareAlike 4.0 International Public License**, view the [license here](https://spotify.piscinadeentropia.es/license)
 
-![Creative Commons Attribution-ShareAlike 4.0 International Public License Logo](https://github.com/Isaaker/Spotify-AdsList/raw/main/images/License-Image.jpeg)
+![Creative Commons Attribution-ShareAlike 4.0 International Public License Logo](https://github.com/Isaaker/Spotify-AdsList/raw/main/docs/images/License-Image.jpeg)
 
 ## Contributing
 

@@ -54,7 +54,7 @@ nav:
       - "Pi-Hole": "docs_pihole.md"
       - "Dnsmasq": "docs_dnsmasq.md"
       - "Adguard": "docs_adguard.md"
-    - Whitelist: docs_whitelist.md
+      - "Whitelist": "docs_whitelist.md"
     - Testing: docs_testing.md
     - Docs:
       - "F.A.Q": "docs_faq.md"
@@ -64,7 +64,7 @@ nav:
     - About: 
       - "About": docs_about.md
       - "License": docs_license.md
-      - "Contributing.md": docs_contributing.md
+      - "Contributing": docs_contributing.md
     - Report Bug: https://github.com/Isaaker/Spotify-AdsList/issues
 extra:
   social:
