@@ -1,7 +1,8 @@
-site_name: Spotify-AdsList
+site_name: Spotify Ads List
 site_url: https://spotify.piscinadeentropia.es
 site_description: No more spotify ADS
 copyright: License <a href="https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt">Creative Commons Attribution-ShareAlike 4.0 International Public License</a> | Reproduction and/or distribution, in whole or in part, and use in Artificial Intelligence is strictly prohibited
+repo_url: https://github.com/Isaaker/Spotify-AdsList/
 
 theme:
     name: material
@@ -11,12 +12,13 @@ theme:
     font:
         text: Ubuntu 
         code: IBM Plex Mono 
+    icon:
+      repo: fontawesome/brands/github
     features:
       - navigation.tabs
       - navigation.tabs.sticky
       - navigation.sections
       - navigation.top
-      - navigation.footer
       - search.suggest
     palette:
       - primary: green
@@ -44,7 +46,7 @@ plugins:
       hooks:
         on_config: "hooks.on_config:deploy_hooks"
 nav:
-    - Home: docs_index.md
+    - Home: index.md
     - Installation: docs_installation.md
     - Versions:
       - "Standard": "docs_standard.md"
@@ -63,4 +65,7 @@ nav:
       - "License": docs_license.md
       - "Contributing.md": docs_contributing.md
     - Report Bug: https://github.com/Isaaker/Spotify-AdsList/issues
-    
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Isaaker/Spotify-AdsList/
