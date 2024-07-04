@@ -32,7 +32,7 @@ jobs:
 
       # Install python
       - name: Install Python
-        uses: actions/setup-python@lastest
+        uses: actions/setup-python@5.1.0
           
       # Run the Blocklist converter
       - name: Build blocklist
