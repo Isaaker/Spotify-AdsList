@@ -1,5 +1,7 @@
 name: SAST Semgrep
 on:
+  pull_request: {}
+  push: {}
   workflow_dispatch:
 jobs:
   sast_semgrep:
