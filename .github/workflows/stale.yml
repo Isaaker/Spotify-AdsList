@@ -7,7 +7,8 @@ name: Mark stale issues and pull requests
 
 on:
   schedule:
-  - cron: '26 11 * * *'
+  - cron: '00 12 * * *'
+  workflow_dispatch:
 
 jobs:
   stale:
@@ -21,7 +22,12 @@ jobs:
     - uses: actions/stale@v9
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        stale-issue-message: 'Stale issue message'
-        stale-pr-message: 'Stale pull request message'
-        stale-issue-label: 'no-issue-activity'
-        stale-pr-label: 'no-pr-activity'
+        stale-issue-message: 'Hello, this is a friendly message to inform you that this issue will be closed and archived for inactivity in the next 2 days.'
+        stale-pr-message: 'Hello, this is a friendly message to inform you that this PR will be closed and archived for inactivity in the next 2 days.'
+        close-issue-message: 'This issue was closed because it has been stalled for 7 days with no activity. To reopen, contact the repository administrator.'
+        close-pr-message: 'This PR was closed because it has been stalled for 7 days with no activity. To reopen, contact the repository administrator.'
+        stale-issue-label: 'Stale'
+        stale-pr-label: 'Stale'
+        days-before-stale: 5
+        days-before-issue-close: 7
+
