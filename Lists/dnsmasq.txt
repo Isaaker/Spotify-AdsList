@@ -1,10 +1,10 @@
 #######################################################################################
 ##### Spotify Ads Blacklist                                                        ####
 ##### Created by: Isaaker                                                          ####
-##### Updated: 2024-07-04 (GMT)                                                    ####
+##### Updated: 2024-07-12 (GMT)                                                    ####
 #######################################################################################
 ##### Version: dnsmasq                                                             ####
-##### Number of domains: 1557                                                      ####
+##### Number of domains: 1562                                                      ####
 #######################################################################################
 ##### Read more: https://github.com/Isaaker/Spotify-AdsList                        ####
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
@@ -731,7 +731,6 @@ server=/cal.spotify.com/
 server=/car-dev.scdn.co/
 server=/car-prod.scdn.co/
 server=/car-staging.scdn.co/
-server=/cast.scdn.co/
 server=/charts-images.scdn.co/
 server=/clemmie.ash1.spotify.com/
 server=/clemmie.ash.spotify.com/
@@ -1567,3 +1566,9 @@ server=/a1051.dscw154.akamai.net/
 server=/video-akpcw-cdn-spotify-com.akamaized.net/
 server=/2qbjhhcl4u87btjbo7dh8vi2n.litix.io/
 server=/litix.io/
+server=/a1949.dscb.akamai.net/
+server=/a1887.dscq.akamai.net/
+server=/e11408.d.akamaiedge.net/
+server=/e14768.dscb.akamaiedge.net/
+server=/e17437.dsct.akamaiedge.net/
+server=/e7366.dscb.akamaiedge.net/

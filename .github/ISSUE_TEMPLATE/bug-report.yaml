@@ -25,68 +25,44 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: version
+    id: platform
     attributes:
-      label: Browser
-      description: What browser did you use when you had the bug?
+      label: Platform
+      description: "Please, select your platform."
       options:
-        - Firefox
-        - Firefox Developer Edition
-        - Safari
-        - Chrome
-        - Chromium
-        - Opera
-        - Opera GX
-        - Microsoft Edge
-        - Internet Explorer
-        - QQ Browser
-        - elinks
-        - Samsung Internet
-        - Vivaldi
-        - Brave
-        - Other (Tell us the name the name in the box below)
-    validations:
-      required: true
-  - type: textarea
-    id: browser-version
-    attributes:
-      label: Tell us the name the name of your browser if you select Other
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us the name
-    validations:
-      required: false
-  - type: textarea
-    id: other-browser
-    attributes:
-      label: Browser Version
-      description: Tell us the name the version of your browser
-      placeholder: Example -> Version 16.0
-    validations:
-      required: true
-  - type: dropdown
-    id: operative_system
-    attributes:
-      label: Operative System (OS)
-      multiple: true
-      options:
-        - MacOS (Apple)
-        - iOS (Apple)
-        - Android (Google)
-        - WatchOS (Apple)
-        - ChromeOS (Google)
-        - Windows (Microsoft)
-        - Linux (Linux Foundation)
+        - Web App
+        - App
+        - API
+        - TV
+        - Carplay & Android auto
+        - Smart Home Devices (such as speakers)
         - Other
     validations:
       required: true
-  - type: textarea
-    id: other-os
+  - type: input
+    id: device
     attributes:
-      label: OS Version
-      description: Tell us the Version of OS, if you select other also tell us your operative system name
-      placeholder: Example -> Monterey 12.6
+      label: Device
+      description: "Please, enter your device name."
+      placeholder: Example -> iPhone
     validations:
       required: true
+  - type: input
+    id: os_version
+    attributes:
+      label: OS & Version
+      description: "Please, enter your device OS & Version."
+      placeholder: Example -> MacOS (14.2.1)
+    validations:
+      required: true
+  - type: input
+    id: browser_version
+    attributes:
+      label: Browser & Version (If applicable)
+      description: "Please, enter your Browser & Version (If applicable)."
+      placeholder: Example -> Safari (17.2.1)
+    validations:
+      required: false
   - type: textarea
     id: logs
     attributes:
