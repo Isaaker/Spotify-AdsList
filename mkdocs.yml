@@ -1,7 +1,8 @@
-site_name: Spotify-AdsList
+site_name: Spotify Ads List
 site_url: https://spotify.piscinadeentropia.es
 site_description: No more spotify ADS
-copyright: &copy; <a href="https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt">Creative Commons Attribution-ShareAlike 4.0 International Public License</a> | Reproduction and/or distribution, in whole or in part, and use in Artificial Intelligence is strictly prohibited
+copyright: License <a href="https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt">Creative Commons Attribution-ShareAlike 4.0 International Public License</a> | Reproduction and/or distribution, in whole or in part, and use in Artificial Intelligence is strictly prohibited
+repo_url: https://github.com/Isaaker/Spotify-AdsList/
 
 theme:
     name: material
@@ -11,12 +12,13 @@ theme:
     font:
         text: Ubuntu 
         code: IBM Plex Mono 
+    icon:
+      repo: fontawesome/brands/github
     features:
       - navigation.tabs
       - navigation.tabs.sticky
       - navigation.sections
       - navigation.top
-      - navigation.footer
       - search.suggest
     palette:
       - primary: green
@@ -28,6 +30,7 @@ markdown_extensions:
   - meta
   - toc:
       permalink: true
+  - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
@@ -43,33 +46,27 @@ plugins:
   - mkdocs-simple-hooks:
       hooks:
         on_config: "hooks.on_config:deploy_hooks"
-  - rss:
-      date_from_meta:
-        as_creation: "date"
-        as_update: false
-        datetime_format: "%Y-%m-%d"
-      pretty_print: !ENV [PRETTY_RSS, false]
-      length: 30
-      match_path: "./*"
-
 nav:
     - Home: index.md
-    - Installation: installation.md
+    - Installation: docs_installation.md
     - Versions:
-      - "Standard": "standard.md"
-      - "Pi-Hole": "pihole.md"
-      - "Dnsmasq": "dnsmasq.md"
-      - "Adguard": "adguard.md"
-    - Whitelist: whitelist.md
-    - Testing: testing.md
+      - "Standard": "docs_standard.md"
+      - "Pi-Hole": "docs_pihole.md"
+      - "Dnsmasq": "docs_dnsmasq.md"
+      - "Adguard": "docs_adguard.md"
+      - "Whitelist": "docs_whitelist.md"
+    - Testing: docs_testing.md
     - Docs:
-      - "F.A.Q": "faq.md"
-      - "How Spotify send ads?": "how_spotify_ads.md"
-      - "How adblockers work?": "how_adblockers_work.md"
-      - "Why to add aditional blocklists": "why_add_more_blocklists.md"
+      - "F.A.Q": "docs_faq.md"
+      - "How Spotify send ads?": "docs_how_spotify_ads.md"
+      - "How adblockers work?": "docs_how_adblockers_work.md"
+      - "Why to add aditional blocklists": "docs_why_add_more_blocklists.md"
     - About: 
-      - "About": about.md
-      - "License": license.md
-      - "Contributing.md": contributing.md
+      - "About": docs_about.md
+      - "License": docs_license.md
+      - "Contributing": docs_contributing.md
     - Report Bug: https://github.com/Isaaker/Spotify-AdsList/issues
-    
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Isaaker/Spotify-AdsList/

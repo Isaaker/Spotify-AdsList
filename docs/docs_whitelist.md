@@ -1,18 +1,17 @@
 # Spotify Ads Whitelist
 
-Created by: Isaaker
+!!! info
+    Created by: Isaaker
 
-Revised: 4/7/23
+    Revised: 4/7/23
 
-Version: WHITELIST
+    Version: WHITELIST
 
-Number of domains: 5
+    Number of domains: 5
 
-Read more: https://github.com/Isaaker/Spotify-AdsList
 
-License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt
-
-**WARNING: This list is not formatted in any special way and therefore cannot be downloaded and used as an input file, please add the domains manually.**
+!!! warning
+    This list is not formatted in any special way and therefore cannot be downloaded and used as an input file, please add the domains manually.
 
 ## Detailed list
 

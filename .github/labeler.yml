@@ -1,0 +1,6 @@
+Blocklists:
+- any: ['Lists/BLACKLIST.txt', 'Lists/adguard.txt', 'Lists/dnsmasq.txt', 'Lists/pi-hole.txt', 'Lists/standard_list.txt']
+Whitelist:
+- any: ['Lists/WHITELIST.txt']
+documentation:
+- any: ['docs/*']
