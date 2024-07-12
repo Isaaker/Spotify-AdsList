@@ -1,10 +1,10 @@
 #######################################################################################
 ##### Spotify Ads Blacklist                                                        ####
 ##### Created by: Isaaker                                                          ####
-##### Updated: 2024-07-04 (GMT)                                                    ####
+##### Updated: 2024-07-12 (GMT)                                                    ####
 #######################################################################################
 ##### Version: Standard                                                            ####
-##### Number of domains: 1557                                                      ####
+##### Number of domains: 1562                                                      ####
 #######################################################################################
 ##### Read more: https://github.com/Isaaker/Spotify-AdsList                        ####
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
@@ -731,7 +731,6 @@
 0.0.0.0 car-dev.scdn.co
 0.0.0.0 car-prod.scdn.co
 0.0.0.0 car-staging.scdn.co
-0.0.0.0 cast.scdn.co
 0.0.0.0 charts-images.scdn.co
 0.0.0.0 clemmie.ash1.spotify.com
 0.0.0.0 clemmie.ash.spotify.com
@@ -1567,3 +1566,9 @@
 0.0.0.0 video-akpcw-cdn-spotify-com.akamaized.net
 0.0.0.0 2qbjhhcl4u87btjbo7dh8vi2n.litix.io
 0.0.0.0 litix.io
+0.0.0.0 a1949.dscb.akamai.net
+0.0.0.0 a1887.dscq.akamai.net
+0.0.0.0 e11408.d.akamaiedge.net
+0.0.0.0 e14768.dscb.akamaiedge.net
+0.0.0.0 e17437.dsct.akamaiedge.net
+0.0.0.0 e7366.dscb.akamaiedge.net
