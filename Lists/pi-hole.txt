@@ -1,16 +1,15 @@
 #######################################################################################
 ##### Spotify Ads Blacklist                                                        ####
 ##### Created by: Isaaker                                                          ####
-##### Updated: 2024-07-12 (GMT)                                                    ####
+##### Updated: 2024-08-31 (GMT)                                                    ####
 #######################################################################################
 ##### Version: pi-hole                                                             ####
-##### Number of domains: 1562                                                      ####
+##### Number of domains: 1559                                                      ####
 #######################################################################################
 ##### Read more: https://github.com/Isaaker/Spotify-AdsList                        ####
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
 #######################################################################################
 
-www.apresolve.spotify.com
 audio-fa.scdn.co
 adeventtracker.spotify.com
 sentry.io
@@ -663,7 +662,6 @@ api-canary.wg.spotify.com
 api-partners-canary.wg.spotify.com
 api-tv-canary.wg.spotify.com
 api.spotify.com
-apresolve.spotify.com
 arantxa.ash1.spotify.com
 arantxa.ash.spotify.com
 artist-identity-image.spotify.com
@@ -1528,7 +1526,6 @@ fc.video-ak.cdn.spotify.com
 fd.video-ak.cdn.spotify.com
 fe.video-ak.cdn.spotify.com
 ff.video-ak.cdn.spotify.com
-apresolve.spotify.com
 beacon-ams3.rubiconproject.com
 e15208.dscj.akamaiedge.net
 a2047.dscapi9.akamai.net
