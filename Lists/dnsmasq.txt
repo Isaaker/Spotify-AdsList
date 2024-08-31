@@ -1,16 +1,15 @@
 #######################################################################################
 ##### Spotify Ads Blacklist                                                        ####
 ##### Created by: Isaaker                                                          ####
-##### Updated: 2024-07-12 (GMT)                                                    ####
+##### Updated: 2024-08-31 (GMT)                                                    ####
 #######################################################################################
 ##### Version: dnsmasq                                                             ####
-##### Number of domains: 1562                                                      ####
+##### Number of domains: 1559                                                      ####
 #######################################################################################
 ##### Read more: https://github.com/Isaaker/Spotify-AdsList                        ####
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
 #######################################################################################
 
-server=/www.apresolve.spotify.com/
 server=/audio-fa.scdn.co/
 server=/adeventtracker.spotify.com/
 server=/sentry.io/
@@ -663,7 +662,6 @@ server=/api-canary.wg.spotify.com/
 server=/api-partners-canary.wg.spotify.com/
 server=/api-tv-canary.wg.spotify.com/
 server=/api.spotify.com/
-server=/apresolve.spotify.com/
 server=/arantxa.ash1.spotify.com/
 server=/arantxa.ash.spotify.com/
 server=/artist-identity-image.spotify.com/
@@ -1528,7 +1526,6 @@ server=/fc.video-ak.cdn.spotify.com/
 server=/fd.video-ak.cdn.spotify.com/
 server=/fe.video-ak.cdn.spotify.com/
 server=/ff.video-ak.cdn.spotify.com/
-server=/apresolve.spotify.com/
 server=/beacon-ams3.rubiconproject.com/
 server=/e15208.dscj.akamaiedge.net/
 server=/a2047.dscapi9.akamai.net/
