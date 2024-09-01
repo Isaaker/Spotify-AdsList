@@ -34,3 +34,4 @@ License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt
 - api-partner.spotify.com
 - partners.wg.spotify.com
 - api.spotify.com
+- audio4-fa.scdn.co

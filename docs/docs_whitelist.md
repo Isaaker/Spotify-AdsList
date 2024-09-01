@@ -33,3 +33,4 @@
 - api-partner.spotify.com
 - partners.wg.spotify.com
 - api.spotify.com
+- audio4-fa.scdn.co
