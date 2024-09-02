@@ -3,11 +3,11 @@
 !!! info
     Created by: Isaaker
 
-    Revised: 4/7/23
+    Revised: 31/8/24
 
     Version: WHITELIST
 
-    Number of domains: 5
+    Number of domains: 7
 
 
 !!! warning
