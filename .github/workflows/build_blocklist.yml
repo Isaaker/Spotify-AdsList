@@ -33,6 +33,10 @@ jobs:
       # Install python
       - name: Install Python
         uses: actions/setup-python@v5
+
+      # Remove the duplicated Blocklist domains
+      - name: Remove duplicated domains
+        run: python3 ${{ github.WORKSPACE }}/${{ steps.extract_branch.outputs.branch }}/scripts/remove_duplicated.py
           
       # Run the Blocklist converter
       - name: Build blocklist

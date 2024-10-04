@@ -14,13 +14,11 @@ import time
 from time import gmtime, strftime
 
 # Get the domains to block
-time.sleep(1)
 print ("Obtaining the domains to block...")
 with open("/home/runner/work/Spotify-AdsList/Spotify-AdsList/Developer/Lists/BLACKLIST.txt", "r") as master_blocklist:
     block_domains = master_blocklist.readlines()
 
 # Generate the new adblock files
-time.sleep(1)
 print (f"\n")
 print ("Generating new adblock files")
 print ("----------------------------")
@@ -29,7 +27,6 @@ current_time = strftime("%Y-%m-%d", gmtime())
 sum_domains = len(block_domains)
 
 #Generate the AdGuard blocklist
-time.sleep(1)
 print ("Generating the AdGuard file...")
 header = f"""#######################################################################################
 ##### Spotify Ads Blacklist                                                        ####
