@@ -120,3 +120,31 @@ print ("Dnsmasq file generated")
 
 print ("----------------------------")
 print ("End of the conversion")
+
+#Generate the ABP blocklist
+print ("Generating the ABP file...")
+header = f"""
+[Adblock Plus 7.1]
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!! Spotify Ads Blacklist                                                        !!!!
+!!!!! Created by: Isaaker                                                          !!!!
+!!!!! Updated: {current_time} (GMT)                                                    !!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!! Version: ABP                                                                 !!!!
+!!!!! Number of domains: {sum_domains}                                                      !!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!! Read more: https://github.com/Isaaker/Spotify-AdsList                        !!!!
+!!!!! License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    !!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+"""
+
+with open("/home/runner/work/Spotify-AdsList/Spotify-AdsList/Developer/Lists/abp.txt", "w") as abp:
+    abp.write(header)
+    for domain in block_domains:
+        abp.write(domain)
+
+print ("ABP file generated")
+
+print ("----------------------------")
+print ("End of the conversion")

@@ -46,8 +46,12 @@ The list is highly compatible, so here are the different versions so that you ca
 | Pi-hole | Compatible with pi-hole and other systems that do not require anything other than domains | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/pi-hole.txt | https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/pi-hole.txt
 | Dnsmasq | Compatible with dnsmasq | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/dnsmasq.txt | https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/dnsmasq.txt
 | Adguard | Compatible with adguard & uBlock Origin | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/adguard.txt | https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/adguard.txt
+| ABP | Compatible with AdBlock Plus | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/abp.txt | https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/abp.txt
 
-**To suscribe with uBlock Origin read the installation documentation -> [Add to uBlock](spotify.piscinadeentropia.es/installation)**
+**To suscribe with uBlock Origin read the installation documentation -> [Add to uBlock](https://spotify.piscinadeentropia.es/installation)**
+
+**To suscribe with ABP you can use -> [this link](https://subscribe.adblockplus.org/?location=https%3A%2F%2Fraw.githubusercontent.com%2FIsaaker%2FSpotify-AdsList%2Fmain%2FLists%2Fabp.txt&title=SpotifyAdsList)**
+
 
 ## Whitelist
 

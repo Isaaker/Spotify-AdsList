@@ -16,6 +16,7 @@ The currently supported adblockers are:
 * [Dnsmasq](https://dnsmasq.org/doc.html)
 * [Adguard](https://adguard.com/es/welcome.html)
 * [uBlock Origin](https://ublockorigin.com)
+* [AdBlock Plus](https://adblockplus.org)
 
 !!! tip
     Being a simple and very backward compatible list, if your adblocker is not included above, you can ask us to include it and if necessary to generate a custom list layout for it.
@@ -33,6 +34,7 @@ Here is a table to find the right format for your adblcoker:
 | Adguard | Adguard |
 | uBlock Origin | Adguard |
 | Standard (with hosts file or adblockers that supports 0.0.0.0 entry) | Standard |
+| AdBlockPlus (ABP) | ABP|
 
 !!! tip
     Being a simple and very backward compatible list, if your adblocker is not included above, you can ask us to include it and if necessary to generate a custom list layout for it.
@@ -52,6 +54,7 @@ Below, you can find a series of basic guides on how to install and use your adbl
 * [Dnsmasq](https://dnsmasq.org/doc.html)
 * [Adguard](https://adguard.com/kb/general/how-to-install/)
 * [uBlock Origin](https://github.com/gorhill/uBlock?tab=readme-ov-file#installation)
+* [AdBlockPlus (ABP)](https://help.adblockplus.org/hc/en-us/articles/1500002320801-How-to-download-and-install-Adblock-Plus)
 
 ### Setup Spotify
 
@@ -62,7 +65,7 @@ To start using Spotify you can use the web app or download the app for your OS:
 
 ## 4. Add Spotify Ads List to your adblocker
 
-To add Spotify Ads List to your adblocker you will need to make use of a raw file that will be synced directly from our GitHub repository. To do this, simply copy the link and enter it in the appropriate field to add it to your adblocker (Or use the link in the case of uBlock Origin):
+To add Spotify Ads List to your adblocker you will need to make use of a raw file that will be synced directly from our GitHub repository. To do this, simply copy the link and enter it in the appropriate field to add it to your adblocker (Or use the link in the case of browser adblockers):
 
 # Standard adblockers
 
@@ -94,6 +97,13 @@ To add Spotify Ads List to your adblocker you will need to make use of a raw fil
 
 !!! tip
     [You can also make this manually with the adguard raw URL](https://github.com/gorhill/uBlock/wiki/Dashboard:-Filter-lists#3rd-party-filter-lists)
+
+#### AdBlock Plus (ABP)
+
+[You can add the blocklist to ABP with this link](https://subscribe.adblockplus.org/?location=https%3A%2F%2Fraw.githubusercontent.com%2FIsaaker%2FSpotify-AdsList%2Fmain%2FLists%2Fabp.txt&title=SpotifyAdsList)
+
+!!! tip
+    [You can also make this manually with the ABP raw URL](https://help.adblockplus.org/hc/en-us/articles/360062859913-Add-or-remove-a-custom-filter)
 
 ## 5. Add Spotify Ads List whitelist to your adblocker
 
