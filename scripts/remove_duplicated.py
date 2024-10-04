@@ -9,10 +9,12 @@ print ("""
 """)
 print ("License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt")
 
+file = "/home/runner/work/Spotify-AdsList/Lists/BLACKLIST.txt"
+
 # Open the file and generate a list with that
 
 print ("Obtaining the domains...")
-with open("/home/runner/work/Spotify-AdsList/Spotify-AdsList/Developer/Lists/BLACKLIST.txt", "r") as master_blocklist:
+with open(file, "r") as master_blocklist:
     block_domains = master_blocklist.readlines()
 
 # Remove duplicated domains
@@ -20,7 +22,7 @@ with open("/home/runner/work/Spotify-AdsList/Spotify-AdsList/Developer/Lists/BLA
 clean_blocklist = list(set(block_domains))
 
 # Rewrite the file
-with open("/home/runner/work/Spotify-AdsList/Spotify-AdsList/Developer/Lists/BLACKLIST.txt", "w") as master_blocklist:
+with open(file, "w") as master_blocklist:
     for domain in clean_blocklist:
         master_blocklist.write(domain)
 
