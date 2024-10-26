@@ -14,8 +14,8 @@ import time
 from time import gmtime, strftime
 
 # Get the domains to block
-branch = os.environ.get('BRANCH')
-files_path = f"/home/runner/work/Spotify-AdsList/Spotify-AdsList/{branch}/Lists/"
+workspace = os.environ.get('GITHUB_WORKSPACE')
+files_path = f"{workspace}}/Lists/"
 print ("Obtaining the domains to block...")
 with open(f"{files_path}/BLACKLIST.txt", "r") as master_blocklist:
     block_domains = master_blocklist.readlines()
