@@ -122,9 +122,6 @@ with open(f"{files_path}/dnsmasq.txt", "w") as dnsmasq:
 
 print ("Dnsmasq file generated")
 
-print ("----------------------------")
-print ("End of the conversion")
-
 #Generate the ABP blocklist
 print ("Generating the ABP file...")
 header = f"""
