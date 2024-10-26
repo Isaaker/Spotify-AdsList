@@ -14,8 +14,9 @@ import time
 from time import gmtime, strftime
 
 # Get the domains to block
+branch = os.environ.get('BRANCH')
 print ("Obtaining the domains to block...")
-with open("/home/runner/work/Spotify-AdsList/Spotify-AdsList/Developer/Lists/BLACKLIST.txt", "r") as master_blocklist:
+with open(f"/home/runner/work/Spotify-AdsList/Spotify-AdsList/{branch}/Lists/BLACKLIST.txt", "r") as master_blocklist:
     block_domains = master_blocklist.readlines()
 
 # Generate the new adblock files
