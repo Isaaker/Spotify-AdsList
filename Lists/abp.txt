@@ -1,3 +1,17 @@
+
+[Adblock Plus 7.1]
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!! Spotify Ads Blacklist                                                        !!!!
+!!!!! Created by: Isaaker                                                          !!!!
+!!!!! Updated: 2024-10-26 (GMT)                                                    !!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!! Version: ABP                                                                 !!!!
+!!!!! Number of domains: 1254                                                      !!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!! Read more: https://github.com/Isaaker/Spotify-AdsList                        !!!!
+!!!!! License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    !!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 adlab.spotify.com
 33.video-ak.cdn.spotify.com
 clk3.vip.sc9.admob.com
