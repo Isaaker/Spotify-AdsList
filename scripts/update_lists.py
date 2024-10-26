@@ -12,15 +12,17 @@ print ("License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.tx
 #Import libraries
 import time
 from time import gmtime, strftime
+import os
 
 # Get the domains to block
-time.sleep(1)
+workspace = os.environ.get('GITHUB_WORKSPACE')
+branch = os.environ.get('BRANCH_NAME')
+files_path = f"{workspace}/{branch}/Lists/"
 print ("Obtaining the domains to block...")
-with open("/home/runner/work/Spotify-AdsList/Spotify-AdsList/Developer/Lists/BLACKLIST.txt", "r") as master_blocklist:
+with open(f"{files_path}/BLACKLIST.txt", "r") as master_blocklist:
     block_domains = master_blocklist.readlines()
 
 # Generate the new adblock files
-time.sleep(1)
 print (f"\n")
 print ("Generating new adblock files")
 print ("----------------------------")
@@ -29,7 +31,6 @@ current_time = strftime("%Y-%m-%d", gmtime())
 sum_domains = len(block_domains)
 
 #Generate the AdGuard blocklist
-time.sleep(1)
 print ("Generating the AdGuard file...")
 header = f"""#######################################################################################
 ##### Spotify Ads Blacklist                                                        ####
@@ -45,7 +46,7 @@ header = f"""###################################################################
 
 """
 
-with open("/home/runner/work/Spotify-AdsList/Spotify-AdsList/Developer/Lists/adguard.txt", "w") as adguard:
+with open(f"{files_path}/adguard.txt", "w") as adguard:
     adguard.write(header)
     for domain in block_domains:
         adguard.write(f"||{domain.rstrip()}^\n")
@@ -68,7 +69,7 @@ header = f"""###################################################################
 
 """
 
-with open("/home/runner/work/Spotify-AdsList/Spotify-AdsList/Developer/Lists/pi-hole.txt", "w") as pihole:
+with open(f"{files_path}/pi-hole.txt", "w") as pihole:
     pihole.write(header)
     for domain in block_domains:
         pihole.write(domain)
@@ -91,7 +92,7 @@ header = f"""###################################################################
 
 """
 
-with open("/home/runner/work/Spotify-AdsList/Spotify-AdsList/Developer/Lists/standard_list.txt", "w") as standard_list:
+with open(f"{files_path}/standard_list.txt", "w") as standard_list:
     standard_list.write(header)
     for domain in block_domains:
         standard_list.write(f"0.0.0.0 {domain}")
@@ -114,12 +115,37 @@ header = f"""###################################################################
 
 """
 
-with open("/home/runner/work/Spotify-AdsList/Spotify-AdsList/Developer/Lists/dnsmasq.txt", "w") as dnsmasq:
+with open(f"{files_path}/dnsmasq.txt", "w") as dnsmasq:
     dnsmasq.write(header)
     for domain in block_domains:
         dnsmasq.write(f"server=/{domain.rstrip()}/\n")
 
 print ("Dnsmasq file generated")
+
+#Generate the ABP blocklist
+print ("Generating the ABP file...")
+header = f"""
+[Adblock Plus 7.1]
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!! Spotify Ads Blacklist                                                        !!!!
+!!!!! Created by: Isaaker                                                          !!!!
+!!!!! Updated: {current_time} (GMT)                                                    !!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!! Version: ABP                                                                 !!!!
+!!!!! Number of domains: {sum_domains}                                                      !!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!! Read more: https://github.com/Isaaker/Spotify-AdsList                        !!!!
+!!!!! License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    !!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+"""
+
+with open(f"{files_path}/abp.txt", "w") as abp:
+    abp.write(header)
+    for domain in block_domains:
+        abp.write(domain)
+
+print ("ABP file generated")
 
 print ("----------------------------")
 print ("End of the conversion")
