@@ -9,6 +9,7 @@ print ("""
 """)
 print ("License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt")
 
+import os
 workspace = os.environ.get('GITHUB_WORKSPACE')
 file = f"{workspace}/Lists/BLACKLIST.txt"
 
