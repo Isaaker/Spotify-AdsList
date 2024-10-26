@@ -15,8 +15,9 @@ from time import gmtime, strftime
 
 # Get the domains to block
 branch = os.environ.get('BRANCH')
+files_path = f"/home/runner/work/Spotify-AdsList/Spotify-AdsList/{branch}/Lists/"
 print ("Obtaining the domains to block...")
-with open(f"/home/runner/work/Spotify-AdsList/Spotify-AdsList/{branch}/Lists/BLACKLIST.txt", "r") as master_blocklist:
+with open(f"{files_path}/BLACKLIST.txt", "r") as master_blocklist:
     block_domains = master_blocklist.readlines()
 
 # Generate the new adblock files
@@ -43,7 +44,7 @@ header = f"""###################################################################
 
 """
 
-with open("/home/runner/work/Spotify-AdsList/Spotify-AdsList/Developer/Lists/adguard.txt", "w") as adguard:
+with open(f"{files_path}/adguard.txt", "w") as adguard:
     adguard.write(header)
     for domain in block_domains:
         adguard.write(f"||{domain.rstrip()}^\n")
@@ -66,7 +67,7 @@ header = f"""###################################################################
 
 """
 
-with open("/home/runner/work/Spotify-AdsList/Spotify-AdsList/Developer/Lists/pi-hole.txt", "w") as pihole:
+with open(f"{files_path}/pi-hole.txt", "w") as pihole:
     pihole.write(header)
     for domain in block_domains:
         pihole.write(domain)
@@ -89,7 +90,7 @@ header = f"""###################################################################
 
 """
 
-with open("/home/runner/work/Spotify-AdsList/Spotify-AdsList/Developer/Lists/standard_list.txt", "w") as standard_list:
+with open(f"{files_path}/standard_list.txt", "w") as standard_list:
     standard_list.write(header)
     for domain in block_domains:
         standard_list.write(f"0.0.0.0 {domain}")
@@ -112,7 +113,7 @@ header = f"""###################################################################
 
 """
 
-with open("/home/runner/work/Spotify-AdsList/Spotify-AdsList/Developer/Lists/dnsmasq.txt", "w") as dnsmasq:
+with open(f"{files_path}/dnsmasq.txt", "w") as dnsmasq:
     dnsmasq.write(header)
     for domain in block_domains:
         dnsmasq.write(f"server=/{domain.rstrip()}/\n")
@@ -140,7 +141,7 @@ header = f"""
 
 """
 
-with open("/home/runner/work/Spotify-AdsList/Spotify-AdsList/Developer/Lists/abp.txt", "w") as abp:
+with open(f"{files_path}/abp.txt", "w") as abp:
     abp.write(header)
     for domain in block_domains:
         abp.write(domain)
