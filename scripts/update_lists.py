@@ -16,7 +16,8 @@ import os
 
 # Get the domains to block
 workspace = os.environ.get('GITHUB_WORKSPACE')
-files_path = f"{workspace}}/Lists/"
+branch = os.environ.get('BRANCH_NAME')
+files_path = f"{workspace}/{branch}/Lists/"
 print ("Obtaining the domains to block...")
 with open(f"{files_path}/BLACKLIST.txt", "r") as master_blocklist:
     block_domains = master_blocklist.readlines()
