@@ -9,8 +9,8 @@ print ("""
 """)
 print ("License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt")
 
-branch = os.environ.get('BRANCH')
-file = f"/home/runner/work/Spotify-AdsList/{branch}/Lists/BLACKLIST.txt"
+workspace = os.environ.get('GITHUB_WORKSPACE')
+file = f"{workspace}/Lists/BLACKLIST.txt"
 
 # Open the file and generate a list with that
 
