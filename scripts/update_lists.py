@@ -12,6 +12,7 @@ print ("License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.tx
 #Import libraries
 import time
 from time import gmtime, strftime
+import os
 
 # Get the domains to block
 workspace = os.environ.get('GITHUB_WORKSPACE')
