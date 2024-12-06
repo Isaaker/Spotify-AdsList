@@ -1,17 +1,18 @@
 # Spotify Ads Whitelist
 
-!!! info
-    Created by: Isaaker
+Created by: Isaaker
 
-    Revised: 31/8/24
+Revised: 6/12/24
 
-    Version: WHITELIST
+Version: WHITELIST
 
-    Number of domains: 7
+Number of domains: 8
 
+Read more: https://github.com/Isaaker/Spotify-AdsList
 
-!!! warning
-    This list is not formatted in any special way and therefore cannot be downloaded and used as an input file, please add the domains manually.
+License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt
+
+**WARNING: This list is not formatted in any special way and therefore cannot be downloaded and used as an input file, please add the domains manually.**
 
 ## Detailed list
 
@@ -25,6 +26,7 @@
 | api.spotify.com | Spotify main API |
 | audio4-fa.scdn.co | Some platforms need this domain unlocked to get audio tracks from Spotify servers | Songs may not play on certain platforms |
 | seektables.scdn.co | Nest Mini devices can't properly cast towards using the Spotify mobile app |
+| cast.scdn.co | Server for casting to google devices such as Google Nest | Unable to use Google Chromecast or Nest with Spotify |
 
 ## Plain List
 
@@ -36,3 +38,4 @@
 - api.spotify.com
 - audio4-fa.scdn.co
 - seektables.scdn.co
+- cast.scdn.co
