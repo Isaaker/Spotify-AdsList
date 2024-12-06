@@ -160,7 +160,6 @@ mmv.admob.com
 clk1.vip.sc9.admob.com
 ads-akp.spotify.com
 svastx.moatads.com
-star.c10r.facebook.com
 adserver.adtechus.com
 status.intercom.io
 7c.video-ak.cdn.spotify.com
@@ -217,7 +216,6 @@ intercom.io
 api.safedk.com
 docs.spotify.com
 daryl.ash.spotify.com
-o22381.ingest.sentry.io
 52.audio-ak.cdn.spotify.com
 comscorenetworks.net
 sap-testing.spotify.com
@@ -557,7 +555,6 @@ ash1-msproxy-a4.ash1.spotify.com
 7f.video-ak.cdn.spotify.com
 search.spotxchange.com
 45.audio-ak.cdn.spotify.com
-gew-dealer-ssl.spotify.com
 click.api.cp.tune.com
 ws-partner.spotify.com
 line-in.spotify.com
@@ -1011,7 +1008,6 @@ dd.video-ak.cdn.spotify.com
 w.intercom.io
 partners.spotify.com
 demo-builder.spotify.com
-gew-dealer.spotify.com
 ab.tune.com
 c5.audio-ak.cdn.spotify.com
 tic1.vip.sc9.admob.com
