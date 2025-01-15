@@ -16,12 +16,13 @@ print ("License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.tx
 
 import os
 import requests
+import subprocess
 workspace = os.environ.get('GITHUB_WORKSPACE')
 branch = os.environ.get('BRANCH_NAME')
 file = f"{workspace}/{branch}/Lists/BLACKLIST-mixed.txt"
 blocklist = f"{workspace}/{branch}/Lists/BLACKLIST.txt"
 default_blocklist = f"{workspace}/{branch}/Lists/default_ad_blocklist.txt"
-
+current_dir=subprocess.run(['pwd'],text=True)   # Just a suggestion, see if you could incorporate this into the tool
 # Download ads default list from The Blocklist Project
 
 print ("Downloading default blocklist...")
