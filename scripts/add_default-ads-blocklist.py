@@ -43,4 +43,4 @@ with open(file, 'wb') as file_write:
     with open(blocklist, "r") as blocklist_1:
         master_blocklist = blocklist_1.readlines()
 
-print ("Duplicated lines deleted sucesfully")
+print ("Duplicated lines deleted succesfully")
