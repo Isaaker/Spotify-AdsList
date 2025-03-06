@@ -1,0 +1,33 @@
+name: MkDocs Deploy Cloudflare
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**'
+      - 'mkdocs.yml'
+    
+jobs:
+  scan:
+    name: gitleaks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@83373cf2f8c4db6e24b41c1a9b086bb9619e9cd3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITLEAKS_CONFIG: cfg/gitleaks.toml
+          
+  build:
+    name: MkDocs Github Pages automatic deployment
+    runs-on: ubuntu-latest
+    needs: 
+      - scan
+    steps:
+      - name: Send deplyoment request
+        run: |
+          ${{ secrets.DEPLOY_COMMAND }}
