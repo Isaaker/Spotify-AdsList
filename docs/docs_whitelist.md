@@ -28,6 +28,8 @@ License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt
 | seektables.scdn.co | Nest Mini devices can't properly cast towards using the Spotify mobile app |
 | cast.scdn.co | Server for casting to google devices such as Google Nest | Unable to use Google Chromecast or Nest with Spotify |
 | audio4-ak.spotifycdn.com | Problems with audio on Linux |
+| pickasso.spotifycdn.com | This domains provides Covers, banners and images from the music and playlists | Missing images |
+| mosaic.scdn.co | This domains provides Covers, banners and images from the music and playlists | Missing images |
 
 ## Plain List
 

@@ -49,12 +49,7 @@ plugins:
 nav:
     - Home: index.md
     - Installation: docs_installation.md
-    - Versions:
-      - "Standard": "docs_standard.md"
-      - "Pi-Hole": "docs_pihole.md"
-      - "Dnsmasq": "docs_dnsmasq.md"
-      - "Adguard": "docs_adguard.md"
-      - "Whitelist": "docs_whitelist.md"
+    - Whitelist: docs_whitelist.md
     - Testing: docs_testing.md
     - Docs:
       - "F.A.Q": "docs_faq.md"

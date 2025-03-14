@@ -1216,7 +1216,6 @@ f8.video-ak.cdn.spotify.com
 ads-west-colo.adsymptotic.com
 ge-0-0-43-crs1.sc9.admob.com
 cb.audio-ak.cdn.spotify.com
-gew1-spclient.spotify.com
 bc.audio-ak.cdn.spotify.com
 d5.video-ak.cdn.spotify.com
 alesti.ash1.spotify.com
