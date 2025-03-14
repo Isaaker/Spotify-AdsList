@@ -8,3 +8,4 @@ audio4-fa.scdn.co
 seektables.scdn.co
 cast.scdn.co
 audio4-ak.spotifycdn.com
+gew4-spclient.spotify.com
