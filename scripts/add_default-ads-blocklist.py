@@ -16,13 +16,25 @@ print ("License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.tx
 
 import os
 import requests
-workspace = os.environ.get('GITHUB_WORKSPACE')
-branch = os.environ.get('BRANCH_NAME')
-file = f"{workspace}/{branch}/Lists/BLACKLIST-mixed.txt"
-blocklist = f"{workspace}/{branch}/Lists/BLACKLIST.txt"
-default_blocklist = f"{workspace}/{branch}/Lists/default_ad_blocklist.txt"
+import subprocess
+
+result = subprocess.run(["pwd"], capture_output=True, text=True)
+current_directory = result.stdout.strip()
+
+if "/home/runner/" in current_directory:
+    workspace = os.environ.get('GITHUB_WORKSPACE')
+    branch = os.environ.get('BRANCH_NAME')
+    file = f"{workspace}/{branch}/Lists/BLACKLIST-mixed.txt"
+    blocklist = f"{workspace}/{branch}/Lists/BLACKLIST.txt"
+    default_blocklist = f"{workspace}/{branch}/Lists/default_ad_blocklist.txt"
+else:
+    file = f"{current_directory}/Lists/BLACKLIST-mixed.txt"
+    blocklist = f"{current_directory}/Lists/BLACKLIST.txt"
+    default_blocklist = f"{current_directory}/Lists/default_ad_blocklist.txt"
+
 
 # Download ads default list from The Blocklist Project
+
 
 print ("Downloading default blocklist...")
 default_blocklist_url = "https://blocklistproject.github.io/Lists/alt-version/ads-nl.txt"
@@ -43,4 +55,5 @@ with open(file, 'wb') as file_write:
     with open(blocklist, "r") as blocklist_1:
         master_blocklist = blocklist_1.readlines()
 
-print ("Duplicated lines deleted succesfully")
+print ("Default blocklist added successfully")
+
