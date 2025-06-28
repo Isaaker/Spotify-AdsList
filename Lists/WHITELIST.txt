@@ -11,3 +11,4 @@ audio4-ak.spotifycdn.com
 gew4-spclient.spotify.com
 pickasso.spotifycdn.com
 mosaic.scdn.co
+audio-fa.scdn.co

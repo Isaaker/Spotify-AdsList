@@ -2,11 +2,11 @@
 
 Created by: Isaaker
 
-Revised: 6/3/25
+Revised: 28/6/25
 
 Version: WHITELIST
 
-Number of domains: 9
+Number of domains: 11
 
 Read more: https://github.com/Isaaker/Spotify-AdsList
 
@@ -25,11 +25,13 @@ License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt
 | partners.wg.spotify.com | This domain is the one that provides some of the main images of the app such as the home screen, the application will continue to play music but some screens may not work properly or may be inaccessible by displaying an error. | Problems displaying images |
 | api.spotify.com | Spotify main API |
 | audio4-fa.scdn.co | Some platforms need this domain unlocked to get audio tracks from Spotify servers | Songs may not play on certain platforms |
+| audio-fa.scdn.co | Some platforms need this domain unlocked to get audio tracks from Spotify servers | Songs may not play on certain platforms |
 | seektables.scdn.co | Nest Mini devices can't properly cast towards using the Spotify mobile app |
 | cast.scdn.co | Server for casting to google devices such as Google Nest | Unable to use Google Chromecast or Nest with Spotify |
 | audio4-ak.spotifycdn.com | Problems with audio on Linux |
 | pickasso.spotifycdn.com | This domains provides Covers, banners and images from the music and playlists | Missing images |
 | mosaic.scdn.co | This domains provides Covers, banners and images from the music and playlists | Missing images |
+| gew4-spclient.spotify.com | Audio playback | Problems with audio playback |
 
 ## Plain List
 
@@ -40,6 +42,10 @@ License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt
 - partners.wg.spotify.com
 - api.spotify.com
 - audio4-fa.scdn.co
+- audio-fa.scdn.co
 - seektables.scdn.co
 - cast.scdn.co
 - audio4-ak.spotifycdn.com
+- gew4-spclient.spotify.com
+- pickasso.spotifycdn.com
+- mosaic.scdn.co

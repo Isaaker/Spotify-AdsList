@@ -511,7 +511,6 @@ adgrx.moatads.com
 sto3-idp-a2.sto3.spotify.com
 omaze.com
 admob.co.nz
-audio-fa.scdn.co
 71.video-ak.cdn.spotify.com
 vt.myvisualiq.net
 a2047.dscapi9.akamai.net
