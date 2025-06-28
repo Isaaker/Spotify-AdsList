@@ -31,7 +31,22 @@ License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt
 | audio4-ak.spotifycdn.com | Problems with audio on Linux |
 | pickasso.spotifycdn.com | This domains provides Covers, banners and images from the music and playlists | Missing images |
 | mosaic.scdn.co | This domains provides Covers, banners and images from the music and playlists | Missing images |
-| gew4-spclient.spotify.com | Audio playback | Problems with audio playback |
+
+## Specific paths for gew1-spclient.spotify.com
+
+**For further info see: [#61](https://github.com/Isaaker/Spotify-AdsList/issues/61) [#68](https://github.com/Isaaker/Spotify-AdsList/issues/68)**
+
+``
+gew1-spclient.spotify.com/melody
+gew1-spclient.spotify.com/connect-state
+gew1-spclient.spotify.com/melody
+gew1-spclient.spotify.com/connect-state
+gew1-spclient.spotify.com/gabo-receiver-service
+gew1-spclient.spotify.com/track-playback
+api.spotify.com^$xhr
+gew1-spclient.spotify.com/storage-resolve
+gew1-spclient.spotify.com/widevine-licens`
+``
 
 ## Plain List
 
@@ -46,6 +61,5 @@ License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt
 - seektables.scdn.co
 - cast.scdn.co
 - audio4-ak.spotifycdn.com
-- gew4-spclient.spotify.com
 - pickasso.spotifycdn.com
 - mosaic.scdn.co

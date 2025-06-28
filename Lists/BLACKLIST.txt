@@ -1248,3 +1248,4 @@ sync.search.spotxchange.com
 74.video-ak.cdn.spotify.com
 video-akpcw.spotifycdn.com
 ap-gue1.spotify.com
+gew4-spclient.spotify.com
