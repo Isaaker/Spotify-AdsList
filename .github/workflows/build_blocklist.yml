@@ -39,10 +39,34 @@ jobs:
         run: python3 ${{ github.WORKSPACE }}/${{ steps.extract_branch.outputs.branch }}/scripts/remove_duplicated.py
         env:
          BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
+      
+      # Remove the duplicated Blocklist domains from whitelist
+      - name: Remove whitelist domains
+        run: python3 ${{ github.WORKSPACE }}/${{ steps.extract_branch.outputs.branch }}/scripts/check_whitelist.py
+        env:
+         BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
+
+      # Remove the duplicated Blocklist domains from whitelist
+      - name: Remove whitelist domains
+        run: python3 ${{ github.WORKSPACE }}/${{ steps.extract_branch.outputs.branch }}/scripts/check_whitelist.py
+        env:
+         BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
+
+      # Download and mix defaullt add blocklist
+      - name: Remove whitelist domains
+        run: python3 ${{ github.WORKSPACE }}/${{ steps.extract_branch.outputs.branch }}/scripts/add_default-ads-blocklist.py
+        env:
+         BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
 
       # Run the Blocklist converter
       - name: Build blocklist
         run: python3 ${{ github.WORKSPACE }}/${{ steps.extract_branch.outputs.branch }}/scripts/update_lists.py
+        env:
+         BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
+
+      # Run the Blocklist Mixed converter
+      - name: Build blocklist
+        run: python3 ${{ github.WORKSPACE }}/${{ steps.extract_branch.outputs.branch }}/scripts/update_list_mixed.py
         env:
          BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
 
