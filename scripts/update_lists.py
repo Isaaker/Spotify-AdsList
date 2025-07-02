@@ -51,7 +51,8 @@ with open(f"{files_path}/adguard.txt", "w") as adguard:
     for domain in block_domains:
         adguard.write(f"||{domain.rstrip()}^\n")
 
-print ("AdGuard file generated")
+
+print ("AdGuard files generated")
 
 #Generate the Pi-hole blocklist
 print ("Generating the Pi-hole file...")

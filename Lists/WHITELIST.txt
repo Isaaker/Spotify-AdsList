@@ -1,0 +1,13 @@
+login5.spotify.com
+spclient.wg.spotify.com
+open.spotify.com
+api-partner.spotify.com
+partners.wg.spotify.com
+api.spotify.com
+audio4-fa.scdn.co
+seektables.scdn.co
+cast.scdn.co
+audio4-ak.spotifycdn.com
+pickasso.spotifycdn.com
+mosaic.scdn.co
+audio-fa.scdn.co
