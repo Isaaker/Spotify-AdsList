@@ -30,7 +30,7 @@ I also recommend you to complement the list with some standard lists of ad domai
 
 **[Learn more about Spotify Ads List](https://spotify.piscinadeentropia.es)**
 
-**[Now if you have questions you can ask throught Discussions 💬](https://github.com/Isaaker/Spotify-AdsList/discussions)**
+**[Now if you have questions you can ask through Discussions 💬](https://github.com/Isaaker/Spotify-AdsList/discussions)**
 
 ## Installation
 
