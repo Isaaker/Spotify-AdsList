@@ -36,7 +36,7 @@ License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt
 
 **For further info see: [#61](https://github.com/Isaaker/Spotify-AdsList/issues/61) [#68](https://github.com/Isaaker/Spotify-AdsList/issues/68)**
 
-``
+```
 gew1-spclient.spotify.com/melody
 gew1-spclient.spotify.com/connect-state
 gew1-spclient.spotify.com/melody
@@ -45,8 +45,8 @@ gew1-spclient.spotify.com/gabo-receiver-service
 gew1-spclient.spotify.com/track-playback
 api.spotify.com^$xhr
 gew1-spclient.spotify.com/storage-resolve
-gew1-spclient.spotify.com/widevine-licens`
-``
+gew1-spclient.spotify.com/widevine-license
+```
 
 ## Plain List
 
