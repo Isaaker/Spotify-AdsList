@@ -1,10 +1,10 @@
 #######################################################################################
 ##### Spotify Ads Blacklist                                                        ####
 ##### Created by: Isaaker                                                          ####
-##### Updated: 2025-07-02 (GMT)                                                    ####
+##### Updated: 2025-08-09 (GMT)                                                    ####
 #######################################################################################
 ##### Version: Adguard                                                             ####
-##### Number of domains: 155472                                                      ####
+##### Number of domains: 155462                                                      ####
 #######################################################################################
 ##### Read more: https://github.com/Isaaker/Spotify-AdsList                        ####
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
@@ -36746,7 +36746,6 @@
 ||anycast.ci.adsafeprotected.com^
 ||anycast.dt.adsafeprotected.com^
 ||anycast.fw.adsafeprotected.com^
-||anycast.pixel.adsafeprotected.^
 ||anycast.pixel.adsafeprotected.com^
 ||anycast.pm.adsafeprotected.com^
 ||anycast.popads.net^
@@ -40723,7 +40722,6 @@
 ||b.recwwcc5.info^
 ||b.rmgserving.com^
 ||b.sc.omtrdc.net^
-||b.scorecardresearch.^
 ||b.scorecardresearch.com^
 ||b.sell.com^
 ||b.sharethrough.com^
@@ -87130,7 +87128,6 @@
 ||lb02.casalemedia.com^
 ||lb03.casalemedia.com^
 ||lb04.casalemedia.com^
-||lb1-217593028.us-east-1.elb.am^
 ||lb1-217593028.us-east-1.elb.amazonaws.com^
 ||lb1.adriver.ru^
 ||lb1.www.ms.akadns.net^
@@ -92077,7 +92074,6 @@
 ||media-playerz.com^
 ||media-rep.com^
 ||media-reports.bluekai.com^
-||media-router-flurry7.prod.medi^
 ||media-router-flurry7.prod.media.wg1.b.yahoo.com^
 ||media-servers.net^
 ||media-serving.com^
@@ -108527,7 +108523,6 @@
 ||pub8.bravenet.com^
 ||pub9.bravenet.com^
 ||pubaccess.advertising.com^
-||pubads.g.doubleclick.^
 ||pubads.g.doubleclick.net^
 ||pubconsole.media.net^
 ||pubcpm.com^
@@ -111520,7 +111515,6 @@
 ||redirectnative.com^
 ||redirectoptimizer.com^
 ||redirector.c.googlesyndication.com^
-||redirector.gvt1.^
 ||redirector.gvt1.com^
 ||redirector.themobilehub.net^
 ||redirector.whosthat.mobi^
@@ -113252,7 +113246,6 @@
 ||rp-a8051c31.crazyegg.com^
 ||rp-df3fb24c.crazyegg.com^
 ||rp-f5ddba66.crazyegg.com^
-||rp-lb-766892831.us-east-1.elb.^
 ||rp-lb-766892831.us-east-1.elb.amazonaws.com^
 ||rp-online.met.vgwort.de^
 ||rp-rep.net^
@@ -114532,7 +114525,6 @@
 ||s.zkcdn.net^
 ||s.zsxpx.com^
 ||s0-2mdn-net.l.google.com^
-||s0.2mdn.^
 ||s0.2mdn.net^
 ||s0.doubleclick.net^
 ||s0.img.awempire.com^
@@ -116738,7 +116730,6 @@
 ||seekinstantly.com^
 ||seemlessfixing.tech^
 ||seemybucks.com^
-||seen-on-screen.thewhizmarketin^
 ||seen-on-screen.thewhizmarketing.com^
 ||seeq.com^
 ||seesaa.jp^
@@ -135934,7 +135925,6 @@
 ||viddirect.ru^
 ||videc10.com^
 ||vidego.multicastmedia.com^
-||video-ad-stats.googlesyndicati^
 ||video-ad-stats.googlesyndication.com^
 ||video-ads-apex.rubiconproject.com^
 ||video-ads.rubiconproject.com^
