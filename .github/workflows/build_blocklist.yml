@@ -41,10 +41,10 @@ jobs:
          BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
       
       # Remove the duplicated Blocklist domains from whitelist
-      - name: Remove whitelist domains
-        run: python3 ${{ github.WORKSPACE }}/${{ steps.extract_branch.outputs.branch }}/scripts/check_whitelist.py
-        env:
-         BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
+#      - name: Remove whitelist domains
+#        run: python3 ${{ github.WORKSPACE }}/${{ steps.extract_branch.outputs.branch }}/scripts/check_whitelist.py
+#        env:
+#         BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
 
       # Remove the duplicated Blocklist domains from whitelist
       - name: Remove whitelist domains
