@@ -30,6 +30,8 @@ I also recommend you to complement the list with some standard lists of ad domai
 
 **[Learn more about Spotify Ads List](https://spotify.piscinadeentropia.es)**
 
+**[Now if you have questions you can ask through Discussions 💬](https://github.com/Isaaker/Spotify-AdsList/discussions)**
+
 ## Installation
 
 **To install, please [read our installation tutorial](https://spotify.piscinadeentropia.es/installation)**
@@ -40,13 +42,13 @@ The list is highly compatible, so here are the different versions so that you ca
 
 **💡 Suggestion: To download the files use curl, wget... and the Raw URL**
  
-| Name | Compatibility | Raw URL | File |
-| -- | -- | -- | -- |
-| Standard | Highly compatible, no particular system | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/standard_list.txt | https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/standard_list.txt
-| Pi-hole | Compatible with pi-hole and other systems that do not require anything other than domains | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/pi-hole.txt | https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/pi-hole.txt
-| Dnsmasq | Compatible with dnsmasq | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/dnsmasq.txt | https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/dnsmasq.txt
-| Adguard | Compatible with adguard & uBlock Origin | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/adguard.txt | https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/adguard.txt
-| ABP | Compatible with AdBlock Plus | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/abp.txt | https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/abp.txt
+| Name | Compatibility | Raw URL | Raw URL+ADS | File |
+| -- | -- | -- | -- | -- |
+| Standard | Highly compatible, no particular system | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/standard_list.txt | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/standard_list-mixed.txt | https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/standard_list.txt |
+| Pi-hole | Compatible with pi-hole and other systems that do not require anything other than domains | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/pi-hole.txt | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/pi-hole-mixed.txt | https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/pi-hole.txt |
+| Dnsmasq | Compatible with dnsmasq | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/dnsmasq.txt | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/dnsmasq-mixed.txt | https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/dnsmasq.txt |
+| Adguard | Compatible with adguard & uBlock Origin | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/adguard.txt | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/adguard-mixed.txt | https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/adguard.txt |
+| ABP | Compatible with AdBlock Plus | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/abp.txt | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/abp-mixed.txt | https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/abp.txt |
 
 **To suscribe with uBlock Origin read the installation documentation -> [Add to uBlock](https://spotify.piscinadeentropia.es/installation)**
 

@@ -2,6 +2,8 @@
 
 Here you can find some frequently asked questions and answers about our blocklist.
 
+**[Now if you have questions you can ask through Discussions 💬](https://github.com/Isaaker/Spotify-AdsList/discussions)**
+
 ## Why do black spaces continue to appear where the advertisements were before?
 
 !!! question "Answer"
