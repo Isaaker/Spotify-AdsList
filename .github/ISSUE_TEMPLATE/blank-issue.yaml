@@ -27,7 +27,7 @@ body:
           required: true
         - label: I agree to follow this project's Code of Conduct
           required: true
-        - label: I read the avaible Documentation
+        - label: I read the available Documentation
           required: true
         - label: I have checked that there is no issue on the same subject
           required: true

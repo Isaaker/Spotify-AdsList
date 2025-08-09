@@ -20,10 +20,8 @@ scdnco.spotify.map.fastly.net3f.audio-ak.cdn.spotify.com
 www.mycomscore.net
 heads-fab.spotify.com
 ac.audio-ak.cdn.spotify.com
-s0.2mdn.
 8b.audio-ak.cdn.spotify.com
 3a.audio-ak.cdn.spotify.com
-pubads.g.doubleclick.
 a1051.dscw154.akamai.net
 api-tv-canary.wg.spotify.com
 ui.cp.tune.com
@@ -149,7 +147,6 @@ artist-identity-image.spotify.com
 v3.moatads.com
 46.audio-ak.cdn.spotify.com
 login.spotify.com
-lb1-217593028.us-east-1.elb.am
 b6.audio-ak.cdn.spotify.com
 oktascimserver.spotify.com
 axp.spotify.com
@@ -168,7 +165,6 @@ c2.audio-ak.cdn.spotify.com
 eb.audio-ak.cdn.spotify.com
 sb.scorecardresearch.com
 andromache.ash.spotify.com
-media-router-flurry7.prod.medi
 zhcn.admob.com
 9c.audio-ak.cdn.spotify.com
 secure-gg.imrworldwide.com
@@ -257,7 +253,6 @@ spclient-canary.wg.spotify.com
 13.audio-ak.cdn.spotify.com
 gew4-spclient.spotify.com
 a1294.w20.akamai.net
-redirector.gvt1.
 partnerportal.spotify.com
 e6.audio-ak.cdn.spotify.com
 anemone.ash.spotify.com
@@ -307,7 +302,6 @@ labs.spotify.com
 admob.tk
 c8.audio-ak.cdn.spotify.com
 www1.vip.sc9.admob.com
-anycast.pixel.adsafeprotected.
 f2.audio-ak.cdn.spotify.com
 kenyatta.ash.spotify.com
 f5.video-ak.cdn.spotify.com
@@ -327,7 +321,6 @@ thisis-images.scdn.co
 56.audio-ak.cdn.spotify.com
 a297.c.akamai.net
 ap-gew4.spotify.com
-b.scorecardresearch.
 bc.audio-ak.cdn.spotify.com
 9b.audio-ak.cdn.spotify.com
 fs.moatads.com
@@ -549,7 +542,6 @@ speech-recognition.spotify.com
 77.video-ak.cdn.spotify.com
 7c.audio-ak.cdn.spotify.com
 staging-newsroom.spotify.com
-video-ad-stats.googlesyndicati
 logtest.moatads.com
 a6.audio-ak.cdn.spotify.com
 clk1.vip.sc9.admob.com
@@ -586,7 +578,6 @@ lb-wg.dual-gslb.spotify.com
 wendy.admob.com
 smtp2.admob.com
 90.audio-ak.cdn.spotify.com
-seen-on-screen.thewhizmarketin
 lb1-217593028.us-east-1.elb.amazonaws.com
 81.audio-ak.cdn.spotify.com
 admetrix.comscore.com
@@ -962,7 +953,6 @@ ash2-idp-a2.ash2.spotify.com
 19.audio-ak.cdn.spotify.com
 region1.app-measurement.com
 1d.video-ak.cdn.spotify.com
-rp-lb-766892831.us-east-1.elb.
 eb.video-ak.cdn.spotify.com
 26.audio-ak.cdn.spotify.com
 samatha.ash.spotify.com
@@ -1125,7 +1115,7 @@ nieves.ash.spotify.com
 8c.video-ak.cdn.spotify.com
 72.video-ak.cdn.spotify.com
 sap.spotify.com
-adclick.g.doublecklick.net
+adclick.g.doubleclick.net
 7a.audio-ak.cdn.spotify.com
 u.admob.com
 y.admob.com

@@ -39,6 +39,12 @@ jobs:
         run: python3 ${{ github.WORKSPACE }}/${{ steps.extract_branch.outputs.branch }}/scripts/remove_duplicated.py
         env:
          BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
+      
+      # Check domains validity
+      - name: Check domains validity
+        run: python3 ${{ github.WORKSPACE }}/${{ steps.extract_branch.outputs.branch }}/scripts/check_domains.py
+        env:
+         BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
 
       # Run the Blocklist converter
       - name: Build blocklist
