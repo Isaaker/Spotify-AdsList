@@ -16,9 +16,8 @@ print ("License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.tx
 
 import os
 import requests
-import subprocess
 
-result = subprocess.run(["pwd"], capture_output=True, text=True)
+result = os.getcwd()
 current_directory = result.stdout.strip()
 
 if "/home/runner/" in current_directory:
@@ -38,7 +37,7 @@ else:
 
 print("Downloading default blocklist...")
 default_blocklist_url = "https://blocklistproject.github.io/Lists/alt-version/ads-nl.txt"
-response = requests.get(default_blocklist_url)
+response = requests.get(default_blocklist_url, timeout=10)
 
 if response.status_code == 200:
     with open(default_blocklist, 'wb') as default_blocklist_write:
