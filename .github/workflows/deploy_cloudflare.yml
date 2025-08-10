@@ -1,4 +1,5 @@
 name: MkDocs Deploy Cloudflare
+permissions: read-all
 
 on:
   workflow_dispatch:
