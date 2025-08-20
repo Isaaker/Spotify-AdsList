@@ -6,7 +6,7 @@ Revised: 28/6/25
 
 Version: WHITELIST
 
-Number of domains: 11
+Number of domains: 14
 
 Read more: https://github.com/Isaaker/Spotify-AdsList
 
@@ -31,6 +31,7 @@ License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt
 | audio4-ak.spotifycdn.com | Problems with audio on Linux |
 | pickasso.spotifycdn.com | This domains provides Covers, banners and images from the music and playlists | Missing images |
 | mosaic.scdn.co | This domains provides Covers, banners and images from the music and playlists | Missing images |
+| gew4-spclient.spotify.com | Nest devices casting | Problems to cast to Nest devices |
 
 ## Specific paths for gew1-spclient.spotify.com
 
@@ -63,3 +64,6 @@ gew1-spclient.spotify.com/widevine-license
 - audio4-ak.spotifycdn.com
 - pickasso.spotifycdn.com
 - mosaic.scdn.co
+- gew4-spclient.spotify.com
+
+** Please remember to include also the domains mentioned in the Specific paths for gew1-spclient.spotify.com above**
