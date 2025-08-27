@@ -1,5 +1,5 @@
 # This script copy the domains to the different adblock formats
-print ("""
+print (r"""
    _____             __  _ ____         ___       __        __    _      __ 
   / ___/____  ____  / /_(_) __/_  __   /   | ____/ /____   / /   (_)____/ /_
   \__ \/ __ \/ __ \/ __/ / /_/ / / /  / /| |/ __  / ___/  / /   / / ___/ __/

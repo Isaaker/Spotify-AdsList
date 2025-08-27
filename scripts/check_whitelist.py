@@ -1,7 +1,7 @@
 # This script checks if the domains of the blocklist match the domains of the whitelist
 
 
-print ("""
+print (r"""
    _____             __  _ ____         ___       __        __    _      __ 
   / ___/____  ____  / /_(_) __/_  __   /   | ____/ /____   / /   (_)____/ /_
   \__ \/ __ \/ __ \/ __/ / /_/ / / /  / /| |/ __  / ___/  / /   / / ___/ __/

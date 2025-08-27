@@ -1,10 +1,6 @@
 # This script adds a default blocklist to the actual one with generic ad domains
 
-
-### DOES NOT WORK - STILL UNDER DEVELOPMENT ###
-
-
-print ("""
+print (r"""
    _____             __  _ ____         ___       __        __    _      __ 
   / ___/____  ____  / /_(_) __/_  __   /   | ____/ /____   / /   (_)____/ /_
   \__ \/ __ \/ __ \/ __/ / /_/ / / /  / /| |/ __  / ___/  / /   / / ___/ __/
@@ -20,16 +16,11 @@ import requests
 result = os.getcwd()
 current_directory = result.stdout.strip()
 
-if "/home/runner/" in current_directory:
-    workspace = os.environ.get('GITHUB_WORKSPACE')
-    branch = os.environ.get('BRANCH_NAME')
-    file = f"{workspace}/{branch}/Lists/BLACKLIST-mixed.txt"
-    blocklist = f"{workspace}/{branch}/Lists/BLACKLIST.txt"
-    default_blocklist = f"{workspace}/{branch}/Lists/default_ad_blocklist.txt"
-else:
-    file = f"{current_directory}/Lists/BLACKLIST-mixed.txt"
-    blocklist = f"{current_directory}/Lists/BLACKLIST.txt"
-    default_blocklist = f"{current_directory}/Lists/default_ad_blocklist.txt"
+workspace = os.environ.get('GITHUB_WORKSPACE')
+branch = os.environ.get('BRANCH_NAME')
+file = f"{workspace}/{branch}/Lists/BLACKLIST-mixed.txt"
+blocklist = f"{workspace}/{branch}/Lists/BLACKLIST.txt"
+default_blocklist = f"{workspace}/{branch}/Lists/default_ad_blocklist.txt"
 
 
 # Download ads default list from The Blocklist Project
