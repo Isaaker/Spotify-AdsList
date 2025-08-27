@@ -1,10 +1,6 @@
 # This script adds a default blocklist to the actual one with generic ad domains
 
-
-### DOES NOT WORK - STILL UNDER DEVELOPMENT ###
-
-
-print ("""
+print (r"""
    _____             __  _ ____         ___       __        __    _      __ 
   / ___/____  ____  / /_(_) __/_  __   /   | ____/ /____   / /   (_)____/ /_
   \__ \/ __ \/ __ \/ __/ / /_/ / / /  / /| |/ __  / ___/  / /   / / ___/ __/
@@ -16,9 +12,6 @@ print ("License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.tx
 
 import os
 import requests
-
-result = os.getcwd()
-current_directory = result.stdout.strip()
 
 workspace = os.environ.get('GITHUB_WORKSPACE')
 branch = os.environ.get('BRANCH_NAME')
