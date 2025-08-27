@@ -13,9 +13,6 @@ print ("License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.tx
 import os
 import requests
 
-result = os.getcwd()
-current_directory = result.stdout.strip()
-
 workspace = os.environ.get('GITHUB_WORKSPACE')
 branch = os.environ.get('BRANCH_NAME')
 file = f"{workspace}/{branch}/Lists/BLACKLIST-mixed.txt"
