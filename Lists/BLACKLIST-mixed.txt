@@ -39866,6 +39866,7 @@ audio-akp-spotify-com.akamaized.net
 audio-akp.spotify.com
 audio-akp.spotify.com.edgesuite.net
 audio-cf.spotify.com
+audio-cf.spotifycdn.com
 audio-ec.spotify.com
 audio-fa.spotify.com
 audio-fab.spotify.com
