@@ -1235,3 +1235,4 @@ mmv.admob.com
 aa.audio-ak.cdn.spotify.com
 audio-akp-bbr-spotify-com.akamaized.net
 bid.g.doubleclick.net
+audio-cf.spotifycdn.com
