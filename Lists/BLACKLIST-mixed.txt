@@ -9701,7 +9701,6 @@ a174.casalemedia.com
 a1740.casalemedia.com
 a1741.casalemedia.com
 a17424.actonsoftware.com
-a1744.dscw154.akamai.net
 a175.casalemedia.com
 a176.casalemedia.com
 a1760.casalemedia.com
@@ -63686,7 +63685,6 @@ e111-6f5c-dbab-bb5d.reporo.net
 e111.yt.srs.doubleverify.com
 e11100.g.akamaiedge.net
 e112.yt.srs.doubleverify.com
-e11408.d.akamaiedge.net
 e1151.e12.akamaiedge.net
 e1174.ksd.akamaiedge.net
 e12919.dscd.akamaiedge.net
