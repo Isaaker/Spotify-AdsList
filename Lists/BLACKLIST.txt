@@ -292,7 +292,6 @@ intercom.io
 b5.video-ak.cdn.spotify.com
 eip-onnet.audio-ak.spotify.com.akahost.net
 70.video-ak.cdn.spotify.com
-e11408.d.akamaiedge.net
 gew1-accesspoint-b-wfcl.ap.spotify.com
 support.tune.com
 bs.serving-sys.com
@@ -501,7 +500,6 @@ heads-ak.spotify.com.edgesuite.net
 ib.adnxs.com
 d361oi6ppvq2ym.cloudfront.net
 rp-lb-766892831.us-east-1.elb.amazonaws.com
-a1744.dscw154.akamai.net
 stage.tune.com
 heads-cf.spotify.com
 dbg52463.moatads.com
