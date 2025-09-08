@@ -34,7 +34,7 @@ jobs:
 
       # Install python
       - name: Install Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
 
       # Remove the duplicated Blocklist domains
       - name: Remove duplicated domains
