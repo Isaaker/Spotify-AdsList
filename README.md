@@ -84,7 +84,7 @@ Here you can find all the tests made, their date and more details.
 **If you have tested the list, please create a issue with type "Testing" to add more tested devices. [Add new tested device](https://github.com/Isaaker/Spotify-AdsList/issues/new?assignees=&labels=Testing&projects=&template=testing.yml&title=New+Testing+Device%3A+%5BDevice+Name%5D+%2F+%5BDevice+OS%26Version%5D)**
 
 ## License
-The code is under **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International**, view the [license here](https://spotify.piscinadeentropia.es/license)
+The code is under **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International**, view the [license here](https://spotify.piscinadeentropia.es/docs_license/)
 
 You are free to:
 
