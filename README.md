@@ -84,9 +84,20 @@ Here you can find all the tests made, their date and more details.
 **If you have tested the list, please create a issue with type "Testing" to add more tested devices. [Add new tested device](https://github.com/Isaaker/Spotify-AdsList/issues/new?assignees=&labels=Testing&projects=&template=testing.yml&title=New+Testing+Device%3A+%5BDevice+Name%5D+%2F+%5BDevice+OS%26Version%5D)**
 
 ## License
-The code is under **Creative Commons Attribution-ShareAlike 4.0 International Public License**, view the [license here](https://spotify.piscinadeentropia.es/license)
+The code is under **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International**, view the [license here](https://spotify.piscinadeentropia.es/license)
 
-![Creative Commons Attribution-ShareAlike 4.0 International Public License Logo](https://github.com/Isaaker/Spotify-AdsList/raw/main/docs/images/License-Image.jpeg)
+You are free to:
+
+- **Share** — copy and redistribute the material in any medium or format.  
+  The licensor cannot revoke these freedoms as long as you follow the license terms.
+
+Under the following terms:
+
+- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+- **NonCommercial** — You may not use the material for commercial purposes.
+- **NoDerivatives** — If you remix, transform, or build upon the material, you may not distribute the modified material.
+- **No additional restrictions** — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
 
 ## Contributing
 
