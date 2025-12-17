@@ -74,7 +74,7 @@ To add Spotify Ads List to your adblocker you will need to make use of a raw fil
 # Standard adblockers
 
 | Adblocker | Raw URL | ADS+Spotify Raw URL |
-| -- | -- |
+| -- | -- | -- |
 | Standard | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/standard_list.txt | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/standard_list-mixed.txt |
 | Pi-hole | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/pi-hole.txt | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/pi-hole-mixed.txt |
 | Dnsmasq | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/dnsmasq.txt | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/dnsmasq-mixed.txt |
