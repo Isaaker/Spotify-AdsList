@@ -11,12 +11,14 @@ To install Spotify Ads List you can follow this steps:
 Spotify Ads List is compatible with all major ad blockers, both open-source and paid.
 
 The currently supported adblockers are:
+
 * Standard (Compatible with multiple adblockers and can also be used with the hosts file.)
 * [Pi-Hole](https://pi-hole.net)
 * [Dnsmasq](https://dnsmasq.org/doc.html)
 * [Adguard](https://adguard.com/es/welcome.html)
 * [uBlock Origin](https://ublockorigin.com)
 * [AdBlock Plus](https://adblockplus.org)
+* [DNSNet](https://github.com/t895/DNSNet)
 
 !!! tip
     Being a simple and very backward compatible list, if your adblocker is not included above, you can ask us to include it and if necessary to generate a custom list layout for it.
@@ -34,7 +36,8 @@ Here is a table to find the right format for your adblcoker:
 | Adguard | Adguard |
 | uBlock Origin | Adguard |
 | Standard (with hosts file or adblockers that supports 0.0.0.0 entry) | Standard |
-| AdBlockPlus (ABP) | ABP|
+| AdBlockPlus (ABP) | ABP |
+| DNSNet | Standard |
 
 !!! tip
     Being a simple and very backward compatible list, if your adblocker is not included above, you can ask us to include it and if necessary to generate a custom list layout for it.
@@ -55,6 +58,7 @@ Below, you can find a series of basic guides on how to install and use your adbl
 * [Adguard](https://adguard.com/kb/general/how-to-install/)
 * [uBlock Origin](https://github.com/gorhill/uBlock?tab=readme-ov-file#installation)
 * [AdBlockPlus (ABP)](https://help.adblockplus.org/hc/en-us/articles/1500002320801-How-to-download-and-install-Adblock-Plus)
+* [DNSNet](https://github.com/t895/DNSNet)
 
 ### Setup Spotify
 
@@ -69,12 +73,12 @@ To add Spotify Ads List to your adblocker you will need to make use of a raw fil
 
 # Standard adblockers
 
-| Adblocker | Raw URL
+| Adblocker | Raw URL | ADS+Spotify Raw URL |
 | -- | -- |
-| Standard | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/standard_list.txt |
-| Pi-hole | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/pi-hole.txt |
-| Dnsmasq | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/dnsmasq.txt |
-| Adguard | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/adguard.txt |
+| Standard | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/standard_list.txt | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/standard_list-mixed.txt |
+| Pi-hole | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/pi-hole.txt | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/pi-hole-mixed.txt |
+| Dnsmasq | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/dnsmasq.txt | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/dnsmasq-mixed.txt |
+| Adguard | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/adguard.txt | https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/abp-mixed.txt |
 
 !!! question "How can I do this?"
     You can find more help about how to add this on this links:
@@ -85,6 +89,9 @@ To add Spotify Ads List to your adblocker you will need to make use of a raw fil
     | Pi-hole | Not official documentation for this, go to the Web UI, in the left bar click on "Adlists", enter the raw url and click "Add" |
     | Dnsmasq | There is not much official documentation, perhaps [this will help](https://dnsmasq.org/docs/dnsmasq-man.html) |
     | Adguard | [Read this](https://adguard.com/kb/) |
+
+!!! question "What is the difference between RAW URL and ADS+Spotify Raw URL?"
+    The first is designed solely to block Spotify adverts, while the second combines our block list with a generic one to enhance the blocking experience.
 
 ### Browser adblockers
 

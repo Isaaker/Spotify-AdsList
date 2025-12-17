@@ -20,3 +20,25 @@ Here you can find some frequently asked questions and answers about our blocklis
 
 !!! question "Answer"
     Although this list is safe and cannot damage your Spotify or your computer in any way. Sometimes Spotify may take a little bit longer to load or have some weird behavior, because the application is actually trying to continuously contact some ad domains, tracking, which are usually constantly changing to find unblocked domains. And this can sometimes change the behavior of the application a little bit.
+
+# Popup ads are displayed
+
+!!! question "Answer"
+    Our block lists should block all third parties; however, as mentioned above, Spotify Premium banners and empty banners may still be displayed, as they are part of the Spotify application's own code and cannot be removed.
+
+# Popup ads are displayed
+
+!!! question "Answer"
+    Our block lists should block all third parties; however, as mentioned above, Spotify Premium banners and empty banners may still be displayed, as they are part of the Spotify application's own code and cannot be removed.
+
+# Some ads are being played
+
+!!! question "Answer"
+    Our list is constantly changing because Spotify continuously removes and adds domains. If you hear or see any advertisements, please do not hesitate to open an issue so we can investigate the case.
+
+[Open a new issue](https://github.com/Isaaker/Spotify-AdsList/issues/new/choose)
+
+# I don't get Spotify Premium features
+
+!!! question "Answer"
+    This tool doesn't give premium features, just blocks Spotify Ads.

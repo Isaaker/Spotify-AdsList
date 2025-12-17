@@ -7,7 +7,7 @@
 |Name|Type|Status|
 |--|--|--|
 |Build Blocklist|Build|[![Build Blocklist](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/build_blocklist.yml/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/build_blocklist.yml)|
-|Deploy Mkdocs|Deploy|[![Deploy Mkdocs](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/deploy_gh-pages.yml/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/deploy_gh-pages.yml)
+|Deploy Mkdocs|Deploy|[![MkDocs Deploy Cloudflare](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/deploy_cloudflare.yml/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/deploy_cloudflare.yml)|
 |SAST GitLeaks|Security|[![SAST GitLeaks](https://github.com/Isaaker/piscinadeentropia/actions/workflows/sast-gitleaks.yml/badge.svg)](https://github.com/Isaaker/piscinadeentropia/actions/workflows/sast-gitleaks.yml)|
 |SAST Semgrep|Security|[![SAST Semgrep](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml)|
 
@@ -80,6 +80,7 @@ Here you can find all the tests made, their date and more details.
 | App | Windows Laptop | Windows 11 (10.0.22631) | - | 26/6/24 | ![Static Badge](https://img.shields.io/badge/Status-ERROR-red?logo=spotify) | pihole | @MW-SAND |
 | Web App | Windows Computer | Windows (22H2 19045.4170) | Chrome (126.0.6478.127 (64 bits)) | 29/6/24 | ![Static Badge](https://img.shields.io/badge/Status-ERROR-red?logo=spotify) | ublock origin | @AlkBek |
 | App | Desktop | Manjaro Zetar 25.0.10 | - | 03/11/2025 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | Adguard | @Dashboy1998 |
+| App | 1+9 Pro | Android 14 | - | 10/12/2025 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | Standard (DNSNet) | @BedBug2479 |
 
 **If you have tested the list, please create a issue with type "Testing" to add more tested devices. [Add new tested device](https://github.com/Isaaker/Spotify-AdsList/issues/new?assignees=&labels=Testing&projects=&template=testing.yml&title=New+Testing+Device%3A+%5BDevice+Name%5D+%2F+%5BDevice+OS%26Version%5D)**
 
