@@ -2,6 +2,22 @@
 
 ![Spotify Block Tutorial Logo](./images/tutorial.gif)
 
+<a href="https://spotify.piscinadeentropia.es/docs_interactive_install" style="text-decoration: none; display: block;">
+<div style="background-color: #1DB954; border-radius: 12px; padding: 20px; display: flex; align-items: center; color: white; font-family: sans-serif; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+<!-- Logo de Spotify -->
+<div style="margin-right: 20px;">
+<svg viewBox="0 0 167.5 167.5" width="60" height="60" fill="white" xmlns="http://www.w3.org/2000/svg">
+<path d="M83.7 0C37.5 0 0 37.5 0 83.7c0 46.3 37.5 83.7 83.7 83.7 46.3 0 83.7-37.5 83.7-83.7S130 0 83.7 0zm38.4 120.7c-1.5 2.5-4.8 3.3-7.3 1.8-15.8-9.7-35.6-11.8-59-6.5-2.8.6-5.7-1.1-6.3-4-.6-2.8 1.1-5.7 4-6.3 25.6-5.8 47.5-3.3 65.2 7.5 2.4 1.5 3.2 4.8 1.4 7.5zm10.2-22.8c-1.9 3-5.8 4-8.8 2.1-18.1-11.1-45.6-14.3-66.9-7.8-3.4 1-7-1-8-4.4s1-7 4.4-8c24.4-7.4 54.8-3.8 75.3 8.8 3.1 1.9 4 5.8 2 9.3zm.9-23.8C108.9 59 69.3 57.7 46.1 64.7c-3.7 1.1-7.7-1-8.8-4.7-1.1-3.7 1-7.7 4.7-8.8 26.7-8.1 70.3-6.6 98.6 10.2 3.3 2 4.4 6.3 2.4 9.6-1.9 3.3-6.2 4.4-9.5 2.4z"/>
+</svg>
+</div>
+<!-- Texto -->
+<div>
+<div style="font-size: 24px; font-weight: 900; line-height: 1;">Installation wizard</div>
+<div style="font-size: 14px; opacity: 0.8; margin-top: 4px;">Click here to start →</div>
+</div>
+</div>
+</a>
+
 Spotify Ads List is quick and easy to install, all you need is a compatible adblocker, an internet connection and the Spotify website or app.
 
 To install Spotify Ads List you can follow this steps:
