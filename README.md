@@ -8,8 +8,14 @@
 |--|--|--|
 |Build Blocklist|Build|[![Build Blocklist](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/build_blocklist.yml/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/build_blocklist.yml)|
 |Deploy Mkdocs|Deploy|[![MkDocs Deploy Cloudflare](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/deploy_cloudflare.yml/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/deploy_cloudflare.yml)|
-|SAST GitLeaks|Security|[![SAST GitLeaks](https://github.com/Isaaker/piscinadeentropia/actions/workflows/sast-gitleaks.yml/badge.svg)](https://github.com/Isaaker/piscinadeentropia/actions/workflows/sast-gitleaks.yml)|
-|SAST Semgrep|Security|[![SAST Semgrep](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml)|
+|SAST GitLeaks|Security|[![SAST GitLeaks](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/sast-gitleaks.yml/badge.svg)](https://github.com/Isaaker/piscinadeentropia/actions/workflows/sast-gitleaks.yml)|
+|SAST Semgrep|Security|[![SAST Semgrep](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/sast-semgrep.yml/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/sast-semgrep.yml)|
+|Dependabot|Security|[![Dependabot Updates](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/dependabot/dependabot-updates)|
+|CodeQL|Security|[![CodeQL Advanced](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/codeql.yml/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/codeql.yml)|
+|Bandit|Security|[![Bandit](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/bandit.yml/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/bandit.yml)|
+|Automatic Dependency Submission|Security|[![Automatic Dependency Submission](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/dependency-graph/auto-submission/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/dependency-graph/auto-submission)|
+| Mark stale issues and pull requests | Repo Managament |[![Mark stale issues and pull requests](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/stale.yml/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/stale.yml)|
+|Summarize new issues|Repo Managament|[![Summarize new issues](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/summary.yml/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/summary.yml)|
 
 ## About
 
