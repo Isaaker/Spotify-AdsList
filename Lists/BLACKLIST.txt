@@ -736,7 +736,6 @@ pl.scdn.co
 7e.audio-ak.cdn.spotify.com
 ea.audio-ak.cdn.spotify.com
 hrblog.spotify.com
-spotify.map.fastly.net
 terraform-modules-test.intercom.io
 v.jwpcdn.com
 cd.audio-ak.cdn.spotify.com
