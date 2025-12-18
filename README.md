@@ -34,7 +34,10 @@ I also recommend you to complement the list with some standard lists of ad domai
 
 ## Installation
 
-**To install, please [read our installation tutorial](https://spotify.piscinadeentropia.es/installation)**
+<a href="https://spotify.piscinadeentropia.es/docs_interactive_install"><img src="https://github.com/user-attachments/assets/09664079-daee-4abd-a58b-3283b978ce92"></img></a>
+
+
+**To install, you can also [read our installation tutorial](https://spotify.piscinadeentropia.es/installation)**
 
 ## List Versions
 
