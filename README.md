@@ -72,8 +72,7 @@ Here you can find all the tests made, their date and more details.
 | -- | -- | -- | -- | -- | -- | -- | -- |
 | Web App | Mac | MacOS (14.2.1) | Safari (17.2.1) | 27/1/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | pihole | @isaaker |
 | Web App | Mac | MacOS (14.2.1) | Firefox (122.0) | 27/1/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | pihole | @isaaker |
-| Web App | Virtual Machine| Debian 12 | Firefox ESR (115.3.0esr)| 27/1/24 | ![Static Badge](https://img.shields.io/badge/Status-ERROR-red?logo=spotify) | pihole | @isaaker |
-| Web App | Virtual Machine | Debian 12 | Chromium (121.0.6167.85)| 27/1/24 | ![Static Badge](https://img.shields.io/badge/Status-ERROR-red?logo=spotify) | pihole | @isaaker |
+| App | Virtual Machine| Debian 13 | - | 18/12/25 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | adguard | @isaaker |
 | App | Mac | MacOS (14.5) | - | 4/7/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | pihole | @isaaker |
 | App | iPhone | iOS (17.5.1) | - | 4/7/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | pihole | @isaaker |
 | App | Google Pixel 4a | Android 13 | - | 20/4/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | adguard | @mfjt |
