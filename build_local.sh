@@ -62,14 +62,6 @@ if [ ! -d "$SPOTIFY_ADS_DIR" ]; then
 fi
 info "Using current directory as project directory: $SPOTIFY_ADS_DIR"
 
-# Look for Python scripts at repo root (not deeper)
-PY_SCRIPTS_COUNT=$(find "$SPOTIFY_ADS_DIR" -maxdepth 1 -type f -name "*.py" 2>/dev/null | wc -l || true)
-if [ "$PY_SCRIPTS_COUNT" -eq 0 ]; then
-  warn "No .py files found at repository root ($SPOTIFY_ADS_DIR). Check if scripts are present in subdirectories."
-else
-  info "Found $PY_SCRIPTS_COUNT .py script(s) at repository root."
-fi
-
 # Check for common top-level files for this project
 check_topfile() {
   local f="$1"
@@ -104,50 +96,6 @@ else
 fi
 
 echo "Environment check completed."
-
-# Exit 0 if critical checks passed (we already exited on critical failures)
-exit 0
-
-echo "Verifying write permissions"
-
-# -------------------------
-# Check write permissions
-# -------------------------
-# Check if current working directory is writable
-CWD_OK=false
-if touch "./.__writable_test__" >/dev/null 2>&1; then
-  rm -f "./.__writable_test__"
-  CWD_OK=true
-fi
-
-# Check if SpotifyAdsList directory is writable
-SPOTIFY_DIR_OK=false
-if touch "$SPOTIFY_ADS_DIR/.__writable_test__" >/dev/null 2>&1; then
-  rm -f "$SPOTIFY_ADS_DIR/.__writable_test__"
-  SPOTIFY_DIR_OK=true
-fi
-
-# Permission results
-if $CWD_OK; then
-  info "Write permission in current directory: OK"
-else
-  warn "No write permission in current directory."
-fi
-
-if $SPOTIFY_DIR_OK; then
-  info "Write permission in $SPOTIFY_ADS_DIR: OK"
-else
-  warn "No write permission in $SPOTIFY_ADS_DIR. If the script needs to write there, adjust permissions (chmod/chown)."
-fi
-
-# If you want to enforce an output directory, uncomment/adjust:
-# OUT_DIR="${OUT_DIR:-$SPOTIFY_ADS_DIR/output}"
-# mkdir -p "$OUT_DIR"
-# if [ ! -w "$OUT_DIR" ]; then error "Cannot write to $OUT_DIR"; fi
-
-echo "Environment check completed successfully."
-# Exit 0 if critical checks passed (we already exited on critical failures)
-exit 0
 
 echo "---------------------------------------------"
 echo "Spotify Ads List build ready for running!"
