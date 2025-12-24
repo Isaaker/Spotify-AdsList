@@ -95,6 +95,16 @@ else
   warn "No write permission in current directory ($SPOTIFY_ADS_DIR). If the script needs to write files, adjust permissions (chmod/chown) or run as appropriate user."
 fi
 
+echo "Checking Python requests library..."
+
+if ! python3 -c "import requests" >/dev/null 2>&1; then
+  echo "ERROR: Python 'requests' library is not installed."
+  echo "Please install it using: pip3 install requests. Do not use requirements.txt, that would install other packages."
+  exit 1
+fi
+
+echo "Python 'requests' library is installed."
+
 echo "Environment check completed."
 
 echo "---------------------------------------------"
