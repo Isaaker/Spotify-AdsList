@@ -13,16 +13,17 @@ print ("License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.tx
 import os
 import requests
 
-try:
-    workspace = os.environ.get('GITHUB_WORKSPACE')
-    branch = os.environ.get('BRANCH_NAME')
-    file = f"{workspace}/{branch}/Lists/BLACKLIST-mixed.txt"
-    blocklist = f"{workspace}/{branch}/Lists/BLACKLIST.txt"
-    default_blocklist = f"{workspace}/{branch}/Lists/default_ad_blocklist.txt"
-except:
+
+workspace = os.environ.get('GITHUB_WORKSPACE')
+branch = os.environ.get('BRANCH_NAME')
+if workspace == None or branch == None:
     file = f"./Lists/BLACKLIST-mixed.txt"
     blocklist = f"./Lists/BLACKLIST.txt"
     default_blocklist = f"./Lists/default_ad_blocklist.txt"
+else:
+    file = f"{workspace}/{branch}/Lists/BLACKLIST-mixed.txt"
+    blocklist = f"{workspace}/{branch}/Lists/BLACKLIST.txt"
+    default_blocklist = f"{workspace}/{branch}/Lists/default_ad_blocklist.txt"
 
 # Download ads default list from The Blocklist Project
 

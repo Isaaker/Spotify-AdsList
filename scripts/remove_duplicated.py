@@ -10,12 +10,12 @@ print (r"""
 print ("License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt")
 
 import os
-try:
-    workspace = os.environ.get('GITHUB_WORKSPACE')
-    branch = os.environ.get('BRANCH_NAME')
-    file = f"{workspace}/{branch}/Lists/BLACKLIST.txt"
-except:
+workspace = os.environ.get('GITHUB_WORKSPACE')
+branch = os.environ.get('BRANCH_NAME')
+if workspace == None or branch == None:
     file = f"./Lists/BLACKLIST.txt"
+else:
+    file = f"{workspace}/{branch}/Lists/BLACKLIST.txt"
 
 # Open the file and generate a list with that
 
