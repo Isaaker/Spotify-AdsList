@@ -7,9 +7,15 @@
 |Name|Type|Status|
 |--|--|--|
 |Build Blocklist|Build|[![Build Blocklist](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/build_blocklist.yml/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/build_blocklist.yml)|
-|Deploy Mkdocs|Deploy|[![Deploy Mkdocs](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/deploy_gh-pages.yml/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/deploy_gh-pages.yml)
-|SAST GitLeaks|Security|[![SAST GitLeaks](https://github.com/Isaaker/piscinadeentropia/actions/workflows/sast-gitleaks.yml/badge.svg)](https://github.com/Isaaker/piscinadeentropia/actions/workflows/sast-gitleaks.yml)|
-|SAST Semgrep|Security|[![SAST Semgrep](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml)|
+|Deploy Mkdocs|Deploy|[![MkDocs Deploy Cloudflare](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/deploy_cloudflare.yml/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/deploy_cloudflare.yml)|
+|SAST GitLeaks|Security|[![SAST GitLeaks](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/sast-gitleaks.yml/badge.svg)](https://github.com/Isaaker/piscinadeentropia/actions/workflows/sast-gitleaks.yml)|
+|SAST Semgrep|Security|[![SAST Semgrep](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/sast-semgrep.yml/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/sast-semgrep.yml)|
+|Dependabot|Security|[![Dependabot Updates](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/dependabot/dependabot-updates)|
+|CodeQL|Security|[![CodeQL Advanced](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/codeql.yml/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/codeql.yml)|
+|Bandit|Security|[![Bandit](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/bandit.yml/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/bandit.yml)|
+|Automatic Dependency Submission|Security|[![Automatic Dependency Submission](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/dependency-graph/auto-submission/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/dependency-graph/auto-submission)|
+| Mark stale issues and pull requests | Repo Managament |[![Mark stale issues and pull requests](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/stale.yml/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/stale.yml)|
+|Summarize new issues|Repo Managament|[![Summarize new issues](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/summary.yml/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/summary.yml)|
 
 ## About
 
@@ -34,7 +40,10 @@ I also recommend you to complement the list with some standard lists of ad domai
 
 ## Installation
 
-**To install, please [read our installation tutorial](https://spotify.piscinadeentropia.es/installation)**
+<a href="https://spotify.piscinadeentropia.es/docs_interactive_install"><img src="https://github.com/user-attachments/assets/09664079-daee-4abd-a58b-3283b978ce92"></img></a>
+
+
+**To install, you can also [read our installation tutorial](https://spotify.piscinadeentropia.es/installation)**
 
 ## List Versions
 
@@ -59,7 +68,7 @@ The list is highly compatible, so here are the different versions so that you ca
 
 In order for Spotify to function properly, a short list of domains needs to be added to its whitelist to prevent redirects from blocked to non-blocked domains from being cut off.
 
-See the Whitelist [here](https://github.com/Isaaker/Spotify-AdsList/blob/main/Lists/WHITELIST.md)
+See the Whitelist [here](https://spotify.piscinadeentropia.es/docs_whitelist/)
 
 ## Testing
 
@@ -69,8 +78,7 @@ Here you can find all the tests made, their date and more details.
 | -- | -- | -- | -- | -- | -- | -- | -- |
 | Web App | Mac | MacOS (14.2.1) | Safari (17.2.1) | 27/1/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | pihole | @isaaker |
 | Web App | Mac | MacOS (14.2.1) | Firefox (122.0) | 27/1/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | pihole | @isaaker |
-| Web App | Virtual Machine| Debian 12 | Firefox ESR (115.3.0esr)| 27/1/24 | ![Static Badge](https://img.shields.io/badge/Status-ERROR-red?logo=spotify) | pihole | @isaaker |
-| Web App | Virtual Machine | Debian 12 | Chromium (121.0.6167.85)| 27/1/24 | ![Static Badge](https://img.shields.io/badge/Status-ERROR-red?logo=spotify) | pihole | @isaaker |
+| App | Virtual Machine| Debian 13 | - | 18/12/25 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | adguard | @isaaker |
 | App | Mac | MacOS (14.5) | - | 4/7/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | pihole | @isaaker |
 | App | iPhone | iOS (17.5.1) | - | 4/7/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | pihole | @isaaker |
 | App | Google Pixel 4a | Android 13 | - | 20/4/24 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | adguard | @mfjt |
@@ -79,13 +87,27 @@ Here you can find all the tests made, their date and more details.
 | App | Mi 9T | LineageOS 21 | - | 26/6/24 | ![Static Badge](https://img.shields.io/badge/Status-ERROR-red?logo=spotify) | pihole | @MW-SAND |
 | App | Windows Laptop | Windows 11 (10.0.22631) | - | 26/6/24 | ![Static Badge](https://img.shields.io/badge/Status-ERROR-red?logo=spotify) | pihole | @MW-SAND |
 | Web App | Windows Computer | Windows (22H2 19045.4170) | Chrome (126.0.6478.127 (64 bits)) | 29/6/24 | ![Static Badge](https://img.shields.io/badge/Status-ERROR-red?logo=spotify) | ublock origin | @AlkBek |
+| App | Desktop | Manjaro Zetar 25.0.10 | - | 03/11/2025 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | Adguard | @Dashboy1998 |
+| App | 1+9 Pro | Android 14 | - | 10/12/2025 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | Standard (DNSNet) | @BedBug2479 |
+| Other | Cloudflare | N/A | - | 15/12/25 | ![Static Badge](https://img.shields.io/badge/Status-OK-green?logo=spotify) | Standard (With pihole or firewall via Cloudflare) | @n0w33d |
 
 **If you have tested the list, please create a issue with type "Testing" to add more tested devices. [Add new tested device](https://github.com/Isaaker/Spotify-AdsList/issues/new?assignees=&labels=Testing&projects=&template=testing.yml&title=New+Testing+Device%3A+%5BDevice+Name%5D+%2F+%5BDevice+OS%26Version%5D)**
 
 ## License
-The code is under **Creative Commons Attribution-ShareAlike 4.0 International Public License**, view the [license here](https://spotify.piscinadeentropia.es/license)
+The code is under **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International**, view the [license here](https://spotify.piscinadeentropia.es/docs_license/)
 
-![Creative Commons Attribution-ShareAlike 4.0 International Public License Logo](https://github.com/Isaaker/Spotify-AdsList/raw/main/docs/images/License-Image.jpeg)
+You are free to:
+
+- **Share** — copy and redistribute the material in any medium or format.  
+  The licensor cannot revoke these freedoms as long as you follow the license terms.
+
+Under the following terms:
+
+- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+- **NonCommercial** — You may not use the material for commercial purposes.
+- **NoDerivatives** — If you remix, transform, or build upon the material, you may not distribute the modified material.
+- **No additional restrictions** — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
 
 ## Contributing
 

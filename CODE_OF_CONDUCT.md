@@ -43,6 +43,14 @@ If the person has a pattern of non-compliance with the code of conduct or has mo
 Consequences:
 Permanent expulsion from the community.
 
+## Pings and Mentions
+
+Please do not mention any users or administrators unless strictly necessary.
+
+Do not mention new issues or PRs with questions; we will verify and resolve the issues when we have time.
+It is permitted to mention users when using functions such as review or assign, if their work is being mentioned, or if they have not participated in a discussion for a long time and you need their attention.
+All cases of moderation are excluded from this restriction. Please do not hesitate to mention an administrator if necessary.
+
 ## Communication and application of the code of conduct
 The code of conduct will be enforced by the Community Administrators, so if you detect unacceptable or inappropriate behavior within the community please notify the administrators through the following contact methods:
 - [E-Mail](mailto:isaaker.hernan@protonmail.com)

@@ -7,6 +7,6 @@ jobs:
   sast_semgrep:
     permissions:                                                                         
       contents: read
-    uses: ramshackle-code/sast_semgrep/.github/workflows/sast_semgrep.yml@17a2b599ce6930240aa6c2797eb121c8fe5badf4   #v1.0.2
+    uses: ramshackle-code/sast_semgrep/.github/workflows/sast_semgrep.yml@77751635f33b222b56bc198d6e0a2ab5722715c4   #v1.0.3
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}

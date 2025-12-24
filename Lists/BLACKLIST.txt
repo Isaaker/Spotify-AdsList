@@ -736,7 +736,6 @@ pl.scdn.co
 7e.audio-ak.cdn.spotify.com
 ea.audio-ak.cdn.spotify.com
 hrblog.spotify.com
-spotify.map.fastly.net
 terraform-modules-test.intercom.io
 v.jwpcdn.com
 cd.audio-ak.cdn.spotify.com
@@ -865,7 +864,6 @@ alesti.ash1.spotify.com
 adnxs.com
 cs126.wpc.teliasoneracdn.net
 ee.audio-ak.cdn.spotify.com
-content-autofill.googleapis.com
 doubleclick.net
 dep.admob.com
 audio-ak.spotify.com
@@ -982,7 +980,6 @@ ia1.comscore.com
 be.video-ak.cdn.spotify.com
 38.audio-ak.cdn.spotify.com
 e1.video-ak.cdn.spotify.com
-www.content-autofill.googleapis.com
 adgrx.moatads.com
 b6.audio-ak.cdn.spotify.com
 spclient-canary.wg.spotify.com

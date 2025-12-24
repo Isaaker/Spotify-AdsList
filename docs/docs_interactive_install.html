@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Ads List Installer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --spotify-green: #1DB954;
+            --spotify-hover: #1ed760;
+            --bg-dark: #121212;
+            --card-bg: #181818;
+            --text-main: #FFFFFF;
+            --text-sec: #B3B3B3;
+            --border-subtle: #282828;
+        }
+
+        /* --- Dynamic Background --- */
+        body {
+            font-family: 'Circular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: var(--text-main);
+            margin: 0;
+            /* Added padding bottom to prevent banner overlap on small screens */
+            padding-bottom: 50px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+            /* Gradient Animation */
+            background: linear-gradient(-45deg, #0d0d0d, #0f2e1b, #000000, #1b1b1b);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* --- Card Container --- */
+        .container {
+            background-color: var(--card-bg);
+            width: 90%; /* Changed to % for better mobile responsiveness */
+            max-width: 750px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid var(--border-subtle);
+            position: relative;
+            backdrop-filter: blur(10px);
+            margin: 20px 0; /* Ensure margin top/bottom */
+        }
+
+        /* --- Header --- */
+        .header {
+            padding: 30px 30px 10px 30px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .logo-img {
+            width: 80px;
+            height: auto;
+            margin-bottom: 10px;
+            filter: drop-shadow(0 0 10px rgba(29, 185, 84, 0.3));
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        /* --- Content Area --- */
+        .content {
+            padding: 40px;
+            min-height: 350px;
+            display: flex;
+            flex-direction: column;
+            animation: fadeIn 0.4s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .step-indicator {
+            color: var(--spotify-green);
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        p, li {
+            color: var(--text-sec);
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        a { color: var(--spotify-green); text-decoration: none; transition: color 0.2s; }
+        a:hover { color: var(--spotify-hover); text-decoration: underline; }
+
+        /* --- Grid & Cards --- */
+        .grid-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .option-card {
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .option-card i {
+            font-size: 2rem;
+            color: var(--text-sec);
+            margin-bottom: 5px;
+        }
+
+        .option-card:hover {
+            background-color: #333;
+            transform: translateY(-2px);
+        }
+
+        .option-card.selected {
+            border-color: var(--spotify-green);
+            background-color: #333;
+        }
+
+        .option-card.selected i {
+            color: var(--spotify-green);
+        }
+
+        /* --- Buttons --- */
+        .footer-nav {
+            padding: 20px 40px;
+            background-color: rgba(0,0,0,0.2);
+            border-top: 1px solid var(--border-subtle);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn {
+            background-color: var(--spotify-green);
+            color: #000;
+            border: none;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.1s, background-color 0.2s;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: var(--spotify-hover);
+            transform: scale(1.02);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 1px solid var(--text-sec);
+            color: var(--text-main);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--text-main);
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        /* --- Code Block --- */
+        .code-container {
+            background-color: #000;
+            border-radius: 6px;
+            padding: 15px;
+            position: relative;
+            margin: 15px 0;
+            border: 1px solid #333;
+        }
+
+        .code-text {
+            font-family: 'Consolas', 'Monaco', monospace;
+            color: #efefef;
+            word-break: break-all;
+            font-size: 0.85rem;
+            margin-right: 50px;
+        }
+
+        .copy-btn {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #333;
+            border: none;
+            color: white;
+            padding: 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .copy-btn:hover { background: #444; }
+        .copy-btn:active { background: var(--spotify-green); }
+
+        /* --- Alerts/Tips --- */
+        .alert {
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            font-size: 0.95rem;
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .alert-info { background-color: rgba(46, 164, 79, 0.15); border: 1px solid rgba(46, 164, 79, 0.4); }
+        .alert-warn { background-color: rgba(230, 150, 0, 0.15); border: 1px solid rgba(230, 150, 0, 0.4); }
+        .alert i { margin-top: 3px; }
+
+        /* --- Progress Bar --- */
+        .progress-container {
+            height: 4px;
+            background: #282828;
+            width: 100%;
+        }
+        .progress-bar {
+            height: 100%;
+            background: var(--spotify-green);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        /* --- BOTTOM BANNER --- */
+        .static-guide-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(18, 18, 18, 0.95); /* Dark semi-transparent background */
+            color: var(--text-sec);
+            text-align: center;
+            padding: 12px;
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-subtle);
+            z-index: 100;
+            backdrop-filter: blur(5px);
+        }
+
+        .static-guide-banner a {
+            color: var(--spotify-green);
+            font-weight: 700;
+            margin-left: 8px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <div class="header">
+        <img src="../images/spotify_ads_list_logo.png" alt="Spotify Ads List" class="logo-img" onerror="this.style.display='none'; document.getElementById('backup-icon').style.display='inline-block'">
+        <i id="backup-icon" class="fa-brands fa-spotify" style="font-size: 3rem; color: var(--spotify-green); display:none; margin-bottom: 10px;"></i>
+        <h1>Spotify Ads List</h1>
+    </div>
+
+    <div class="content" id="content-area">
+        </div>
+
+    <div class="footer-nav">
+        <button id="btn-prev" class="btn btn-secondary" onclick="prevStep()"><i class="fa-solid fa-arrow-left"></i> Back</button>
+        <button id="btn-next" class="btn" onclick="nextStep()">Start <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+</div>
+
+<div class="static-guide-banner">
+    Would you prefer to read a static version of the installation guide?
+    <a href="https://spotify.piscinadeentropia.es/docs_installation/" target="_blank">
+        Click here <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8em;"></i>
+    </a>
+</div>
+
+<script>
+    // --- DATA CONFIGURATION ---
+    const adblockers = {
+        'pihole': { 
+            name: 'Pi-Hole', 
+            icon: 'fa-solid fa-network-wired',
+            type: 'network',
+            urls: {
+                standard: 'https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/pi-hole.txt',
+                mixed: 'https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/pi-hole-mixed.txt'
+            },
+            docs: 'Web UI > Adlists > Paste URL > Add.'
+        },
+        'dnsmasq': { 
+            name: 'Dnsmasq', 
+            icon: 'fa-solid fa-server',
+            type: 'network',
+            urls: {
+                standard: 'https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/dnsmasq.txt',
+                mixed: 'https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/dnsmasq-mixed.txt'
+            },
+            docs: 'Check official docs.'
+        },
+        'adguard': { 
+            name: 'Adguard', 
+            icon: 'fa-solid fa-shield-halved',
+            type: 'network',
+            urls: {
+                standard: 'https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/adguard.txt',
+                mixed: 'https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/abp-mixed.txt'
+            },
+            docs: 'Filters > Add Custom Filter.'
+        },
+        'ublock': { 
+            name: 'uBlock Origin', 
+            icon: 'fa-solid fa-shield-cat', // Fun icon for uBlock
+            type: 'browser',
+            browserLinks: {
+                chrome: 'chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm/asset-viewer.html?url=https%3A%2F%2Fraw.githubusercontent.com%2Fisaaker%2FSpotify-AdsList%2Fmain%2FLists%2Fadguard.txt&title=Spotify-AdsList&subscribe=1',
+                firefox: 'moz-extension://c396fed9-d8f8-4a6c-95a0-80773fa36d8a/asset-viewer.html?url=https%3A%2F%2Fraw.githubusercontent.com%2Fisaaker%2FSpotify-AdsList%2Fmain%2FLists%2Fadguard.txt&title=Spotify-AdsList&subscribe=1'
+            },
+            urls: {
+                standard: 'https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/adguard.txt',
+                mixed: 'https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/abp-mixed.txt' // uBlock reads Adguard/ABP syntax
+            }
+        },
+        'abp': { 
+            name: 'AdBlock Plus', 
+            icon: 'fa-brands fa-adversal',
+            type: 'browser',
+            subscribeLink: 'https://subscribe.adblockplus.org/?location=https%3A%2F%2Fraw.githubusercontent.com%2FIsaaker%2FSpotify-AdsList%2Fmain%2FLists%2Fabp.txt&title=SpotifyAdsList',
+            urls: {
+                standard: 'https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/abp.txt',
+                mixed: 'https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/abp-mixed.txt'
+            }
+        },
+        'dnsnet': { 
+            name: 'DNSNet', 
+            icon: 'fa-solid fa-globe',
+            type: 'network',
+            urls: {
+                standard: 'https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/standard_list.txt',
+                mixed: 'https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/standard_list-mixed.txt'
+            }
+        },
+        'standard': { 
+            name: 'Standard / Hosts', 
+            icon: 'fa-solid fa-file-code',
+            type: 'network',
+            urls: {
+                standard: 'https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/standard_list.txt',
+                mixed: 'https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/main/Lists/standard_list-mixed.txt'
+            },
+            docs: 'Hosts file requires manual entry.'
+        }
+    };
+
+    // --- STATE ---
+    let currentStep = 0;
+    let selectedAdblockerKey = null;
+    let selectedListType = null; // 'standard' or 'mixed'
+
+    // --- RENDER LOGIC ---
+    function updateUI() {
+        const content = document.getElementById('content-area');
+        const btnNext = document.getElementById('btn-next');
+        const btnPrev = document.getElementById('btn-prev');
+        const progressBar = document.getElementById('progress-bar');
+        
+        // Progress Bar Calculation (6 Steps total: 0 to 5)
+        const progress = (currentStep / 5) * 100;
+        progressBar.style.width = `${progress}%`;
+
+        // Button Visibility
+        btnPrev.style.display = currentStep === 0 ? 'none' : 'inline-flex';
+        btnNext.innerHTML = currentStep === 5 ? 'Finish <i class="fa-solid fa-check"></i>' : 'Next <i class="fa-solid fa-arrow-right"></i>';
+        
+        // Hide next button on last step if needed, or redirect
+        if (currentStep === 6) { 
+             // Logic for reset or redirect could go here
+        }
+
+        content.style.animation = 'none';
+        content.offsetHeight; /* trigger reflow */
+        content.style.animation = null;
+
+        // --- STEP 0: INTRO ---
+        if (currentStep === 0) {
+            content.innerHTML = `
+                <span class="step-indicator">Introduction</span>
+                <h2>Welcome to the Tutorial</h2>
+                <p>Spotify Ads List is quick and easy to install. All you need is a compatible adblocker and internet connection.</p>
+                <div class="alert alert-info">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <div>
+                        <strong>Compatibility Check:</strong><br>
+                        Compatible with Pi-Hole, uBlock Origin, Adguard, and many others.
+                    </div>
+                </div>
+                <p>Click <strong>Next</strong> to find the right configuration for you.</p>
+            `;
+        }
+
+        // --- STEP 1: SELECT ADBLOCKER ---
+        else if (currentStep === 1) {
+            content.innerHTML = `
+                <span class="step-indicator">Step 1 of 5</span>
+                <h2>Select your Adblocker</h2>
+                <p>Choose the software you are using to block ads:</p>
+                <div class="grid-options">
+                    ${Object.keys(adblockers).map(key => `
+                        <div class="option-card ${selectedAdblockerKey === key ? 'selected' : ''}" 
+                             onclick="selectAdblocker('${key}')" id="card-${key}">
+                            <i class="${adblockers[key].icon}"></i>
+                            <strong>${adblockers[key].name}</strong>
+                        </div>
+                    `).join('')}
+                </div>
+                <p id="error-msg" style="color:#ff5555; display:none; margin-top:15px; font-weight:bold;">
+                    <i class="fa-solid fa-circle-exclamation"></i> Please select an option.
+                </p>
+            `;
+        }
+
+        // --- STEP 2: PREREQUISITES ---
+        else if (currentStep === 2) {
+            const ab = adblockers[selectedAdblockerKey];
+            content.innerHTML = `
+                <span class="step-indicator">Step 2 of 5</span>
+                <h2>Prerequisites</h2>
+                <p>You selected <strong>${ab.name}</strong>.</p>
+                
+                <div style="background:#222; padding:20px; border-radius:8px;">
+                    <ul style="margin:0; padding-left:20px;">
+                        <li>Ensure <strong>${ab.name}</strong> is installed and running.</li>
+                        <li>Ensure the <strong>Spotify App</strong> is installed (or use the Web Player).</li>
+                        <li>Create a free Spotify account if you haven't yet.</li>
+                    </ul>
+                </div>
+                
+                <div class="alert alert-warn" style="margin-top:20px;">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <div>
+                        <strong>Note:</strong> This list only blocks ads. It does not install Spotify for you.
+                    </div>
+                </div>
+            `;
+        }
+
+        // --- STEP 3: LIST TYPE (Standard vs Mixed) ---
+        else if (currentStep === 3) {
+             content.innerHTML = `
+                <span class="step-indicator">Step 3 of 5</span>
+                <h2>Choose List Mode</h2>
+                <p>How do you want to use this list?</p>
+                
+                <div class="grid-options" style="grid-template-columns: 1fr 1fr;">
+                    <div class="option-card ${selectedListType === 'standard' ? 'selected' : ''}" 
+                         onclick="selectListType('standard')" id="type-standard">
+                        <i class="fa-brands fa-spotify"></i>
+                        <strong>Spotify Ads Only</strong>
+                        <span style="font-size:0.8rem; color:#888;">Blocks only Spotify specific domains.</span>
+                    </div>
+                    
+                    <div class="option-card ${selectedListType === 'mixed' ? 'selected' : ''}" 
+                         onclick="selectListType('mixed')" id="type-mixed">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <strong>Ads + Spotify (Mixed)</strong>
+                        <span style="font-size:0.8rem; color:#888;">Combines Spotify blocklist with a generic ad list.</span>
+                    </div>
+                </div>
+                <p id="error-msg-type" style="color:#ff5555; display:none; margin-top:15px; font-weight:bold;">
+                    Select a format.
+                </p>
+             `;
+        }
+
+        // --- STEP 4: INSTALLATION ---
+        else if (currentStep === 4) {
+            const ab = adblockers[selectedAdblockerKey];
+            const targetUrl = selectedListType === 'standard' ? ab.urls.standard : ab.urls.mixed;
+            
+            let html = `
+                <span class="step-indicator">Step 4 of 5</span>
+                <h2>Add the List</h2>
+            `;
+
+            // Browser Auto-Install Buttons (Only show if Standard is selected, or if user wants manual URL)
+            // Note: Subscribe links usually point to specific files.
+            let showSubscribe = false;
+            if (ab.type === 'browser' && selectedListType === 'standard') {
+                showSubscribe = true;
+            }
+
+            if (showSubscribe) {
+                html += `<p>Click below to subscribe automatically to the <strong>Standard</strong> list:</p>`;
+                
+                if (selectedAdblockerKey === 'ublock') {
+                    html += `
+                        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:20px;">
+                            <a href="${ab.browserLinks.chrome}" target="_blank" class="btn"><i class="fa-brands fa-chrome"></i> Add to Chrome</a>
+                            <a href="${ab.browserLinks.firefox}" target="_blank" class="btn"><i class="fa-brands fa-firefox-browser"></i> Add to Firefox</a>
+                        </div>
+                        <p style="font-size:0.9rem; color:#888;">Or use the manual link below:</p>
+                    `;
+                } else if (selectedAdblockerKey === 'abp') {
+                    html += `
+                        <div style="margin-bottom:20px;">
+                            <a href="${ab.subscribeLink}" target="_blank" class="btn">Subscribe Now</a>
+                        </div>
+                        <p style="font-size:0.9rem; color:#888;">Or use the manual link below:</p>
+                    `;
+                }
+            } else {
+                 html += `<p>Copy the <strong>Raw URL</strong> below and add it to <strong>${ab.name}</strong>:</p>`;
+            }
+
+            // Show Code Block (Always useful)
+            html += `
+                <div class="code-container">
+                    <div class="code-text">${targetUrl}</div>
+                    <button class="copy-btn" onclick="copyToClipboard('${targetUrl}')"><i class="fa-regular fa-copy"></i> Copy</button>
+                </div>
+            `;
+
+            if (ab.type === 'network') {
+                html += `
+                    <div class="alert alert-info">
+                        <i class="fa-solid fa-book"></i>
+                        <div>
+                            <strong>How to add?</strong><br>
+                            ${ab.docs}
+                        </div>
+                    </div>
+                `;
+            }
+
+            content.innerHTML = html;
+        }
+
+        // --- STEP 5: WHITELIST ---
+        else if (currentStep === 5) {
+            const whitelistUrl = "https://raw.githubusercontent.com/Isaaker/Spotify-AdsList/refs/heads/main/Lists/WHITELIST.txt";
+            
+            content.innerHTML = `
+                <span class="step-indicator">Final Step</span>
+                <h2>Add the Whitelist</h2>
+                <div class="alert alert-warn">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <div>
+                        <strong>Crucial Step:</strong> You MUST add these domains to your Allow/Whitelist, otherwise songs might skip or not play.
+                    </div>
+                </div>
+
+                <p>1. View the whitelist domains here:</p>
+                <a href="https://spotify.piscinadeentropia.es/docs_whitelist/" target="_blank" class="btn btn-secondary" style="width:fit-content; margin-bottom:15px;">
+                    <i class="fa-solid fa-list"></i> Open Whitelist File
+                </a>
+
+                <p>2. Or copy the raw link to import if your adblocker supports remote whitelists:</p>
+                <div class="code-container">
+                    <div class="code-text">${whitelistUrl}</div>
+                    <button class="copy-btn" onclick="copyToClipboard('${whitelistUrl}')"><i class="fa-regular fa-copy"></i> Copy</button>
+                </div>
+
+                <div class="alert alert-info">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <div>
+                        <strong>Why?</strong> Blocked ads sometimes redirect legitimate traffic. The whitelist ensures the music stream keeps flowing.
+                    </div>
+                </div>
+            `;
+        }
+        
+        // --- END SCREEN ---
+        else if (currentStep === 6) {
+             content.innerHTML = `
+                <span class="step-indicator">Complete</span>
+                <h2>You are all set!</h2>
+                <p>Restart your Spotify app and enjoy ad-free music.</p>
+                
+                <div style="display:grid; gap:10px; margin-top:30px;">
+                    <a href="https://github.com/Isaaker/Spotify-AdsList" target="_blank" class="option-card" style="flex-direction:row; justify-content:center;">
+                        <i class="fa-brands fa-github"></i> Star on GitHub
+                    </a>
+                    <a href="https://github.com/Isaaker/Spotify-AdsList/issues" target="_blank" class="option-card" style="flex-direction:row; justify-content:center;">
+                        <i class="fa-solid fa-bug"></i> Report Issue
+                    </a>
+                </div>
+                <div style="text-align:center; margin-top:20px;">
+                    <button class="btn btn-secondary" onclick="location.reload()">Start Over</button>
+                </div>
+             `;
+             btnNext.style.display = 'none';
+             btnPrev.style.display = 'none';
+        }
+    }
+
+    // --- INTERACTION LOGIC ---
+
+    function selectAdblocker(key) {
+        selectedAdblockerKey = key;
+        document.querySelectorAll('.grid-options .option-card').forEach(el => el.classList.remove('selected'));
+        document.getElementById(`card-${key}`).classList.add('selected');
+        document.getElementById('error-msg').style.display = 'none';
+    }
+
+    function selectListType(type) {
+        selectedListType = type;
+        document.getElementById('type-standard').classList.remove('selected');
+        document.getElementById('type-mixed').classList.remove('selected');
+        document.getElementById(`type-${type}`).classList.add('selected');
+        document.getElementById('error-msg-type').style.display = 'none';
+    }
+
+    function nextStep() {
+        // Validation Step 1
+        if (currentStep === 1 && !selectedAdblockerKey) {
+            document.getElementById('error-msg').style.display = 'block';
+            return;
+        }
+        // Validation Step 3
+        if (currentStep === 3 && !selectedListType) {
+            document.getElementById('error-msg-type').style.display = 'block';
+            return;
+        }
+
+        currentStep++;
+        updateUI();
+    }
+
+    function prevStep() {
+        if (currentStep > 0) {
+            currentStep--;
+            updateUI();
+        }
+    }
+
+    function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(() => {
+            // Visual feedback
+            const btns = document.querySelectorAll('.copy-btn');
+            btns.forEach(b => {
+                const originalHtml = b.innerHTML;
+                b.innerHTML = '<i class="fa-solid fa-check"></i> Copied!';
+                b.style.background = 'var(--spotify-green)';
+                b.style.color = '#000';
+                setTimeout(() => {
+                    b.innerHTML = originalHtml;
+                    b.style.background = '#333';
+                    b.style.color = '#fff';
+                }, 2000);
+            });
+        });
+    }
+
+    // Init
+    updateUI();
+
+</script>
+
+</body>
+</html>
