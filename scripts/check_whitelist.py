@@ -42,7 +42,13 @@ def check_whitelist_against_blacklist(whitelist_file, blacklist_file):
         print("No whitelisted domains are in the blacklist.")
 
 if __name__ == "__main__":
-    WHITELIST_FILE = "./Lists/WHITELIST.txt"
-    BLACKLIST_FILE = "./Lists/BLACKLIST.txt"
+    try:
+        workspace = os.environ.get('GITHUB_WORKSPACE')
+        branch = os.environ.get('BRANCH_NAME')
+        WHITELIST_FILE = f"{workspace}/{branch}/Lists/WHITELIST.txt"
+        BLACKLIST_FILE = f"{workspace}/{branch}/Lists/BLACKLIST.txt"
+    except:
+        WHITELIST_FILE = "./Lists/WHITELIST.txt"
+        BLACKLIST_FILE = "./Lists/BLACKLIST.txt"
 
     check_whitelist_against_blacklist(WHITELIST_FILE, BLACKLIST_FILE)

@@ -15,9 +15,12 @@ from time import gmtime, strftime
 import os
 
 # Get the domains to block
-workspace = os.environ.get('GITHUB_WORKSPACE')
-branch = os.environ.get('BRANCH_NAME')
-files_path = f"{workspace}/{branch}/Lists/"
+try:
+    workspace = os.environ.get('GITHUB_WORKSPACE')
+    branch = os.environ.get('BRANCH_NAME')
+    files_path = f"{workspace}/{branch}/Lists/"
+except:
+    files_path = f"./Lists/"
 print ("Obtaining the domains to block...")
 with open(f"{files_path}/BLACKLIST.txt", "r") as master_blocklist:
     block_domains = master_blocklist.readlines()

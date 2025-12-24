@@ -13,15 +13,18 @@ print ("License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.tx
 import os
 import requests
 
-workspace = os.environ.get('GITHUB_WORKSPACE')
-branch = os.environ.get('BRANCH_NAME')
-file = f"{workspace}/{branch}/Lists/BLACKLIST-mixed.txt"
-blocklist = f"{workspace}/{branch}/Lists/BLACKLIST.txt"
-default_blocklist = f"{workspace}/{branch}/Lists/default_ad_blocklist.txt"
-
+try:
+    workspace = os.environ.get('GITHUB_WORKSPACE')
+    branch = os.environ.get('BRANCH_NAME')
+    file = f"{workspace}/{branch}/Lists/BLACKLIST-mixed.txt"
+    blocklist = f"{workspace}/{branch}/Lists/BLACKLIST.txt"
+    default_blocklist = f"{workspace}/{branch}/Lists/default_ad_blocklist.txt"
+except:
+    file = f"./Lists/BLACKLIST-mixed.txt"
+    blocklist = f"./Lists/BLACKLIST.txt"
+    default_blocklist = f"./Lists/default_ad_blocklist.txt"
 
 # Download ads default list from The Blocklist Project
-
 
 print("Downloading default blocklist...")
 default_blocklist_url = "https://blocklistproject.github.io/Lists/alt-version/ads-nl.txt"
@@ -63,4 +66,3 @@ with open(file, 'w') as file_write:
         file_write.write(line + "\n")
 
 print("Default blocklist added successfully")
-
