@@ -29,5 +29,4 @@ jobs:
         stale-issue-label: 'Stale'
         stale-pr-label: 'Stale'
         days-before-stale: 5
-        days-before-issue-close: 7
-
+        days-before-issue-close: 2
