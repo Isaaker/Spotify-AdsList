@@ -33,6 +33,14 @@ print ("----------------------------")
 current_time = strftime("%Y-%m-%d", gmtime())
 sum_domains = len(block_domains)
 
+line_inner_width = 87
+left_prefix = "##### Number of domains: "
+right_suffix = "####"
+available = line_inner_width - len(left_prefix) - len(right_suffix)
+num_str = str(sum_domains)
+padding = " " * max(0, available - len(num_str))
+domain_line = f"{num_str}{padding}"
+
 #Generate the AdGuard blocklist
 print ("Generating the AdGuard file...")
 header = f"""#######################################################################################
@@ -41,7 +49,7 @@ header = f"""###################################################################
 ##### Updated: {current_time} (GMT)                                                    ####
 #######################################################################################
 ##### Version: Adguard                                                             ####
-##### Number of domains: {sum_domains}                                                      ####
+##### Number of domains: {domain_line}####
 #######################################################################################
 ##### Read more: https://github.com/Isaaker/Spotify-AdsList                        ####
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
@@ -65,7 +73,7 @@ header = f"""###################################################################
 ##### Updated: {current_time} (GMT)                                                    ####
 #######################################################################################
 ##### Version: pi-hole                                                             ####
-##### Number of domains: {sum_domains}                                                      ####
+##### Number of domains: {domain_line}####
 #######################################################################################
 ##### Read more: https://github.com/Isaaker/Spotify-AdsList                        ####
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
@@ -88,7 +96,7 @@ header = f"""###################################################################
 ##### Updated: {current_time} (GMT)                                                    ####
 #######################################################################################
 ##### Version: Standard                                                            ####
-##### Number of domains: {sum_domains}                                                      ####
+##### Number of domains: {domain_line}####
 #######################################################################################
 ##### Read more: https://github.com/Isaaker/Spotify-AdsList                        ####
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
@@ -111,7 +119,7 @@ header = f"""###################################################################
 ##### Updated: {current_time} (GMT)                                                    ####
 #######################################################################################
 ##### Version: dnsmasq                                                             ####
-##### Number of domains: {sum_domains}                                                      ####
+##### Number of domains: {domain_line}####
 #######################################################################################
 ##### Read more: https://github.com/Isaaker/Spotify-AdsList                        ####
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
@@ -136,7 +144,7 @@ header = f"""
 !!!!! Updated: {current_time} (GMT)                                                    !!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!! Version: ABP                                                                 !!!!
-!!!!! Number of domains: {sum_domains}                                                      !!!!
+!!!!! Number of domains: {domain_line}!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!! Read more: https://github.com/Isaaker/Spotify-AdsList                        !!!!
 !!!!! License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    !!!!
