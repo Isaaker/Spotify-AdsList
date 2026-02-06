@@ -27,7 +27,6 @@ comscoredirect.net
 d3.audio-ak.cdn.spotify.com
 admob.co.uk
 core-ash-001.ash1.spotify.com
-tv.scdn.co
 logtest.moatads.com
 lysandra.ash1.spotify.com
 click.api.cp.tune.com
@@ -740,7 +739,6 @@ terraform-modules-test.intercom.io
 v.jwpcdn.com
 cd.audio-ak.cdn.spotify.com
 admob.fi
-ap.spotify.com
 c7.audio-ak.cdn.spotify.com
 7a.audio-ak.cdn.spotify.com
 34.audio-ak.cdn.spotify.com
@@ -1075,7 +1073,6 @@ de.audio-ak.cdn.spotify.com
 insights.spotify.com
 ash2-idp-a2.ash2.spotify.com
 eip-tata.audio-ak.spotify.com.akahost.net
-audio-ake.spotify.com.edgesuite.net
 api.mixpanel.com
 6e.video-ak.cdn.spotify.com
 gw.admob.com
@@ -1160,7 +1157,6 @@ b.admob.com
 lotta.ash1.spotify.com
 d3rt199lpmkn.cloudfront.net
 c1.vip.sc9.admob.com
-video-akpcw.spotifycdn.com
 dev1.vip.sc9.admob.com
 stacia.ash1.spotify.com
 blog.spotify.com
