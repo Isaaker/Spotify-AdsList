@@ -1226,3 +1226,4 @@ ilisapesi.ash.spotify.com
 b5.video-ak.cdn.spotify.com
 showads33000.pubmatic.com
 adstudio.spotify.com
+gew4-dealer.g2.spotify.com
