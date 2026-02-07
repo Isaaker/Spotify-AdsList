@@ -1,10 +1,10 @@
 #######################################################################################
 ##### Spotify Ads Blacklist                                                        ####
 ##### Created by: Isaaker                                                          ####
-##### Updated: 2026-02-06 (GMT)                                                    ####
+##### Updated: 2026-02-07 (GMT)                                                    ####
 #######################################################################################
 ##### Version: pi-hole                                                             ####
-##### Number of domains: 1228                                                      ####
+##### Number of domains: 1229                                                      ####
 #######################################################################################
 ##### Read more: https://github.com/Isaaker/Spotify-AdsList                        ####
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
@@ -1238,3 +1238,4 @@ ilisapesi.ash.spotify.com
 b5.video-ak.cdn.spotify.com
 showads33000.pubmatic.com
 adstudio.spotify.com
+gew4-dealer.g2.spotify.com
