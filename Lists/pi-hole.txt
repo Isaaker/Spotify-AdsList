@@ -4,7 +4,7 @@
 ##### Updated: 2026-03-08 (GMT)                                                    ####
 #######################################################################################
 ##### Version: pi-hole                                                             ####
-##### Number of domains: 1253                                                      ####
+##### Number of domains: 1244                                                      ####
 #######################################################################################
 ##### Read more: https://github.com/Isaaker/Spotify-AdsList                        ####
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
@@ -322,7 +322,6 @@ admetrix.comscore.com
 3b.video-ak.cdn.spotify.com
 heads-fac.spotify.com
 moatads.com
-wg.spotify.com
 7b.audio-ak.cdn.spotify.com
 atc.spotify.map.fastly.net
 admob.fr
@@ -382,7 +381,6 @@ admob.no
 gew3-dealer.g2.spotify.com
 audio2.spotify.com
 weblb-wg.dual-gslb.spotify.com
-geo3.ggpht.com
 wl.support.spotify.com
 97.audio-ak.cdn.spotify.com
 a1.video-ak.cdn.spotify.com
@@ -577,7 +575,6 @@ tune.com
 thisis-images.scdn.co
 developer.admob.com
 shulamit.ash1.spotify.com
-gcdn.2mdn.net
 lotta.ash.spotify.com
 audio-sp-lon.spotify.com
 b0.video-ak.cdn.spotify.com
@@ -740,7 +737,6 @@ sjc.weblb-wg.dual-gslb.spotify.com
 audio4-ak.spotify.com.edgesuite.net
 aa.audio-ak.cdn.spotify.com
 labs.spotify.com
-p.scdn.co
 postbuy.comscore.com
 ipinfo.io
 bsams.eyeblaster.akadns.net
@@ -771,7 +767,6 @@ df.audio-ak.cdn.spotify.com
 73.audio-ak.cdn.spotify.com
 heads-ak.spotify.com.edgesuite.net
 gew1-spclient.spotify.com
-ash.weblb-wg.dual-gslb.spotify.com
 51.video-ak.cdn.spotify.com
 cd.audio-ak.cdn.spotify.com
 securepubads.g.doubleclick.net
@@ -870,7 +865,6 @@ quantcast584928381.s.moatpixel.com
 sdkm.w.inmobi.com
 audio-sp-sto.spotify.com
 audio-cf.spotify.com
-ash-dealer.spotify.com
 tx102.sc9.admob.com
 upgrade.spotify.com
 cadace.ash1.spotify.com
@@ -1193,7 +1187,6 @@ devaccount.spotify.com
 guc3-accesspoint-b-76wp.ap.spotify.com
 w.intercom.io
 sto.weblb-wg.gslb.spotify.com
-redirector.gvt1.com
 z.moatads.com
 pagead46.l.doubleclick.net
 u.admob.com
@@ -1204,7 +1197,6 @@ a1294.w20.akamai.net
 b3.audio-ak.cdn.spotify.com
 upv4.moatads.com
 rosevear.ash1.spotify.com
-audio-fa.spotify.com
 o.admob.com
 gew1-accesspoint-b-4nz6.ap.spotify.com
 3f.video-ak.cdn.spotify.com
@@ -1213,7 +1205,6 @@ neeharika.ash1.spotify.com
 engineering.intercom.io
 eng.admob.com
 9e.video-ak.cdn.spotify.com
-o.scdn.co
 ba.video-ak.cdn.spotify.com
 078d9f6a6dc1.cdn4.forter.com
 cpm1.vip.sc9.admob.com
