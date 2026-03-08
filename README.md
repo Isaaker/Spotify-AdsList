@@ -15,7 +15,6 @@
 |Bandit|Security|[![Bandit](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/bandit.yml/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/bandit.yml)|
 |Automatic Dependency Submission|Security|[![Automatic Dependency Submission](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/dependency-graph/auto-submission/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/dependency-graph/auto-submission)|
 | Mark stale issues and pull requests | Repo Managament |[![Mark stale issues and pull requests](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/stale.yml/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/stale.yml)|
-|Summarize new issues|Repo Managament|[![Summarize new issues](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/summary.yml/badge.svg)](https://github.com/Isaaker/Spotify-AdsList/actions/workflows/summary.yml)|
 
 ## About
 
