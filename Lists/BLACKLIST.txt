@@ -811,7 +811,6 @@ herlinda.ash.spotify.com
 07.audio-ak.cdn.spotify.com
 redirector.gvt1.com
 45.audio-ak.cdn.spotify.com
-repository.spotify.com
 y.moatads.com
 hanane.ash1.spotify.com
 audio-cf.spotifycdn.com
@@ -951,7 +950,6 @@ www.moatads.com
 crusader.scdn.co
 iad.comscore.com
 ec.video-ak.cdn.spotify.com
-exp.wg.spotify.com
 nieves.ash.spotify.com
 creativeservice-production.scdn.co
 mixpanel.com
@@ -1226,4 +1224,16 @@ ilisapesi.ash.spotify.com
 b5.video-ak.cdn.spotify.com
 showads33000.pubmatic.com
 adstudio.spotify.com
+api.branch.io
+www.api.branch.io
+branch.io
+pixel-static.spotify.com
+gew-dealer.g2.spotify.com
+gew1-dealer.g2.spotify.com
+gew2-dealer.g2.spotify.com
+gew3-dealer.g2.spotify.com
 gew4-dealer.g2.spotify.com
+gew1-spclient.spotify.com
+gew2-spclient.spotify.com
+gew3-spclient.spotify.com
+gew4-spclient.spotify.com
