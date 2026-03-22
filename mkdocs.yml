@@ -65,5 +65,5 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Isaaker/Spotify-AdsList/
-  extra_javascript:
-      - js/archive-banner.js
+extra_javascript:
+  - js/archive-banner.js
