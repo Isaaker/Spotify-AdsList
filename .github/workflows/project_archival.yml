@@ -31,7 +31,7 @@ jobs:
 
       - name: Close issue (if issue)
         if: github.event.issue != null
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           script: |
             await github.rest.issues.update({
@@ -43,7 +43,7 @@ jobs:
 
       - name: Close pull request (if PR)
         if: github.event.pull_request != null
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           script: |
             await github.rest.pulls.update({
