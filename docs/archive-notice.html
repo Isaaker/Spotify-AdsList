@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Archival Notice</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .card {
+            background-color: #1e1e1e;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            max-width: 500px;
+            border: 1px solid #333;
+        }
+        h1 { color: #1DB954; margin-top: 0; font-size: 1.8rem; }
+        p { line-height: 1.6; color: #b3b3b3; font-size: 1.1rem; }
+        .timer-container {
+            margin-top: 25px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+        .timer {
+            font-weight: bold;
+            color: #1DB954;
+            font-size: 1.2rem;
+        }
+        .loader {
+            margin: 20px auto;
+            border: 3px solid #333;
+            border-top: 3px solid #1DB954;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+        }
+        .links {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+        }
+        a { color: #1DB954; text-decoration: none; font-weight: 500; }
+        a:hover { text-decoration: underline; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>ℹ️ Project Archival Notice</h1>
+        <p>
+            Thank you for using <strong>Spotify-AdsList</strong>. <br>
+            Please note that this project will be archived and no longer maintained starting <strong>April 1st</strong>.
+        </p>
+        
+        <div class="links">
+            <a href="https://spotify.piscinadeentropia.es/">Learn more...</a>
+        </div>
+
+        <div class="timer-container">
+            <div class="loader"></div>
+            Redirecting to your destination in <span id="countdown" class="timer">5</span> seconds...
+            <br><br>
+            <small>If you are not redirected, <a id="direct-link" href="#">click here</a>.</small>
+        </div>
+    </div>
+
+    <script>
+        // 1. Obtener la URL de destino del parámetro 'redirect'
+        const urlParams = new URLSearchParams(window.location.search);
+        let destination = urlParams.get('redirect');
+
+        // Validar que la redirección sea interna o segura (opcional pero recomendado)
+        if (!destination || destination.startsWith('http') === false && !destination.startsWith('/')) {
+            destination = "https://spotify.piscinadeentropia.es/";
+        }
+
+        // 2. Función para establecer la cookie y redirigir
+        function proceed() {
+            // Cookie válida por 30 días
+            const d = new Date();
+            d.setTime(d.getTime() + (30 * 24 * 60 * 60 * 1000));
+            document.cookie = "Spotify-Archive-Notice=true; expires=" + d.toUTCString() + "; path=/; SameSite=Lax";
+            window.location.href = destination;
+        }
+
+        // 3. Lógica del contador
+        let seconds = 5;
+        const countdownEl = document.getElementById('countdown');
+        const directLink = document.getElementById('direct-link');
+        directLink.href = destination;
+
+        const interval = setInterval(() => {
+            seconds--;
+            countdownEl.textContent = seconds;
+            if (seconds <= 0) {
+                clearInterval(interval);
+                proceed();
+            }
+        }, 1000);
+
+        // Permitir saltar la espera
+        directLink.onclick = (e) => {
+            e.preventDefault();
+            proceed();
+        };
+    </script>
+</body>
+</html>
