@@ -17,7 +17,10 @@ import os
 # Get the domains to block
 workspace = os.environ.get('GITHUB_WORKSPACE')
 branch = os.environ.get('BRANCH_NAME')
-files_path = f"{workspace}/{branch}/Lists/"
+if workspace == None or branch == None:
+    files_path = f"./Lists/"
+else:
+    files_path = f"{workspace}/{branch}/Lists/"
 print ("Obtaining the domains to block...")
 with open(f"{files_path}/BLACKLIST.txt", "r") as master_blocklist:
     block_domains = master_blocklist.readlines()
@@ -44,6 +47,9 @@ header = f"""###################################################################
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
 #######################################################################################
 
+###############################################################################################
+##### This project was archived on March 30, 2026; https://spotify.piscinadeentropia.es   #####
+###############################################################################################
 """
 
 with open(f"{files_path}/adguard.txt", "w") as adguard:
@@ -68,6 +74,10 @@ header = f"""###################################################################
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
 #######################################################################################
 
+###############################################################################################
+##### This project was archived on March 30, 2026; https://spotify.piscinadeentropia.es   #####
+###############################################################################################
+
 """
 
 with open(f"{files_path}/pi-hole.txt", "w") as pihole:
@@ -91,6 +101,9 @@ header = f"""###################################################################
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
 #######################################################################################
 
+###############################################################################################
+##### This project was archived on March 30, 2026; https://spotify.piscinadeentropia.es   #####
+###############################################################################################
 """
 
 with open(f"{files_path}/standard_list.txt", "w") as standard_list:
@@ -114,6 +127,9 @@ header = f"""###################################################################
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
 #######################################################################################
 
+###############################################################################################
+##### This project was archived on March 30, 2026; https://spotify.piscinadeentropia.es   #####
+###############################################################################################
 """
 
 with open(f"{files_path}/dnsmasq.txt", "w") as dnsmasq:
@@ -139,6 +155,9 @@ header = f"""
 !!!!! License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    !!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!! This project was archived on March 30, 2026; https://spotify.piscinadeentropia.es   !!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 """
 
 with open(f"{files_path}/abp.txt", "w") as abp:

@@ -17,7 +17,10 @@ import os
 # Get the domains to block
 workspace = os.environ.get('GITHUB_WORKSPACE')
 branch = os.environ.get('BRANCH_NAME')
-files_path = f"{workspace}/{branch}/Lists/"
+if workspace == None or branch == None:
+    files_path = f"./Lists/"
+else:
+    files_path = f"{workspace}/{branch}/Lists/"
 print ("Obtaining the domains to block...")
 with open(f"{files_path}/BLACKLIST-mixed.txt", "r") as master_blocklist:
     block_domains = master_blocklist.readlines()
@@ -30,6 +33,14 @@ print ("----------------------------")
 current_time = strftime("%Y-%m-%d", gmtime())
 sum_domains = len(block_domains)
 
+line_inner_width = 87
+left_prefix = "##### Number of domains: "
+right_suffix = "####"
+available = line_inner_width - len(left_prefix) - len(right_suffix)
+num_str = str(sum_domains)
+padding = " " * max(0, available - len(num_str))
+domain_line = f"{num_str}{padding}"
+
 #Generate the AdGuard blocklist
 print ("Generating the AdGuard file...")
 header = f"""#######################################################################################
@@ -38,12 +49,16 @@ header = f"""###################################################################
 ##### Updated: {current_time} (GMT)                                                    ####
 #######################################################################################
 ##### Version: Adguard                                                             ####
-##### Number of domains: {sum_domains}                                                      ####
+##### Number of domains: {domain_line}####
 #######################################################################################
 ##### Read more: https://github.com/Isaaker/Spotify-AdsList                        ####
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
 #######################################################################################
 
+
+###############################################################################################
+##### This project was archived on March 30, 2026; https://spotify.piscinadeentropia.es   #####
+###############################################################################################
 """
 
 with open(f"{files_path}/adguard-mixed.txt", "w") as adguard:
@@ -62,12 +77,15 @@ header = f"""###################################################################
 ##### Updated: {current_time} (GMT)                                                    ####
 #######################################################################################
 ##### Version: pi-hole                                                             ####
-##### Number of domains: {sum_domains}                                                      ####
+##### Number of domains: {domain_line}####
 #######################################################################################
 ##### Read more: https://github.com/Isaaker/Spotify-AdsList                        ####
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
 #######################################################################################
 
+###############################################################################################
+##### This project was archived on March 30, 2026; https://spotify.piscinadeentropia.es   #####
+###############################################################################################
 """
 
 with open(f"{files_path}/pi-hole-mixed.txt", "w") as pihole:
@@ -85,12 +103,15 @@ header = f"""###################################################################
 ##### Updated: {current_time} (GMT)                                                    ####
 #######################################################################################
 ##### Version: Standard                                                            ####
-##### Number of domains: {sum_domains}                                                      ####
+##### Number of domains: {domain_line}####
 #######################################################################################
 ##### Read more: https://github.com/Isaaker/Spotify-AdsList                        ####
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
 #######################################################################################
 
+###############################################################################################
+##### This project was archived on March 30, 2026; https://spotify.piscinadeentropia.es   #####
+###############################################################################################
 """
 
 with open(f"{files_path}/standard_list-mixed.txt", "w") as standard_list:
@@ -108,12 +129,15 @@ header = f"""###################################################################
 ##### Updated: {current_time} (GMT)                                                    ####
 #######################################################################################
 ##### Version: dnsmasq                                                             ####
-##### Number of domains: {sum_domains}                                                      ####
+##### Number of domains: {domain_line}####
 #######################################################################################
 ##### Read more: https://github.com/Isaaker/Spotify-AdsList                        ####
 ##### License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    ####
 #######################################################################################
 
+###############################################################################################
+##### This project was archived on March 30, 2026; https://spotify.piscinadeentropia.es   #####
+###############################################################################################
 """
 
 with open(f"{files_path}/dnsmasq-mixed.txt", "w") as dnsmasq:
@@ -133,12 +157,15 @@ header = f"""
 !!!!! Updated: {current_time} (GMT)                                                    !!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!! Version: ABP                                                                 !!!!
-!!!!! Number of domains: {sum_domains}                                                      !!!!
+!!!!! Number of domains: {domain_line}!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!! Read more: https://github.com/Isaaker/Spotify-AdsList                        !!!!
 !!!!! License: https://github.com/Isaaker/Spotify-AdsList/blob/main/LICENSE.txt    !!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!! This project was archived on March 30, 2026; https://spotify.piscinadeentropia.es   !!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 """
 
 with open(f"{files_path}/abp-mixed.txt", "w") as abp:

@@ -1,16 +1,52 @@
 # Spotify Ads List
 
 ![Spotify-AdsList Logo](https://github.com/Isaaker/Spotify-AdsList/raw/main/docs/images/spotify_ads_list_logo.png)
-## ℹ️ Project archival notice
 
-Thank you to everyone who has used, tested, and contributed to this project. Due to lack of time, I will archive the repository: it will be archived and no longer actively maintained as of April 1.
+## ℹ️ Project Archived
 
-- New issues and pull requests will not be answered after that date.
-- I will publish a final release on March 31; that will be the last release.
+Thank you to everyone who used, tested, reported issues, and contributed to this project.
 
-This notice will be posted automatically on new Issues and PRs, placed in the README, shown as a banner on the website, added to Discussions, and included at the top of the project lists (blocklist).
+This repository has been archived and is no longer actively maintained. Archive date: March 30, 2026.
 
-If you would like to take over the project, have questions, or need to communicate anything related to it, please contact me at isaaker@piscinadeentropia.es.
+What this means
+
+- The repository is read-only: new issues and pull requests will not be accepted.
+- The website and repository will remain publicly accessible for an indefinite period, but availability is not guaranteed.
+- All repository contents and associated materials remain under the same license: **Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)**.
+- No license changes are allowed under any circumstances.
+- Per the license terms, changes to the project are not permitted; any redistribution must preserve the project as-is, include the same license, and provide attribution.
+
+Maintainers, transfers, and contributor access
+
+- Repository ownership will remain with me (Isaaker). I will not transfer ownership.
+- If you wish to assume maintenance responsibilities, you may be added as a collaborator with write access; however, repository ownership will remain mine.
+- To request collaborator access, email isaaker@piscinadeentropia.es with:
+  1. Your GitHub username or organization.
+  2. A brief plan for maintenance (scope and frequency).
+  3. Any relevant contact or verification info.
+- Requests are reviewed in order received; response time may be up to two weeks.
+- Adding a collaborator does not imply transfer of ownership or the right to change the license.
+
+Support and reporting
+
+- For critical security issues, email isaaker@piscinadeentropia.es and include “SECURITY” in the subject line.
+- For questions or archival-related requests (e.g., build artifacts, archives, or historical data), email the same address.
+
+Additional notes
+
+- CI, deployment hooks, and automated services have been disabled; builds or live demos may no longer run.
+- Package registry entries, third-party services, or external integrations referenced by the project may be removed or break over time.
+- The project’s issue history, pull requests, and discussions remain as a historical record but will not be acted upon.
+
+License and attribution
+
+- License: **Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)** — no changes permitted.
+- Redistribution must preserve the license, the content as-is, and provide attribution to the original author.
+
+Contact
+
+- Maintainer: Isaaker
+- Email: isaaker@piscinadeentropia.es
 
 ## Workflows
 

@@ -53,8 +53,20 @@ jobs:
       # Remove the duplicated Blocklist domains from whitelist
 
       # Download and mix defaullt add blocklist
-      - name: Download and mix defaullt add blocklist
+      - name: Download and mix default add blocklist
         run: python3 ${{ github.WORKSPACE }}/${{ steps.extract_branch.outputs.branch }}/scripts/add_default-ads-blocklist.py
+        env:
+         BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
+      
+      # Check whitelist for BLACKLIST-mixed.txt
+      - name: Remove whitelist domains from WHITELIST-mixed.txt
+        run: python3 ${{ github.WORKSPACE }}/${{ steps.extract_branch.outputs.branch }}/scripts/check_whitelist_mixed.py
+        env:
+         BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
+
+      # Check domain exclusion for BLACKLIST-mixed.txt
+      - name: Remove domain exclusion domains from WHITELIST-mixed.txt
+        run: python3 ${{ github.WORKSPACE }}/${{ steps.extract_branch.outputs.branch }}/scripts/domain_exclusion.py
         env:
          BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
 
